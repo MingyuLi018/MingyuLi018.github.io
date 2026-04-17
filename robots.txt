@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mingyuli.com/sitemap.xml
+Sitemap: https://MingyuLi018.github.io/sitemap.xml
