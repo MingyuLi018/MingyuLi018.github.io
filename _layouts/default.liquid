@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}">
   <!-- Head -->
   <head>
     {% if page.redirect %}

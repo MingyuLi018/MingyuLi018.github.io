@@ -42,8 +42,9 @@ layout: default
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
+      {% assign current_lang = page.lang | default: "en" %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">{% if current_lang == 'zh' %}动态{% else %}news{% endif %}</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -51,15 +52,21 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{% if current_lang == 'zh' %}最新文章{% else %}latest posts{% endif %}</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
+      {% assign current_lang = page.lang | default: "en" %}
+      {% if current_lang == 'zh' %}
+        {% assign pub_url = '/zh/publications/' %}
+      {% else %}
+        {% assign pub_url = '/publications/' %}
+      {% endif %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ pub_url | relative_url }}" style="color: inherit">{% if current_lang == 'zh' %}代表论文{% else %}selected publications{% endif %}</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

@@ -1,0 +1,23 @@
+en:
+  - title: about
+    url: /
+  - title: publications
+    url: /publications/
+  - title: projects
+    url: /projects/
+  - title: cv
+    url: /cv/
+  - title: competitions
+    url: /competitions/
+
+zh:
+  - title: "关于"
+    url: /zh/
+  - title: "论文"
+    url: /zh/publications/
+  - title: "项目"
+    url: /zh/projects/
+  - title: "简历"
+    url: /zh/cv/
+  - title: "竞赛"
+    url: /zh/competitions/
