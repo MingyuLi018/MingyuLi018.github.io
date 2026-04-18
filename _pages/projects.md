@@ -2,12 +2,22 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: "研究与工程项目集锦 / A collection of research and engineering projects."
 nav: true
 nav_order: 2
 lang: en
 display_categories: [research, engineering]
 horizontal: false
+---
+
+## 研究与工程项目
+
+以下是我参与的研究和工程项目。
+
+## Research & Engineering Projects
+
+Below is a collection of my research and engineering projects.
+
 ---
 
 <!-- pages/projects.md -->

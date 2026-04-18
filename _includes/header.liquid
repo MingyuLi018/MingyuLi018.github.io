@@ -75,23 +75,16 @@
               </button>
             </li>
           {% endif %}
-          <!-- Language Toggle -->
+          <!-- Language Toggle (only on About pages) -->
+          {% if page.permalink == '/' or page.permalink == '/zh/' %}
           <li class="toggle-container">
             {% if current_lang == 'zh' %}
-              {% assign switch_url = page.permalink | replace: '/zh/', '/' %}
-              {% if switch_url == page.permalink %}
-                {% assign switch_url = '/' %}
-              {% endif %}
-              <a class="nav-link lang-switch" href="{{ switch_url | relative_url }}" title="Switch to English">EN</a>
+              <a class="nav-link lang-switch" href="{{ '/' | relative_url }}" title="Switch to English">EN</a>
             {% else %}
-              {% if page.permalink == '/' %}
-                {% assign switch_url = '/zh/' %}
-              {% else %}
-                {% assign switch_url = '/zh' | append: page.permalink %}
-              {% endif %}
-              <a class="nav-link lang-switch" href="{{ switch_url | relative_url }}" title="切换到中文">中</a>
+              <a class="nav-link lang-switch" href="{{ '/zh/' | relative_url }}" title="切换到中文">中</a>
             {% endif %}
           </li>
+          {% endif %}
         </ul>
       </div>
     </div>
