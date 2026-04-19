@@ -267,12 +267,34 @@ ul.task-list input[type="checkbox"] {
 .competition-card {
   margin-bottom: 1.5rem;
 
-  .competition-toggle {
-    .when-expanded {
-      display: none;
+  details.competition-details {
+    > summary {
+      cursor: pointer;
+      list-style: none;
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      border-radius: 0.2rem;
+      border: 1px solid var(--global-theme-color);
+      color: var(--global-theme-color);
+      background: transparent;
+      transition: all 0.15s ease-in-out;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover {
+        background-color: var(--global-theme-color);
+        color: white;
+      }
+
+      .when-expanded {
+        display: none;
+      }
     }
 
-    &[aria-expanded="true"] {
+    &[open] > summary {
       .when-collapsed {
         display: none;
       }
