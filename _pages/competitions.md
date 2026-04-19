@@ -89,6 +89,27 @@ Below is a collection of competitions and awards. Click on any photo to view in 
   </div>
 </div>
 
+<strong>演示动画 / Demo Animations</strong>
+
+<div class="pswp-gallery" id="gallery--hec-am-demo">
+  <div class="row row-cols-2 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/product-intro.gif' | relative_url }}"
+         data-pswp-width="360" data-pswp-height="204" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/product-intro.gif' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="产品介绍动画 / Product introduction animation" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/function-demo.gif' | relative_url }}"
+         data-pswp-width="360" data-pswp-height="203" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/function-demo.gif' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="功能演示动画 / Function demo animation" />
+      </a>
+    </div>
+  </div>
+</div>
+
 <strong>CAD 设计 / CAD Design</strong>
 
 <div class="pswp-gallery" id="gallery--hec-am-cad">
@@ -269,6 +290,35 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 <p class="text-muted"><small>2025.07</small></p>
 
+<!-- Preview: 3 selected photos -->
+<div class="competition-preview">
+<div class="pswp-gallery" id="gallery--smartcar-preview">
+  <div class="row row-cols-3 g-2 mb-2">
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/v1-car-cruising.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/v1-car-cruising.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="第一版小车巡航 / V1 car cruising" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/final-competition-scene.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="684" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/final-competition-scene.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="决赛现场 / Final competition scene" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/team-photo-1.jpg' | relative_url }}"
+         data-pswp-width="1182" data-pswp-height="960" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/team-photo-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队合照 / Team photo" />
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
 <details class="competition-details">
   <summary>
     <span class="when-collapsed">展开详情 / Show Details &#9660;</span>
@@ -284,7 +334,103 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
-<em>照片即将上传 / Photos coming soon.</em>
+<strong>第一版小车 / V1 Prototype</strong>
+
+<div class="pswp-gallery" id="gallery--smartcar-v1">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/v1-car-cruising.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/v1-car-cruising.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="第一版小车巡航 / V1 car cruising" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/v1-car-grabbing.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/v1-car-grabbing.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="第一版小车抓取 / V1 car grabbing" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/v1-car-arm-detail-1.jpg' | relative_url }}"
+         data-pswp-width="810" data-pswp-height="1440" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/v1-car-arm-detail-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="机械臂细节1 / Arm detail 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/v1-car-arm-detail-2.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/v1-car-arm-detail-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="机械臂细节2 / Arm detail 2" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>决赛小车 / Final Version</strong>
+
+<div class="pswp-gallery" id="gallery--smartcar-final">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/v2-car-standby.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/v2-car-standby.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="第二版小车待机 / V2 car standby" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/final-car-standby.jpg' | relative_url }}"
+         data-pswp-width="1279" data-pswp-height="1706" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/final-car-standby.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="决赛小车待机 / Final car standby" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/final-car-match-1.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/final-car-match-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="决赛比赛1 / Final match 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/final-car-match-2.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/final-car-match-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="决赛比赛2 / Final match 2" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/final-competition-scene.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="684" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/final-competition-scene.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="决赛现场 / Final competition scene" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>团队合照 / Team Photos</strong>
+
+<div class="pswp-gallery" id="gallery--smartcar-team">
+  <div class="row row-cols-2 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/team-photo-1.jpg' | relative_url }}"
+         data-pswp-width="1182" data-pswp-height="960" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/team-photo-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队合照1 / Team photo 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/smart-car-2025/team-photo-2.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/smart-car-2025/team-photo-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队合照2 / Team photo 2" />
+      </a>
+    </div>
+  </div>
+</div>
 
   </div>
 </details>
@@ -302,6 +448,35 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 <p class="text-muted"><small>2025.05</small></p>
 
+<!-- Preview: 3 selected photos -->
+<div class="competition-preview">
+<div class="pswp-gallery" id="gallery--shmech-preview">
+  <div class="row row-cols-3 g-2 mb-2">
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Certificate" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/mechanical-drive-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/mechanical-drive-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="机械传动模块 / Mechanical drive module" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/team-photo-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/team-photo-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队合照 / Team photo" />
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
 <details class="competition-details">
   <summary>
     <span class="when-collapsed">展开详情 / Show Details &#9660;</span>
@@ -317,7 +492,75 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
-<em>照片即将上传 / Photos coming soon.</em>
+<strong>获奖证书 / Certificate</strong>
+
+<div class="pswp-gallery" id="gallery--shmech-cert">
+  <div class="row row-cols-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Certificate" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>作品细节 / Project Details</strong>
+
+<div class="pswp-gallery" id="gallery--shmech-details">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/mechanical-drive-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/mechanical-drive-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="机械传动模块1 / Mechanical drive 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/mechanical-drive-2.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/mechanical-drive-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="机械传动模块2 / Mechanical drive 2" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/voice-module-1.jpg' | relative_url }}"
+         data-pswp-width="1280" data-pswp-height="1706" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/voice-module-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="语音模块细节1 / Voice module 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/voice-module-2.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/voice-module-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="语音模块细节2 / Voice module 2" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>团队合照 / Team Photos</strong>
+
+<div class="pswp-gallery" id="gallery--shmech-team">
+  <div class="row row-cols-2 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/team-photo-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/team-photo-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队合照1 / Team photo 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/team-photo-2.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1280" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/team-photo-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队合照2 / Team photo 2" />
+      </a>
+    </div>
+  </div>
+</div>
 
   </div>
 </details>
@@ -335,6 +578,35 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 <p class="text-muted"><small>2025.06</small></p>
 
+<!-- Preview: 3 selected photos -->
+<div class="competition-preview">
+<div class="pswp-gallery" id="gallery--shgraphics-preview">
+  <div class="row row-cols-3 g-2 mb-2">
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="716" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛获奖证书 / National certificate" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛作品总览 / National competition overview" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛作品总览 / Provincial competition overview" />
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
 <details class="competition-details">
   <summary>
     <span class="when-collapsed">展开详情 / Show Details &#9660;</span>
@@ -350,7 +622,103 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
-<em>照片即将上传 / Photos coming soon.</em>
+<strong>获奖证书 / Certificate</strong>
+
+<div class="pswp-gallery" id="gallery--shgraphics-cert">
+  <div class="row row-cols-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="716" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛获奖证书 / National certificate" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>国赛作品 / National Competition Works</strong>
+
+<div class="pswp-gallery" id="gallery--shgraphics-national">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览1 / National overview 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-2.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览2 / National overview 2" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-3.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-3.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览3 / National overview 3" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-4.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-4.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览4 / National overview 4" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-5.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-5.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览5 / National overview 5" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-cad-parts.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="610" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-cad-parts.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛关键零件CAD图 / National CAD parts drawing" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-gripper-detail.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-gripper-detail.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛抓取机构细节 / National gripper detail" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>省赛作品 / Provincial Competition Works</strong>
+
+<div class="pswp-gallery" id="gallery--shgraphics-provincial">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛总览 / Provincial overview" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-manufacturing.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1820" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-manufacturing.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛制造过程 / Provincial manufacturing process" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-wiring-detail.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-wiring-detail.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛走线细节 / Provincial wiring detail" />
+      </a>
+    </div>
+  </div>
+</div>
 
   </div>
 </details>
@@ -383,7 +751,7 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
-<em>照片即将上传 / Photos coming soon.</em>
+<em>照片与上方个人赛项相同，请参阅第6项。/ Photos are the same as the individual entry above (#6).</em>
 
   </div>
 </details>
@@ -401,6 +769,35 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 <p class="text-muted"><small>2023.12</small></p>
 
+<!-- Preview: 3 photos -->
+<div class="competition-preview">
+<div class="pswp-gallery" id="gallery--aistartup-preview">
+  <div class="row row-cols-3 g-2 mb-2">
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/ai-startup-2023/1-certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/ai-startup-2023/1-certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Certificate" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/ai-startup-2023/presentation-closeup.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/ai-startup-2023/presentation-closeup.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="答辩特写 / Presentation closeup" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/ai-startup-2023/team-presentation.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="683" target="_blank">
+        <img src="{{ '/assets/img/competitions/ai-startup-2023/team-presentation.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队答辩 / Team presentation" />
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
 <details class="competition-details">
   <summary>
     <span class="when-collapsed">展开详情 / Show Details &#9660;</span>
@@ -416,7 +813,40 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
-<em>照片即将上传 / Photos coming soon.</em>
+<strong>获奖证书 / Certificate</strong>
+
+<div class="pswp-gallery" id="gallery--aistartup-cert">
+  <div class="row row-cols-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/ai-startup-2023/1-certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/ai-startup-2023/1-certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Certificate" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>竞赛现场 / Competition Photos</strong>
+
+<div class="pswp-gallery" id="gallery--aistartup-photos">
+  <div class="row row-cols-2 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/ai-startup-2023/presentation-closeup.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/ai-startup-2023/presentation-closeup.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="答辩特写 / Presentation closeup" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/ai-startup-2023/team-presentation.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="683" target="_blank">
+        <img src="{{ '/assets/img/competitions/ai-startup-2023/team-presentation.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="团队答辩 / Team presentation" />
+      </a>
+    </div>
+  </div>
+</div>
 
   </div>
 </details>
