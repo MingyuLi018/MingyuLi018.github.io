@@ -466,9 +466,21 @@ _照片即将上传 / Photos coming soon._
 
 <div class="competition-card">
 
-### 同济大学校奖学金一等奖 + 校级优秀学生
+### 同济大学校奖学金一等奖
 
-### Tongji University First-Class Scholarship + Outstanding Student Award
+### Tongji University First-Class Scholarship
+
+<p class="text-muted"><small>2025.12</small></p>
+
+</div><!-- end competition-card -->
+
+---
+
+<div class="competition-card">
+
+### 同济大学校级优秀学生
+
+### Tongji University Outstanding Student Award
 
 <p class="text-muted"><small>2025.12</small></p>
 

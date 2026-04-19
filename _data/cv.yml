@@ -96,10 +96,15 @@ cv:
         awarder: "Ministry of Education"
         summary: "Industry Track, university-level selection."
 
-      - title: "Tongji University First-Class Scholarship + Outstanding Student"
+      - title: "Tongji University First-Class Scholarship"
         date: 2025
         awarder: "Tongji University"
-        summary: "First-class scholarship and outstanding student award."
+        summary: "First-class scholarship for academic excellence."
+
+      - title: "Tongji University Outstanding Student Award"
+        date: 2025
+        awarder: "Tongji University"
+        summary: "Outstanding student award."
 
       - title: "Utility Model Patent"
         date: 2024
