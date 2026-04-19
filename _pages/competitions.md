@@ -31,7 +31,8 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 <p class="text-muted"><small>2025.07</small></p>
 
-<!-- Preview: 3 selected photos (always visible) -->
+<!-- Preview: 3 selected photos (hidden when expanded) -->
+<div class="competition-preview">
 <div class="pswp-gallery" id="gallery--hec-am-preview">
   <div class="row row-cols-3 g-2 mb-2">
     <div class="col">
@@ -56,6 +57,7 @@ Below is a collection of competitions and awards. Click on any photo to view in 
       </a>
     </div>
   </div>
+</div>
 </div>
 
 <details class="competition-details">

@@ -267,6 +267,11 @@ ul.task-list input[type="checkbox"] {
 .competition-card {
   margin-bottom: 1.5rem;
 
+  // Hide preview photos when details is expanded
+  &:has(details.competition-details[open]) .competition-preview {
+    display: none;
+  }
+
   details.competition-details {
     > summary {
       cursor: pointer;
