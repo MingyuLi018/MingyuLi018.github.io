@@ -56,12 +56,16 @@ ul.task-list input[type="checkbox"] {
 // Profile
 
 .profile {
-  width: 100%;
+  width: 40%;
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
     font-family: monospace;
+    font-size: 0.75rem;
 
     p {
       display: inline-block;
@@ -81,6 +85,10 @@ ul.task-list input[type="checkbox"] {
 @media (min-width: 576px) {
   .profile {
     width: 30%;
+
+    .more-info {
+      font-size: inherit;
+    }
 
     .address {
       p {
@@ -251,6 +259,41 @@ ul.task-list input[type="checkbox"] {
   a:hover {
     border-bottom-color: var(--global-theme-color);
     text-decoration: none;
+  }
+}
+
+// Competitions
+
+.competition-card {
+  margin-bottom: 1.5rem;
+
+  .competition-toggle {
+    .when-expanded {
+      display: none;
+    }
+
+    &[aria-expanded="true"] {
+      .when-collapsed {
+        display: none;
+      }
+
+      .when-expanded {
+        display: inline;
+      }
+    }
+  }
+}
+
+.competition-desc {
+  background-color: var(--global-bg-color);
+  border-left: 4px solid var(--global-theme-color);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 

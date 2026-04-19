@@ -51,19 +51,60 @@ cv:
         summary: "First-author paper published at IEEE International Conference on Advanced Robotics and Mechatronics."
 
     Awards:
+      - title: "Higher Education Cup - Additive Manufacturing Track - National First Prize"
+        date: 2025
+        awarder: "Ministry of Education / China Graphics Society"
+        summary: "18th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition."
+
+      - title: "China Mechanical Engineering Innovation - BMHRI Cup - National Third Prize"
+        date: 2025
+        awarder: "Chinese Mechanical Engineering Society"
+        summary: "China College Student Mechanical Engineering Innovation and Creativity Competition - Logistics Technology Creativity Contest."
+
+      - title: "Higher Education Cup - Team National Second Prize"
+        date: 2025
+        awarder: "Ministry of Education / China Graphics Society"
+        summary: "18th Higher Education Cup - Team event."
+
+      - title: "National Intelligent Car Race - Baidu Smart Transportation - Regional Second Prize"
+        date: 2025
+        awarder: "Chinese Association of Automation"
+        summary: "20th National University Students Intelligent Car Race - Baidu Smart Transportation Track."
+
+      - title: "Shanghai Mechanical Engineering Innovation Competition - Municipal First Prize"
+        date: 2025
+        awarder: "Shanghai Municipal Education Commission"
+        summary: "14th Shanghai College Student Mechanical Engineering Innovation Competition."
+
+      - title: "Shanghai Graphics Cup - 3D Individual Municipal Second Prize"
+        date: 2025
+        awarder: "Shanghai Graphics Society"
+        summary: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition."
+
+      - title: "Shanghai Graphics Cup - 3D Team Municipal Second Prize"
+        date: 2025
+        awarder: "Shanghai Graphics Society"
+        summary: "15th Shanghai Graphics Cup - Team event. 2nd highest individual score in team."
+
+      - title: "AI Startup Experience Competition - University Second Prize"
+        date: 2023
+        awarder: "Tongji University"
+        summary: "1st Insight WE Future - AI Please Answer Startup Experience Competition."
+
+      - title: "China International College Students' Innovation Competition - University Silver Award"
+        date: 2025
+        awarder: "Ministry of Education"
+        summary: "Industry Track, university-level selection."
+
+      - title: "Tongji University First-Class Scholarship + Outstanding Student"
+        date: 2025
+        awarder: "Tongji University"
+        summary: "First-class scholarship and outstanding student award."
+
       - title: "Utility Model Patent"
-        authors:
-          - "Li Mingyu"
         date: 2024
         awarder: "China National Intellectual Property Administration"
         summary: "Authorized utility model patent."
-
-      - title: "National-level Competition Awards"
-        authors:
-          - "Li Mingyu"
-        date: 2024
-        awarder: "Various"
-        summary: "Multiple national-level competition awards in robotics and engineering."
 
     Skills:
       - name: "Mechanical Engineering"
