@@ -36,9 +36,9 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 <div class="pswp-gallery" id="gallery--hec-am-preview">
   <div class="row row-cols-3 g-2 mb-2">
     <div class="col">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
-         data-pswp-width="832" data-pswp-height="1185" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.jpg' | relative_url }}"
+         data-pswp-width="600" data-pswp-height="855" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Award Certificate" />
       </a>
     </div>
@@ -51,7 +51,7 @@ Below is a collection of competitions and awards. Click on any photo to view in 
     </div>
     <div class="col">
       <a href="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
-         data-pswp-width="1080" data-pswp-height="560" target="_blank">
+         data-pswp-width="1024" data-pswp-height="531" target="_blank">
         <img src="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="3D 打印成品组装 / 3D printed assembled product" />
       </a>
@@ -80,9 +80,9 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 <div class="pswp-gallery" id="gallery--hec-am-cert">
   <div class="row row-cols-3 g-2">
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
-         data-pswp-width="832" data-pswp-height="1185" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.jpg' | relative_url }}"
+         data-pswp-width="600" data-pswp-height="855" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Award Certificate" />
       </a>
     </div>
@@ -158,7 +158,7 @@ Below is a collection of competitions and awards. Click on any photo to view in 
     </div>
     <div class="col mb-3">
       <a href="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
-         data-pswp-width="1080" data-pswp-height="560" target="_blank">
+         data-pswp-width="1024" data-pswp-height="531" target="_blank">
         <img src="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="3D 打印成品组装 / 3D printed assembled product" />
       </a>
