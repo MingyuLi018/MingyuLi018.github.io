@@ -495,12 +495,19 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 <strong>获奖证书 / Certificate</strong>
 
 <div class="pswp-gallery" id="gallery--shmech-cert">
-  <div class="row row-cols-3 g-2">
+  <div class="row row-cols-2 g-2">
     <div class="col mb-3">
       <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg' | relative_url }}"
          data-pswp-width="1024" data-pswp-height="768" target="_blank">
         <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Certificate" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-certificate.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="716" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-certificate.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛获奖证书 / National certificate" />
       </a>
     </div>
   </div>
@@ -536,6 +543,90 @@ Below is a collection of competitions and awards. Click on any photo to view in 
          data-pswp-width="1024" data-pswp-height="1366" target="_blank">
         <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/voice-module-2.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="语音模块细节2 / Voice module 2" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>国赛作品 / National Competition Works</strong>
+
+<div class="pswp-gallery" id="gallery--shmech-national">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-1.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-1.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览1 / National overview 1" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-2.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-2.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览2 / National overview 2" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-3.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-3.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览3 / National overview 3" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-4.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-4.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览4 / National overview 4" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-5.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-overview-5.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览5 / National overview 5" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-cad-parts.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="610" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-cad-parts.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛关键零件CAD图 / National CAD parts drawing" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-gripper-detail.jpg' | relative_url }}"
+         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/national-gripper-detail.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛抓取机构细节 / National gripper detail" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<strong>省赛作品 / Provincial Competition Works</strong>
+
+<div class="pswp-gallery" id="gallery--shmech-provincial">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/provincial-overview.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/provincial-overview.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛总览 / Provincial overview" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/provincial-manufacturing.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="1820" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/provincial-manufacturing.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛制造过程 / Provincial manufacturing process" />
+      </a>
+    </div>
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/provincial-wiring-detail.jpg' | relative_url }}"
+         data-pswp-width="1024" data-pswp-height="768" target="_blank">
+        <img src="{{ '/assets/img/competitions/shanghai-mech-innovation-2025/provincial-wiring-detail.jpg' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛走线细节 / Provincial wiring detail" />
       </a>
     </div>
   </div>
@@ -578,35 +669,6 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 <p class="text-muted"><small>2025.06</small></p>
 
-<!-- Preview: 3 selected photos -->
-<div class="competition-preview">
-<div class="pswp-gallery" id="gallery--shgraphics-preview">
-  <div class="row row-cols-3 g-2 mb-2">
-    <div class="col">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="716" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛获奖证书 / National certificate" />
-      </a>
-    </div>
-    <div class="col">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="768" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛作品总览 / National competition overview" />
-      </a>
-    </div>
-    <div class="col">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="768" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛作品总览 / Provincial competition overview" />
-      </a>
-    </div>
-  </div>
-</div>
-</div>
-
 <details class="competition-details">
   <summary>
     <span class="when-collapsed">展开详情 / Show Details &#9660;</span>
@@ -622,103 +684,7 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
-<strong>获奖证书 / Certificate</strong>
-
-<div class="pswp-gallery" id="gallery--shgraphics-cert">
-  <div class="row row-cols-3 g-2">
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="716" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-certificate.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛获奖证书 / National certificate" />
-      </a>
-    </div>
-  </div>
-</div>
-
-<strong>国赛作品 / National Competition Works</strong>
-
-<div class="pswp-gallery" id="gallery--shgraphics-national">
-  <div class="row row-cols-2 row-cols-md-3 g-2">
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="768" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-1.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览1 / National overview 1" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-2.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-2.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览2 / National overview 2" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-3.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="1366" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-3.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览3 / National overview 3" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-4.jpg' | relative_url }}"
-         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-4.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览4 / National overview 4" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-5.jpg' | relative_url }}"
-         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-overview-5.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛总览5 / National overview 5" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-cad-parts.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="610" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-cad-parts.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛关键零件CAD图 / National CAD parts drawing" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-gripper-detail.jpg' | relative_url }}"
-         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/national-gripper-detail.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="国赛抓取机构细节 / National gripper detail" />
-      </a>
-    </div>
-  </div>
-</div>
-
-<strong>省赛作品 / Provincial Competition Works</strong>
-
-<div class="pswp-gallery" id="gallery--shgraphics-provincial">
-  <div class="row row-cols-2 row-cols-md-3 g-2">
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="768" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-overview.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛总览 / Provincial overview" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-manufacturing.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="1820" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-manufacturing.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛制造过程 / Provincial manufacturing process" />
-      </a>
-    </div>
-    <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-wiring-detail.jpg' | relative_url }}"
-         data-pswp-width="1024" data-pswp-height="768" target="_blank">
-        <img src="{{ '/assets/img/competitions/shanghai-graphics-cup-2025/provincial-wiring-detail.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="省赛走线细节 / Provincial wiring detail" />
-      </a>
-    </div>
-  </div>
-</div>
+<em>照片即将上传 / Photos coming soon.</em>
 
   </div>
 </details>
