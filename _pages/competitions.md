@@ -36,24 +36,24 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 <div class="pswp-gallery" id="gallery--hec-am-preview">
   <div class="row row-cols-3 g-2 mb-2">
     <div class="col">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-assembly-iso.jpg' | relative_url }}"
-         data-pswp-width="554" data-pswp-height="321" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-assembly-iso.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 等轴测装配图 / CAD isometric assembly view" />
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
+         data-pswp-width="832" data-pswp-height="1185" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Award Certificate" />
       </a>
     </div>
     <div class="col">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-assembly.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/2-cad-modules-front.png' | relative_url }}"
+         data-pswp-width="435" data-pswp-height="450" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/2-cad-modules-front.png' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 模块正面视图 / CAD modular front view" />
+      </a>
+    </div>
+    <div class="col">
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
          data-pswp-width="1080" data-pswp-height="560" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-assembly.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="3D 打印成品组装 / 3D printed assembled product" />
-      </a>
-    </div>
-    <div class="col">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-parts-layout.jpg' | relative_url }}"
-         data-pswp-width="1706" data-pswp-height="1279" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-parts-layout.jpg' | relative_url }}"
-             class="img-fluid rounded z-depth-1" loading="lazy" alt="3D 打印零件布局 / 3D printed parts layout" />
       </a>
     </div>
   </div>
@@ -75,56 +75,70 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 
 </div>
 
+<strong>获奖证书 / Certificate</strong>
+
+<div class="pswp-gallery" id="gallery--hec-am-cert">
+  <div class="row row-cols-3 g-2">
+    <div class="col mb-3">
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
+         data-pswp-width="832" data-pswp-height="1185" target="_blank">
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/1-certificate.png' | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy" alt="获奖证书 / Award Certificate" />
+      </a>
+    </div>
+  </div>
+</div>
+
 <strong>CAD 设计 / CAD Design</strong>
 
 <div class="pswp-gallery" id="gallery--hec-am-cad">
   <div class="row row-cols-2 row-cols-md-3 g-2">
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-assembly-iso.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/cad-assembly-iso.jpg' | relative_url }}"
          data-pswp-width="554" data-pswp-height="321" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-assembly-iso.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/cad-assembly-iso.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 等轴测装配图 / CAD isometric assembly view" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-full-assembly.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/cad-full-assembly.png' | relative_url }}"
          data-pswp-width="436" data-pswp-height="397" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-full-assembly.png' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/cad-full-assembly.png' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 正面完整装配图 / CAD full assembly front view" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-modules-front.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/2-cad-modules-front.png' | relative_url }}"
          data-pswp-width="435" data-pswp-height="450" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-modules-front.png' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/2-cad-modules-front.png' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 模块正面视图 / CAD modular front view" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-mechanism-front.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/cad-mechanism-front.png' | relative_url }}"
          data-pswp-width="554" data-pswp-height="367" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-mechanism-front.png' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/cad-mechanism-front.png' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 内部机构前视图 / CAD internal mechanism front view" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-mechanism-rear.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/cad-mechanism-rear.png' | relative_url }}"
          data-pswp-width="554" data-pswp-height="355" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-mechanism-rear.png' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/cad-mechanism-rear.png' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 内部机构后视图 / CAD internal mechanism rear view" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-component-detail.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/cad-component-detail.png' | relative_url }}"
          data-pswp-width="343" data-pswp-height="336" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-component-detail.png' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/cad-component-detail.png' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 零部件细节 / CAD component detail" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/cad-drawer-detail.png' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/cad-drawer-detail.png' | relative_url }}"
          data-pswp-width="463" data-pswp-height="314" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/cad-drawer-detail.png' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/cad-drawer-detail.png' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="CAD 抽屉细节 / CAD drawer detail" />
       </a>
     </div>
@@ -136,37 +150,37 @@ Below is a collection of competitions and awards. Click on any photo to view in 
 <div class="pswp-gallery" id="gallery--hec-am-printed">
   <div class="row row-cols-2 row-cols-md-3 g-2">
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-parts-layout.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/printed-parts-layout.jpg' | relative_url }}"
          data-pswp-width="1706" data-pswp-height="1279" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-parts-layout.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/printed-parts-layout.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="3D 打印零件布局 / 3D printed parts layout" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-assembly.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
          data-pswp-width="1080" data-pswp-height="560" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-assembly.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/3-printed-assembly.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="3D 打印成品组装 / 3D printed assembled product" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-housing-detail.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/printed-housing-detail.jpg' | relative_url }}"
          data-pswp-width="956" data-pswp-height="584" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-housing-detail.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/printed-housing-detail.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="白色外壳模块特写 / White housing module detail" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-bracket-detail.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/printed-bracket-detail.jpg' | relative_url }}"
          data-pswp-width="963" data-pswp-height="587" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-bracket-detail.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/printed-bracket-detail.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="黑色支架特写 / Black bracket detail" />
       </a>
     </div>
     <div class="col mb-3">
-      <a href="{{ '/assets/img/competitions/higher-education-cup-2024/printed-compartment-detail.jpg' | relative_url }}"
+      <a href="{{ '/assets/img/competitions/higher-education-cup-2025/printed-compartment-detail.jpg' | relative_url }}"
          data-pswp-width="835" data-pswp-height="578" target="_blank">
-        <img src="{{ '/assets/img/competitions/higher-education-cup-2024/printed-compartment-detail.jpg' | relative_url }}"
+        <img src="{{ '/assets/img/competitions/higher-education-cup-2025/printed-compartment-detail.jpg' | relative_url }}"
              class="img-fluid rounded z-depth-1" loading="lazy" alt="储物格螺栓细节 / Storage compartment bolt detail" />
       </a>
     </div>
