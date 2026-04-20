@@ -9,12 +9,16 @@
 
 <hr />
 
+{% assign prev_was_card = false %}
 {% for comp in site.data.competitions %}
   {% if comp.section_title %}
+    <hr />
     <h2>{{ comp.section_title }}</h2>
+    {% assign prev_was_card = false %}
   {% else %}
+    {% if prev_was_card %}<hr />{% endif %}
     {% include competition_card.liquid comp=comp %}
-    {% unless forloop.last %}<hr />{% endunless %}
+    {% assign prev_was_card = true %}
   {% endif %}
 {% endfor %}
 

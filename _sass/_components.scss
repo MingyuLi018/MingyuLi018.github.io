@@ -292,56 +292,56 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Competitions
+// Shared expandable card styles (used by both project and competition cards)
 
-.competition-card {
+.expandable-card {
   margin-bottom: 1.5rem;
 
   // Hide preview photos when details is expanded
-  &:has(details.competition-details[open]) .competition-preview {
+  &:has(details.expandable-details[open]) .card-preview {
     display: none;
   }
+}
 
-  details.competition-details {
-    > summary {
-      cursor: pointer;
-      list-style: none;
-      display: inline-block;
-      padding: 0.25rem 0.5rem;
-      font-size: 0.875rem;
-      border-radius: 0.2rem;
-      border: 1px solid var(--global-theme-color);
-      color: var(--global-theme-color);
-      background: transparent;
-      transition: all 0.15s ease-in-out;
+.expandable-details {
+  > summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    border: 1px solid var(--global-theme-color);
+    color: var(--global-theme-color);
+    background: transparent;
+    transition: all 0.15s ease-in-out;
 
-      &::-webkit-details-marker {
-        display: none;
-      }
-
-      &:hover {
-        background-color: var(--global-theme-color);
-        color: white;
-      }
-
-      .when-expanded {
-        display: none;
-      }
+    &::-webkit-details-marker {
+      display: none;
     }
 
-    &[open] > summary {
-      .when-collapsed {
-        display: none;
-      }
+    &:hover {
+      background-color: var(--global-theme-color);
+      color: white;
+    }
 
-      .when-expanded {
-        display: inline;
-      }
+    .when-expanded {
+      display: none;
+    }
+  }
+
+  &[open] > summary {
+    .when-collapsed {
+      display: none;
+    }
+
+    .when-expanded {
+      display: inline;
     }
   }
 }
 
-.competition-desc {
+.card-desc {
   background-color: var(--global-bg-color);
   border-left: 4px solid var(--global-theme-color);
   padding: 1rem 1.25rem;
@@ -354,71 +354,13 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-// Project cards (expandable, horizontal layout)
+// Project-specific styles
 
 .project-card {
-  margin-bottom: 1.5rem;
-
-  // Hide preview photos when details is expanded
-  &:has(details.project-details[open]) .project-preview {
-    display: none;
-  }
-
   .project-header-img {
     object-fit: cover;
     max-height: 250px;
     width: 100%;
-  }
-
-  details.project-details {
-    > summary {
-      cursor: pointer;
-      list-style: none;
-      display: inline-block;
-      padding: 0.25rem 0.5rem;
-      font-size: 0.875rem;
-      border-radius: 0.2rem;
-      border: 1px solid var(--global-theme-color);
-      color: var(--global-theme-color);
-      background: transparent;
-      transition: all 0.15s ease-in-out;
-
-      &::-webkit-details-marker {
-        display: none;
-      }
-
-      &:hover {
-        background-color: var(--global-theme-color);
-        color: white;
-      }
-
-      .when-expanded {
-        display: none;
-      }
-    }
-
-    &[open] > summary {
-      .when-collapsed {
-        display: none;
-      }
-
-      .when-expanded {
-        display: inline;
-      }
-    }
-  }
-}
-
-.project-desc {
-  background-color: var(--global-bg-color);
-  border-left: 4px solid var(--global-theme-color);
-  padding: 1rem 1.25rem;
-  margin-bottom: 1.5rem;
-  border-radius: 0 0.25rem 0.25rem 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-
-  p:last-child {
-    margin-bottom: 0;
   }
 }
 

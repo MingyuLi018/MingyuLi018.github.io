@@ -11,7 +11,7 @@
   {% assign gallery = site.data.gallery.projects[project.gallery_key] %}
 {% endif %}
 
-<div class="project-card" markdown="0">
+<div class="expandable-card project-card" markdown="0">
 
 <!-- Horizontal header: left image + right text -->
 <div class="row no-gutters align-items-center mb-3">
@@ -43,7 +43,7 @@
 
 {% comment %} Preview gallery (hidden when details expanded) {% endcomment %}
 {% if gallery and gallery.images.size > 0 %}
-<div class="project-preview">
+<div class="card-preview">
 <div class="pswp-gallery" id="gallery--{{ slug }}-preview">
   <div class="row row-cols-3 g-2 mb-2">
     {% for img in gallery.images limit:3 %}
@@ -62,7 +62,7 @@
 {% endif %}
 
 <!-- Expandable details -->
-<details class="project-details">
+<details class="expandable-details">
   <summary>
     <span class="when-collapsed">Show Details / 展开详情 &#9660;</span>
     <span class="when-expanded">Collapse / 收起 &#9650;</span>
@@ -71,7 +71,7 @@
 
 {% comment %} Description box {% endcomment %}
 {% if project.details_en or project.details_zh %}
-<div class="project-desc">
+<div class="card-desc">
 {% if project.details_en %}
 <strong>About:</strong>
 <p>{{ project.details_en }}</p>
@@ -130,4 +130,4 @@
   </div>
 </details>
 
-</div><!-- end project-card -->
+</div><!-- end expandable-card -->

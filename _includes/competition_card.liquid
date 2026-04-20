@@ -7,7 +7,7 @@
   {% assign gallery = site.data.gallery.competitions[comp.gallery_key] %}
 {% endif %}
 
-<div class="competition-card" markdown="0">
+<div class="expandable-card" markdown="0">
 
 <h3>{{ comp.title }}</h3>
 
@@ -23,7 +23,7 @@
 
 {% comment %} Preview gallery (hidden when details expanded) {% endcomment %}
 {% if gallery and gallery.preview.size > 0 %}
-<div class="competition-preview">
+<div class="card-preview">
 <div class="pswp-gallery" id="gallery--{{ comp.key }}-preview">
   <div class="row row-cols-3 g-2 mb-2">
     {% for img in gallery.preview %}
@@ -47,7 +47,7 @@
 {% if gallery and gallery.sections.size > 0 %}{% assign has_details = true %}{% endif %}
 
 {% if has_details %}
-<details class="competition-details">
+<details class="expandable-details">
   <summary>
     <span class="when-collapsed">Show Details / 展开详情 &#9660;</span>
     <span class="when-expanded">Collapse / 收起 &#9650;</span>
@@ -55,7 +55,7 @@
   <div class="mt-3">
 
 {% if comp.description_en or comp.description_zh %}
-<div class="competition-desc">
+<div class="card-desc">
 {% if comp.description_en %}
 <strong>About:</strong> {{ comp.description_en }}
 {% endif %}
@@ -100,4 +100,4 @@
 </details>
 {% endif %}
 
-</div><!-- end competition-card -->
+</div><!-- end expandable-card -->
