@@ -2,25 +2,35 @@
 layout: page
 title: projects
 permalink: /projects/
-description: "研究与工程项目集锦 / A collection of research and engineering projects."
+description: "A collection of research projects and competition awards. / 科研项目与竞赛获奖集锦。"
 nav: true
 nav_order: 2
 lang: en
 display_categories: [research, engineering]
 horizontal: false
+images:
+  photoswipe: true
 ---
 
-## 研究与工程项目
+<!-- Tab navigation -->
+<ul class="nav nav-tabs projects-tabs" id="projectsTabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="true">
+      Research / 科研项目
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="competitions-tab" data-toggle="tab" href="#competitions" role="tab" aria-controls="competitions" aria-selected="false">
+      Competitions / 科技竞赛
+    </a>
+  </li>
+</ul>
 
-以下是我参与的研究和工程项目。
+<div class="tab-content" id="projectsTabContent">
 
-## Research & Engineering Projects
+<!-- Research Tab -->
+<div class="tab-pane fade show active" id="research" role="tabpanel" aria-labelledby="research-tab">
 
-Below is a collection of my research and engineering projects.
-
----
-
-<!-- pages/projects.md -->
 <div class="projects">
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -74,3 +84,33 @@ Below is a collection of my research and engineering projects.
   {% endif %}
 {% endif %}
 </div>
+
+</div><!-- end research tab -->
+
+<!-- Competitions Tab -->
+<div class="tab-pane fade" id="competitions" role="tabpanel" aria-labelledby="competitions-tab">
+
+{% include competitions_content.liquid %}
+
+</div><!-- end competitions tab -->
+
+</div><!-- end tab-content -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Handle URL hash to activate correct tab on page load
+  var hash = window.location.hash;
+  if (hash === '#competitions') {
+    var tab = document.querySelector('#competitions-tab');
+    if (tab) tab.click();
+  }
+
+  // Update URL hash on tab switch + fix PhotoSwipe in hidden tabs
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+    var id = $(e.target).attr('href');
+    history.replaceState(null, null, id);
+    // Trigger resize so PhotoSwipe recalculates image dimensions
+    window.dispatchEvent(new Event('resize'));
+  });
+});
+</script>

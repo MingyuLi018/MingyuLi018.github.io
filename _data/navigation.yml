@@ -1,5 +1,5 @@
 en:
-  - title: about
+  - title: home
     url: /
   - title: publications
     url: /publications/
@@ -7,11 +7,11 @@ en:
     url: /projects/
   - title: cv
     url: /cv/
-  - title: competitions
-    url: /competitions/
+  - title: misc
+    url: /misc/
 
 zh:
-  - title: "关于"
+  - title: "主页"
     url: /zh/
   - title: "论文"
     url: /publications/
@@ -19,5 +19,5 @@ zh:
     url: /projects/
   - title: "简历"
     url: /cv/
-  - title: "竞赛"
-    url: /competitions/
+  - title: "杂记"
+    url: /misc/
