@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "研究与工程项目集锦 / A collection of research and engineering projects.",
+          description: "A collection of research projects and competition awards. / 科研项目与竞赛获奖集锦。",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -30,12 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-competitions",
-          title: "competitions",
-          description: "Awards and competition photos / 竞赛获奖与照片集锦",
+        },{id: "nav-misc",
+          title: "misc",
+          description: "Miscellaneous / 杂记",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/competitions/";
+            window.location.href = "/misc/";
           },
         },{id: "news-utility-model-patent-authorized-by-china-national-intellectual-property-administration",
           title: 'Utility model patent authorized by China National Intellectual Property Administration.',
