@@ -48,17 +48,17 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-dexterous-hand-zero-shot-visual-grasping",
           title: 'Dexterous Hand Zero-Shot Visual Grasping',
-          description: "灵巧手零样本视觉抓取 / Zero-shot visual grasping using dexterous robotic hands.",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-robotic-arm-embedded-control",
           title: 'Robotic Arm Embedded Control',
-          description: "机械臂嵌入式控制 / Embedded control system for robotic arms with real-time control.",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-intelligent-manufacturing-simulation",
           title: 'Intelligent Manufacturing Simulation',
-          description: "智能制造仿真 / Simulation and optimization of intelligent manufacturing processes.",
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{
