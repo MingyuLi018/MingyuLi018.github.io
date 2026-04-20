@@ -1,0 +1,31 @@
+# Smart Car Race (#4)
+dir: assets/img/competitions/smart-car-2025
+
+preview:
+  - { file: v1-car-cruising.jpg, w: 1024, h: 768 }
+  - { file: final-competition-scene.jpg, w: 1024, h: 684 }
+  - { file: team-photo-1.jpg, w: 1182, h: 960 }
+
+sections:
+  - title: "V1 Prototype / 第一版小车"
+    cols: 3
+    images:
+      - { file: v1-car-cruising.jpg, caption: "V1 car cruising / 第一版小车巡航", w: 1024, h: 768 }
+      - { file: v1-car-grabbing.jpg, caption: "V1 car grabbing / 第一版小车抓取", w: 1024, h: 768 }
+      - { file: v1-car-arm-detail-1.jpg, caption: "Arm detail 1 / 机械臂细节1", w: 810, h: 1440 }
+      - { file: v1-car-arm-detail-2.jpg, caption: "Arm detail 2 / 机械臂细节2", w: 1024, h: 1366 }
+
+  - title: "Final Version / 决赛小车"
+    cols: 3
+    images:
+      - { file: v2-car-standby.jpg, caption: "V2 car standby / 第二版小车待机", w: 1024, h: 1366 }
+      - { file: final-car-standby.jpg, caption: "Final car standby / 决赛小车待机", w: 1279, h: 1706 }
+      - { file: final-car-match-1.jpg, caption: "Final match 1 / 决赛比赛1", w: 1706, h: 1279 }
+      - { file: final-car-match-2.jpg, caption: "Final match 2 / 决赛比赛2", w: 1706, h: 1279 }
+      - { file: final-competition-scene.jpg, caption: "Final competition scene / 决赛现场", w: 1024, h: 684 }
+
+  - title: "Team Photos / 团队合照"
+    cols: 2
+    images:
+      - { file: team-photo-1.jpg, caption: "Team photo 1 / 团队合照1", w: 1182, h: 960 }
+      - { file: team-photo-2.jpg, caption: "Team photo 2 / 团队合照2", w: 1024, h: 768 }

@@ -1,0 +1,103 @@
+<!-- _includes/competition_card.liquid -->
+<!-- Renders a single competition card from _data/competitions.yml entry -->
+<!-- Expects `comp` variable passed via include -->
+
+{% assign gallery = nil %}
+{% if comp.gallery_key %}
+  {% assign gallery = site.data.gallery.competitions[comp.gallery_key] %}
+{% endif %}
+
+<div class="competition-card" markdown="0">
+
+<h3>{{ comp.title }}</h3>
+
+{% if comp.title_zh %}
+<h3>{{ comp.title_zh }}</h3>
+{% endif %}
+
+<p class="text-muted"><small>{{ comp.date }}</small></p>
+
+{% if comp.badge %}
+<p><span class="badge bg-success">{{ comp.badge }}</span></p>
+{% endif %}
+
+{% comment %} Preview gallery (hidden when details expanded) {% endcomment %}
+{% if gallery and gallery.preview.size > 0 %}
+<div class="competition-preview">
+<div class="pswp-gallery" id="gallery--{{ comp.key }}-preview">
+  <div class="row row-cols-3 g-2 mb-2">
+    {% for img in gallery.preview %}
+    <div class="col">
+      <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+         data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank">
+        <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy"
+             alt="{{ img.caption | default: img.file }}" />
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+{% endif %}
+
+{% comment %} Expandable details (show if has description, gallery sections, or note) {% endcomment %}
+{% assign has_details = false %}
+{% if comp.description_en or comp.note %}{% assign has_details = true %}{% endif %}
+{% if gallery and gallery.sections.size > 0 %}{% assign has_details = true %}{% endif %}
+
+{% if has_details %}
+<details class="competition-details">
+  <summary>
+    <span class="when-collapsed">Show Details / 展开详情 &#9660;</span>
+    <span class="when-expanded">Collapse / 收起 &#9650;</span>
+  </summary>
+  <div class="mt-3">
+
+{% if comp.description_en or comp.description_zh %}
+<div class="competition-desc">
+{% if comp.description_en %}
+<strong>About:</strong> {{ comp.description_en }}
+{% endif %}
+{% if comp.description_zh %}
+<strong>竞赛介绍：</strong>{{ comp.description_zh }}
+{% endif %}
+</div>
+{% endif %}
+
+{% if comp.note %}
+<em>{{ comp.note }}</em>
+{% endif %}
+
+{% if gallery and gallery.sections.size > 0 %}
+  {% for section in gallery.sections %}
+<strong>{{ section.title }}</strong>
+
+<div class="pswp-gallery" id="gallery--{{ comp.key }}-{{ forloop.index }}">
+  {% assign cols = section.cols | default: 3 %}
+  <div class="row row-cols-2 row-cols-md-{{ cols }} g-2">
+    {% for img in section.images %}
+    <div class="col mb-3">
+      <div class="gallery-img-wrapper">
+        <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+           data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank">
+          <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+               class="img-fluid rounded z-depth-1" loading="lazy"
+               alt="{{ img.caption | default: img.file }}" />
+        </a>
+        {% if img.caption %}
+        <div class="gallery-hover-caption">{{ img.caption }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+  {% endfor %}
+{% endif %}
+
+  </div>
+</details>
+{% endif %}
+
+</div><!-- end competition-card -->

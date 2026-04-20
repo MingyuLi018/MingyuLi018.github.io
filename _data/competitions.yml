@@ -1,0 +1,97 @@
+# Competition and honors entries (ordered)
+# Each entry references gallery data via gallery_key -> _data/gallery/competitions/<key>.yml
+
+# ── Competitions ──
+
+- key: hec-am
+  title: "Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition - Additive Manufacturing Track - National First Prize"
+  title_zh: "第十八届\"高教杯\"全国大学生先进成图技术与产品信息建模创新大赛【机械类增材制造赛道】国家一等奖"
+  date: "2025.07"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  gallery_key: hec-am
+
+- key: bmhri
+  title: "BMHRI Cup Logistics Technology Creativity Contest - National Third Prize<br/>18th Higher Education Cup - Team National Second Prize"
+  title_zh: "2025年中国大学生机械工程创新创意大赛\"北起院杯\"物流技术创意赛 国家三等奖<br/>第十八届\"高教杯\"全国大学生先进成图技术与产品信息建模创新大赛 团体国家二等奖"
+  date: "2025.07 - 2025.08"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  gallery_key: bmhri
+
+- key: internet-plus
+  title: "China International College Students' Internet+ Innovation and Entrepreneurship Competition (2026)"
+  title_zh: "2026年中国国际大学生互联网+创新创业大赛"
+  date: "2026"
+  badge: "Currently Competing / 正在竞赛中"
+
+- key: smartcar
+  title: "20th National University Students Intelligent Car Race - Baidu Smart Transportation Track - Regional Second Prize"
+  title_zh: "第二十届全国大学生智能汽车竞赛百度智慧交通赛项 区域赛二等奖"
+  date: "2025.07"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  gallery_key: smartcar
+
+- key: shmech
+  title: "14th Shanghai College Student Mechanical Engineering Innovation Competition - Municipal First Prize"
+  title_zh: "第十四届上海市大学生机械工程创新大赛 市级一等奖"
+  date: "2025.05"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  gallery_key: shmech
+
+- key: graphics-cup-individual
+  title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize"
+  title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖"
+  date: "2025.06"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  note: "Photos coming soon. / 照片即将上传"
+
+- key: graphics-cup-team
+  title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Team Municipal Second Prize (2nd Highest Individual Score in Team)"
+  title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组团体市级二等奖（团队分数贡献第二名）"
+  date: "2025.06"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  note: "Photos are the same as the individual entry above. / 照片与上方个人赛项相同。"
+
+- key: aistartup
+  title: "1st \"Insight WE Future - AI Please Answer\" Startup Experience Competition - University Second Prize"
+  title_zh: "第一届\"洞见WE来—AI请回答\"初创体验大赛 校级二等奖"
+  date: "2023.12"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  gallery_key: aistartup
+
+- key: innovation-comp
+  title: "China International College Students' Innovation Competition (2025) - Industry Track - University Silver Award"
+  title_zh: "中国国际大学生创新大赛（2025）产业赛道 校级银奖"
+  date: "2025.07"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  note: "Photos coming soon. / 照片即将上传"
+
+# ── Honors section header ──
+
+- section_title: "Projects & Honors / 项目与荣誉"
+
+# ── Honors entries ──
+
+- key: emawd
+  title: "Intelligent Manufacturing System Manual Work Simulation Optimization Based on emaWD Software — College Student Innovation and Entrepreneurship Training Program Completion"
+  title_zh: "基于emaWD软件的智能制造系统人工工作仿真优化 — 校级大学生创新创业训练计划结题"
+  date: "2025.03"
+  description_en: "Description of the project goes here."
+  description_zh: "此处填写项目介绍内容。"
+
+- key: scholarship
+  title: "Tongji University First-Class Scholarship"
+  title_zh: "同济大学校奖学金一等奖"
+  date: "2025.12"
+
+- key: outstanding-student
+  title: "Tongji University Outstanding Student Award"
+  title_zh: "同济大学校级优秀学生"
+  date: "2025.12"

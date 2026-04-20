@@ -1,0 +1,133 @@
+<!-- _includes/project_card.liquid -->
+<!-- Renders a single project as an expandable horizontal card -->
+<!-- Expects `project` variable from the calling loop -->
+<!-- Gallery data loaded from _data/gallery/projects/*.yml via project.gallery_key -->
+
+{% assign slug = project.title | slugify %}
+
+{% comment %} Load gallery data from _data/gallery/projects/ {% endcomment %}
+{% assign gallery = nil %}
+{% if project.gallery_key %}
+  {% assign gallery = site.data.gallery.projects[project.gallery_key] %}
+{% endif %}
+
+<div class="project-card" markdown="0">
+
+<!-- Horizontal header: left image + right text -->
+<div class="row no-gutters align-items-center mb-3">
+  <div class="col-md-4">
+    <img src="{{ project.img | relative_url }}"
+         class="img-fluid rounded z-depth-1 project-header-img"
+         loading="lazy"
+         alt="{{ project.title }}" />
+  </div>
+  <div class="col-md-8 pl-md-3 pt-3 pt-md-0">
+    <h3>{{ project.title }}</h3>
+    {% if project.title_zh %}
+      <h3>{{ project.title_zh }}</h3>
+    {% endif %}
+    {% if project.date_label %}
+      <p class="text-muted"><small>{{ project.date_label }}</small></p>
+    {% endif %}
+    <p>{{ project.description_en }}</p>
+    {% if project.description_zh %}
+      <p>{{ project.description_zh }}</p>
+    {% endif %}
+    {% if project.github %}
+      <a href="{{ project.github }}" target="_blank" class="github-icon">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+{% comment %} Preview gallery (hidden when details expanded) {% endcomment %}
+{% if gallery and gallery.images.size > 0 %}
+<div class="project-preview">
+<div class="pswp-gallery" id="gallery--{{ slug }}-preview">
+  <div class="row row-cols-3 g-2 mb-2">
+    {% for img in gallery.images limit:3 %}
+    <div class="col">
+      <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+         data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank">
+        <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+             class="img-fluid rounded z-depth-1" loading="lazy"
+             alt="{{ img.caption | default: img.file }}" />
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+</div>
+{% endif %}
+
+<!-- Expandable details -->
+<details class="project-details">
+  <summary>
+    <span class="when-collapsed">Show Details / 展开详情 &#9660;</span>
+    <span class="when-expanded">Collapse / 收起 &#9650;</span>
+  </summary>
+  <div class="mt-3">
+
+{% comment %} Description box {% endcomment %}
+{% if project.details_en or project.details_zh %}
+<div class="project-desc">
+{% if project.details_en %}
+<strong>About:</strong>
+<p>{{ project.details_en }}</p>
+{% endif %}
+{% if project.details_zh %}
+<strong>项目介绍：</strong>
+<p>{{ project.details_zh }}</p>
+{% endif %}
+</div>
+{% endif %}
+
+{% comment %} Key contributions {% endcomment %}
+{% if project.contributions_en or project.contributions_zh %}
+<strong>Key Contributions / 主要贡献</strong>
+<ul>
+{% if project.contributions_en %}
+  {% for c in project.contributions_en %}
+    <li>{{ c }}</li>
+  {% endfor %}
+{% endif %}
+{% if project.contributions_zh %}
+  {% for c in project.contributions_zh %}
+    <li>{{ c }}</li>
+  {% endfor %}
+{% endif %}
+</ul>
+{% endif %}
+
+{% comment %} Full gallery with hover captions {% endcomment %}
+{% if gallery and gallery.images.size > 0 %}
+<strong>Project Gallery / 项目图集</strong>
+
+<div class="pswp-gallery" id="gallery--{{ slug }}-full">
+  <div class="row row-cols-2 row-cols-md-3 g-2">
+    {% for img in gallery.images %}
+    <div class="col mb-3">
+      <div class="gallery-img-wrapper">
+        <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+           data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank">
+          <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+               class="img-fluid rounded z-depth-1" loading="lazy"
+               alt="{{ img.caption | default: img.file }}" />
+        </a>
+        {% if img.caption %}
+        <div class="gallery-hover-caption">{{ img.caption }}</div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% else %}
+<em>Photos coming soon. / 照片即将上传</em>
+{% endif %}
+
+  </div>
+</details>
+
+</div><!-- end project-card -->

@@ -1,0 +1,27 @@
+# Shanghai Mech Innovation (#5)
+dir: assets/img/competitions/shanghai-mech-innovation-2025
+
+preview:
+  - { file: certificate.jpg, w: 1024, h: 768 }
+  - { file: mechanical-drive-1.jpg, w: 1024, h: 1366 }
+  - { file: team-photo-1.jpg, w: 1024, h: 768 }
+
+sections:
+  - title: "Certificate / 获奖证书"
+    cols: 3
+    images:
+      - { file: certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 768 }
+
+  - title: "Project Details / 作品细节"
+    cols: 3
+    images:
+      - { file: mechanical-drive-1.jpg, caption: "Mechanical drive 1 / 机械传动模块1", w: 1024, h: 1366 }
+      - { file: mechanical-drive-2.jpg, caption: "Mechanical drive 2 / 机械传动模块2", w: 1024, h: 768 }
+      - { file: voice-module-1.jpg, caption: "Voice module 1 / 语音模块细节1", w: 1280, h: 1706 }
+      - { file: voice-module-2.jpg, caption: "Voice module 2 / 语音模块细节2", w: 1024, h: 1366 }
+
+  - title: "Team Photos / 团队合照"
+    cols: 2
+    images:
+      - { file: team-photo-1.jpg, caption: "Team photo 1 / 团队合照1", w: 1024, h: 768 }
+      - { file: team-photo-2.jpg, caption: "Team photo 2 / 团队合照2", w: 1706, h: 1280 }

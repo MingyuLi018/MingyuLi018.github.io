@@ -1,0 +1,39 @@
+# Higher Education Cup - Additive Manufacturing (#1)
+dir: assets/img/competitions/higher-education-cup-2025
+
+preview:
+  - { file: 1-certificate.jpg, w: 600, h: 855 }
+  - { file: 2-cad-modules-front.png, w: 435, h: 450 }
+  - { file: 3-printed-assembly.jpg, w: 1024, h: 531 }
+
+sections:
+  - title: "Certificate / 获奖证书"
+    cols: 3
+    images:
+      - { file: 1-certificate.jpg, caption: "Award Certificate / 获奖证书", w: 600, h: 855 }
+
+  - title: "Demo Animations / 演示动画"
+    cols: 2
+    images:
+      - { file: product-intro.gif, caption: "Product introduction animation / 产品介绍动画", w: 360, h: 204 }
+      - { file: function-demo.gif, caption: "Function demo animation / 功能演示动画", w: 360, h: 203 }
+
+  - title: "CAD Design / CAD 设计"
+    cols: 3
+    images:
+      - { file: cad-assembly-iso.jpg, caption: "CAD isometric assembly view / CAD 等轴测装配图", w: 554, h: 321 }
+      - { file: cad-full-assembly.png, caption: "CAD full assembly front view / CAD 正面完整装配图", w: 436, h: 397 }
+      - { file: 2-cad-modules-front.png, caption: "CAD modular front view / CAD 模块正面视图", w: 435, h: 450 }
+      - { file: cad-mechanism-front.png, caption: "CAD internal mechanism front view / CAD 内部机构前视图", w: 554, h: 367 }
+      - { file: cad-mechanism-rear.png, caption: "CAD internal mechanism rear view / CAD 内部机构后视图", w: 554, h: 355 }
+      - { file: cad-component-detail.png, caption: "CAD component detail / CAD 零部件细节", w: 343, h: 336 }
+      - { file: cad-drawer-detail.png, caption: "CAD drawer detail / CAD 抽屉细节", w: 463, h: 314 }
+
+  - title: "3D Printed Prototype / 3D 打印实物"
+    cols: 3
+    images:
+      - { file: printed-parts-layout.jpg, caption: "3D printed parts layout / 3D 打印零件布局", w: 1706, h: 1279 }
+      - { file: 3-printed-assembly.jpg, caption: "3D printed assembled product / 3D 打印成品组装", w: 1024, h: 531 }
+      - { file: printed-housing-detail.jpg, caption: "White housing module detail / 白色外壳模块特写", w: 956, h: 584 }
+      - { file: printed-bracket-detail.jpg, caption: "Black bracket detail / 黑色支架特写", w: 963, h: 587 }
+      - { file: printed-compartment-detail.jpg, caption: "Storage compartment bolt detail / 储物格螺栓细节", w: 835, h: 578 }
