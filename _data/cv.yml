@@ -4,7 +4,7 @@ cv:
   email: 2352659@tongji.edu.cn
   location: "Shanghai, China"
   image: ""
-  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.23, CET-6 510. Researching robotic grasping, embedded vision, and intelligent manufacturing."
+  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0, CET-6 510. Researching robotic grasping, embedded vision, and intelligent manufacturing."
 
   social_networks:
     - network: GitHub
@@ -24,7 +24,7 @@ cv:
         studyType: "B.Eng."
         start_date: 2022
         end_date: 2026
-        score: "GPA: 4.23"
+        score: "GPA: 4.28/5.0"
         highlights:
           - "School of Mechanical Engineering"
           - "Core courses: excellent grades in major subjects"

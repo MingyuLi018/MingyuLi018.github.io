@@ -29,13 +29,11 @@ latest_posts:
   limit: 3
 ---
 
-I am a junior undergraduate student at the School of Mechanical Engineering, Tongji University. My research interests lie in **mechatronics** and **computer vision**, with a focus on robotic grasping and embedded vision systems.
+I am a junior undergraduate student at [Tongji University](https://en.tongji.edu.cn), majoring in Mechatronic Engineering. My research interests lie at the intersection of **mechatronics** and **computer vision**, with a specific focus on robotic grasping and embedded vision systems.
 
-I maintain a GPA of 4.23 and scored 510 on CET-6, with excellent grades in core major courses. I was awarded the **Tongji University First-Class Scholarship** and **Outstanding Student Award** in 2025. My research focuses on intelligent robotics and machine vision at the intersection of mechanical engineering and computer science.
+I am deeply passionate about building intelligent robotic platforms. Currently, I lead a research project on **zero-shot visual grasping for dexterous hands**, while also contributing to the embedded control and intelligent manufacturing simulation of robotic arms. My research efforts have led to a first-author publication accepted at **IEEE ICARM**, as well as an authorized utility model patent.
 
-In terms of research, I lead a **dexterous hand zero-shot visual grasping** project and participate in robotic arm embedded control and intelligent manufacturing simulation. I have published a first-author paper at **IEEE ICARM** and hold an authorized utility model patent.
-
-During my undergraduate studies, I have actively participated in cutting-edge research seminars and won multiple **national-level competition awards**, demonstrating solid engineering practice and teamwork abilities.
+Academically, I maintain a GPA of 4.28/5.0, earning me the **First-Class Scholarship** and the **Outstanding Student Award** in 2025. Beyond the lab and classroom, I have actively participated in national-level engineering competitions, winning multiple awards that reflect my strong foundation in engineering practice and teamwork.
 
 <div class="row mt-4">
   <div class="col-sm-6 col-md-4">
