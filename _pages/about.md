@@ -36,3 +36,9 @@ I maintain a GPA of 4.23 and scored 510 on CET-6, with excellent grades in core 
 In terms of research, I lead a **dexterous hand zero-shot visual grasping** project and participate in robotic arm embedded control and intelligent manufacturing simulation. I have published a first-author paper at **IEEE ICARM** and hold an authorized utility model patent.
 
 During my undergraduate studies, I have actively participated in cutting-edge research seminars and won multiple **national-level competition awards**, demonstrating solid engineering practice and teamwork abilities.
+
+<div class="row mt-4">
+  <div class="col-sm-6 col-md-4">
+    {% include figure.liquid loading="lazy" path="assets/img/outstanding-student-certificate.jpg" class="img-fluid rounded z-depth-1" alt="Tongji University Outstanding Student Award / 同济大学校级优秀学生" %}
+  </div>
+</div>

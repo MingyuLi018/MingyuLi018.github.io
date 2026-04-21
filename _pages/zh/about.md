@@ -37,3 +37,9 @@ latest_posts:
 科研上，我聚焦机器人抓取与嵌入式视觉，主持**灵巧手零样本视觉抓取**项目，参与机械臂嵌入式控制、智能制造仿真课题；以一作发表**IEEE ICARM**会议论文、授权实用新型专利。
 
 在校期间深耕课题组前沿研讨，获多项**国家级竞赛奖项**，工程实践与协作能力扎实。
+
+<div class="row mt-4">
+  <div class="col-sm-6 col-md-4">
+    {% include figure.liquid loading="lazy" path="assets/img/outstanding-student-certificate.jpg" class="img-fluid rounded z-depth-1" alt="同济大学校级优秀学生 / Tongji University Outstanding Student Award" %}
+  </div>
+</div>
