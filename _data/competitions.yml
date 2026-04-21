@@ -47,7 +47,7 @@
   date: "2025.06"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
-  note: "Photos coming soon. / 照片即将上传"
+  gallery_key: graphics-cup
 
 - key: graphics-cup-team
   title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Team Municipal Second Prize (2nd Highest Individual Score in Team)"
@@ -55,7 +55,7 @@
   date: "2025.06"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
-  note: "Photos are the same as the individual entry above. / 照片与上方个人赛项相同。"
+  gallery_key: graphics-cup
 
 - key: aistartup
   title: "1st \"Insight WE Future - AI Please Answer\" Startup Experience Competition - University Second Prize"

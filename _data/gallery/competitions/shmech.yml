@@ -8,9 +8,10 @@ preview:
 
 sections:
   - title: "Certificate / 获奖证书"
-    cols: 3
+    cols: 2
     images:
-      - { file: certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 768 }
+      - { file: certificate.jpg, caption: "Team Certificate / 团队获奖证书", w: 1024, h: 768 }
+      - { file: certificate-individual.jpg, caption: "Individual Certificate / 个人获奖证书", w: 1798, h: 1268 }
 
   - title: "Project Details / 作品细节"
     cols: 3
