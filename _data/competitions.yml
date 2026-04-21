@@ -85,13 +85,3 @@
   date: "2025.03"
   description_en: "Description of the project goes here."
   description_zh: "此处填写项目介绍内容。"
-
-- key: scholarship
-  title: "Tongji University First-Class Scholarship"
-  title_zh: "同济大学校奖学金一等奖"
-  date: "2025.12"
-
-- key: outstanding-student
-  title: "Tongji University Outstanding Student Award"
-  title_zh: "同济大学校级优秀学生"
-  date: "2025.12"

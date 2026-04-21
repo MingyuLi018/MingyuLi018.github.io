@@ -31,7 +31,7 @@ latest_posts:
 
 I am a junior undergraduate student at the School of Mechanical Engineering and Robotics, Tongji University. My research interests lie in **mechatronics** and **computer vision**, with a focus on robotic grasping and embedded vision systems.
 
-I maintain a GPA of 4.23 and scored 510 on CET-6, with excellent grades in core major courses. My research focuses on intelligent robotics and machine vision at the intersection of mechanical engineering and computer science.
+I maintain a GPA of 4.23 and scored 510 on CET-6, with excellent grades in core major courses. I was awarded the **Tongji University First-Class Scholarship** and **Outstanding Student Award** in 2025. My research focuses on intelligent robotics and machine vision at the intersection of mechanical engineering and computer science.
 
 In terms of research, I lead a **dexterous hand zero-shot visual grasping** project and participate in robotic arm embedded control and intelligent manufacturing simulation. I have published a first-author paper at **IEEE ICARM** and hold an authorized utility model patent.
 

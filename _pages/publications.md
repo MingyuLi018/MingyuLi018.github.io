@@ -4,7 +4,7 @@ permalink: /publications/
 title: publications
 description: "论文发表（按年份倒序）/ Publications in reversed chronological order."
 nav: true
-nav_order: 1
+nav_order: 2
 lang: en
 ---
 

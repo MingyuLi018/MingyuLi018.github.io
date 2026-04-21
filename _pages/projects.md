@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: "A collection of research projects and competition awards. / 科研项目与竞赛获奖集锦。"
 nav: true
-nav_order: 2
+nav_order: 1
 lang: en
 display_categories: [research, engineering]
 images:
@@ -15,12 +15,12 @@ images:
 <ul class="nav nav-tabs projects-tabs" id="projectsTabs" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="true">
-      Research / 科研项目
+      Research
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="competitions-tab" data-toggle="tab" href="#competitions" role="tab" aria-controls="competitions" aria-selected="false">
-      Competitions / 科技竞赛
+      Competitions
     </a>
   </li>
 </ul>
