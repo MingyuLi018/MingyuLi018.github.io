@@ -187,7 +187,7 @@ profile:
   image: prof_pic.jpg       # 头像图片（放在 assets/img/ 下）
   image_circular: false
   more_info: >
-    <p>School of Mechanical Engineering and Robotics</p>
+    <p>School of Mechanical Engineering</p>
     <p>Tongji University</p>
     <p>Shanghai, China</p>
 ```

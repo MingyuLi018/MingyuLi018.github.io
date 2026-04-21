@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
-  Junior Undergraduate, <a href="https://en.tongji.edu.cn">Tongji University</a>, School of Mechanical Engineering and Robotics
+  Junior Undergraduate, <a href="https://en.tongji.edu.cn">Tongji University</a>, School of Mechanical Engineering
 lang: en
 
 profile:
@@ -11,7 +11,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>School of Mechanical Engineering and Robotics</p>
+    <p>School of Mechanical Engineering</p>
     <p>Tongji University</p>
     <p>Shanghai, China</p>
 
@@ -29,7 +29,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a junior undergraduate student at the School of Mechanical Engineering and Robotics, Tongji University. My research interests lie in **mechatronics** and **computer vision**, with a focus on robotic grasping and embedded vision systems.
+I am a junior undergraduate student at the School of Mechanical Engineering, Tongji University. My research interests lie in **mechatronics** and **computer vision**, with a focus on robotic grasping and embedded vision systems.
 
 I maintain a GPA of 4.23 and scored 510 on CET-6, with excellent grades in core major courses. I was awarded the **Tongji University First-Class Scholarship** and **Outstanding Student Award** in 2025. My research focuses on intelligent robotics and machine vision at the intersection of mechanical engineering and computer science.
 

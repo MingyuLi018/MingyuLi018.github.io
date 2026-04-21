@@ -3,7 +3,7 @@ layout: about
 title: "关于"
 permalink: /zh/
 subtitle: >
-  本科大三, <a href="https://www.tongji.edu.cn">同济大学</a>, 机械工程与机器人学院
+  本科大三, <a href="https://www.tongji.edu.cn">同济大学</a>, 机械工程学院
 lang: zh
 nav: false
 
@@ -12,7 +12,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p>机械工程与机器人学院</p>
+    <p>机械工程学院</p>
     <p>同济大学</p>
     <p>中国上海</p>
 
@@ -30,7 +30,7 @@ latest_posts:
   limit: 3
 ---
 
-我是同济大学机械工程与机器人学院的一名大三本科生，研究方向为**机械电子**与**机器视觉**，聚焦机器人抓取与嵌入式视觉系统。
+我是同济大学机械工程学院的一名大三本科生，研究方向为**机械电子**与**机器视觉**，聚焦机器人抓取与嵌入式视觉系统。
 
 本人GPA 4.23，CET-6 510分，核心专业课成绩优异。曾获**同济大学校奖学金一等奖**及**校级优秀学生**荣誉（2025年）。具备扎实的机械、编程与算法基础，主攻智能机器人、机器视觉交叉方向。
 
