@@ -4,7 +4,7 @@ cv:
   email: 2352659@tongji.edu.cn
   location: "Shanghai, China"
   image: ""
-  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0, CET-6 510. Researching robotic grasping, embedded vision, and intelligent manufacturing."
+  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0 (87.78/100), CET-6 510. Research interests in robotic dexterous manipulation, embedded vision systems, and intelligent manufacturing."
 
   social_networks:
     - network: GitHub
@@ -24,117 +24,133 @@ cv:
         studyType: "B.Eng."
         start_date: 2022
         end_date: 2026
-        score: "GPA: 4.28/5.0"
+        score: "GPA: 4.28/5.0 (87.78/100)"
         highlights:
           - "School of Mechanical Engineering"
-          - "Core courses: excellent grades in major subjects"
+          - "**Core Courses:** Robotics, Machine Vision, Automatic Control Theory, Mechanical Design, Microcontroller Systems"
           - "CET-6: 510"
 
-    Experience:
-      - company: "Tongji University Research Group"
-        position: "Undergraduate Researcher"
-        location: "Shanghai, China"
-        start_date: 2023
-        end_date: ""
-        summary: "Research on robotic grasping and embedded vision systems."
-        highlights:
-          - "Led dexterous hand zero-shot visual grasping project"
-          - "Participated in robotic arm embedded control research"
-          - "Participated in intelligent manufacturing simulation project"
-
     Publications:
-      - title: "ICARM Conference Paper (First Author)"
+      - title: "Zero-shot Visual Grasping for Dexterous Hands (First Author)"
         authors:
           - "Mingyu Li"
-        publisher: "IEEE ICARM"
+        publisher: "IEEE ICARM 2025"
         releaseDate: 2025
-        summary: "First-author paper published at IEEE International Conference on Advanced Robotics and Mechatronics."
+        summary: "First-author paper accepted at IEEE International Conference on Advanced Robotics and Mechatronics."
 
-    Awards:
-      - title: "Higher Education Cup - Additive Manufacturing Track - National First Prize"
+      - title: "Utility Model Patent (Authorized)"
+        authors:
+          - "Mingyu Li"
+        publisher: "China National Intellectual Property Administration"
+        releaseDate: 2024
+        summary: "Authorized utility model patent."
+
+    Research Experience:
+      - company: "Tongji University, Intelligent Robotics Lab"
+        position: "Project Lead — Dexterous Hand Zero-shot Visual Grasping"
+        location: "Shanghai, China"
+        start_date: "2024"
+        end_date: ""
+        highlights:
+          - "Designed and implemented a zero-shot visual grasping pipeline integrating **depth estimation, point-cloud segmentation, and grasp pose generation** for a multi-fingered dexterous hand"
+          - "Developed a **real-time ROS-based control framework** on NVIDIA Jetson for end-to-end inference and grasp execution"
+          - "Validated the system on previously unseen household objects, demonstrating strong **zero-shot generalization** capability"
+          - "Published findings as **first author** at IEEE ICARM 2025"
+
+      - company: "Tongji University, Intelligent Robotics Lab"
+        position: "Core Researcher — Robotic Arm Embedded Vision-Control System"
+        location: "Shanghai, China"
+        start_date: "2023"
+        end_date: "2024"
+        highlights:
+          - "Built an embedded vision-control system on **STM32 + OpenMV** for a robotic manipulator, enabling autonomous target tracking and grasping"
+          - "Implemented **PID-based servo control** with real-time visual feedback for precise positioning"
+          - "Optimized system architecture for **low-power edge deployment** with stable real-time performance"
+
+      - company: "Tongji University"
+        position: "Team Member — Intelligent Manufacturing Digital Twin Simulation"
+        location: "Shanghai, China"
+        start_date: "2024"
+        end_date: "2025"
+        highlights:
+          - "Participated in building a **digital twin simulation platform** for intelligent manufacturing production lines"
+          - "Developed simulation models using **CoppeliaSim** and integrated sensor data for real-time monitoring"
+
+    Technical Skills:
+      - name: "Programming"
+        icon: fa-solid fa-code
+        keywords:
+          - "Python"
+          - "C/C++"
+          - "MATLAB"
+
+      - name: "Robotics & Edge Computing"
+        icon: fa-solid fa-microchip
+        keywords:
+          - "ROS/ROS2"
+          - "STM32"
+          - "NVIDIA Jetson"
+          - "Arduino"
+          - "OpenMV"
+
+      - name: "Machine Vision & AI"
+        icon: fa-solid fa-eye
+        keywords:
+          - "OpenCV"
+          - "PyTorch"
+          - "Point Cloud Library (PCL)"
+          - "YOLO"
+          - "Depth Estimation"
+
+      - name: "Simulation & CAD"
+        icon: fa-solid fa-cube
+        keywords:
+          - "SolidWorks"
+          - "ANSYS"
+          - "Gazebo"
+          - "CoppeliaSim"
+          - "ADAMS"
+
+      - name: "Tools"
+        icon: fa-solid fa-screwdriver-wrench
+        keywords:
+          - "Git"
+          - "Docker"
+          - "LaTeX"
+          - "Linux"
+
+    Selected Awards:
+      - title: "First-Class Scholarship & Outstanding Student Award"
+        date: 2025
+        awarder: "Tongji University"
+        summary: "Awarded for top academic performance and overall excellence."
+
+      - title: "Higher Education Cup — National First Prize (Additive Manufacturing)"
         date: 2025
         awarder: "Ministry of Education / China Graphics Society"
-        summary: "18th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition."
+        summary: "18th National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition."
 
-      - title: "China Mechanical Engineering Innovation - BMHRI Cup - National Third Prize"
-        date: 2025
-        awarder: "Chinese Mechanical Engineering Society"
-        summary: "China College Student Mechanical Engineering Innovation and Creativity Competition - Logistics Technology Creativity Contest."
-
-      - title: "Higher Education Cup - Team National Second Prize"
-        date: 2025
-        awarder: "Ministry of Education / China Graphics Society"
-        summary: "18th Higher Education Cup - Team event."
-
-      - title: "National Intelligent Car Race - Baidu Smart Transportation - Regional Second Prize"
-        date: 2025
-        awarder: "Chinese Association of Automation"
-        summary: "20th National University Students Intelligent Car Race - Baidu Smart Transportation Track."
-
-      - title: "Shanghai Mechanical Engineering Innovation Competition - Municipal First Prize"
+      - title: "Shanghai Mechanical Engineering Innovation — Municipal First Prize"
         date: 2025
         awarder: "Shanghai Municipal Education Commission"
         summary: "14th Shanghai College Student Mechanical Engineering Innovation Competition."
 
-      - title: "Shanghai Graphics Cup - 3D Individual Municipal Second Prize"
+      - title: "Higher Education Cup — National Second Prize (Team)"
         date: 2025
-        awarder: "Shanghai Graphics Society"
-        summary: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition."
+        awarder: "Ministry of Education / China Graphics Society"
+        summary: "18th Higher Education Cup — Team event."
 
-      - title: "Shanghai Graphics Cup - 3D Team Municipal Second Prize"
+      - title: "BMHRI Cup Mechanical Innovation — National Third Prize"
         date: 2025
-        awarder: "Shanghai Graphics Society"
-        summary: "15th Shanghai Graphics Cup - Team event. 2nd highest individual score in team."
+        awarder: "Chinese Mechanical Engineering Society"
+        summary: "China College Student Mechanical Engineering Innovation and Creativity Competition."
 
-      - title: "AI Startup Experience Competition - University Second Prize"
-        date: 2023
-        awarder: "Tongji University"
-        summary: "1st Insight WE Future - AI Please Answer Startup Experience Competition."
+      - title: "National Intelligent Car Race — Regional Second Prize"
+        date: 2025
+        awarder: "Chinese Association of Automation"
+        summary: "20th National University Students Intelligent Car Race — Baidu Smart Transportation Track."
 
-      - title: "China International College Students' Innovation Competition - University Silver Award"
+      - title: "China International College Students' Innovation Competition — University Silver Award"
         date: 2025
         awarder: "Ministry of Education"
         summary: "Industry Track, university-level selection."
-
-      - title: "Tongji University First-Class Scholarship"
-        date: 2025
-        awarder: "Tongji University"
-        summary: "First-class scholarship for academic excellence."
-
-      - title: "Tongji University Outstanding Student Award"
-        date: 2025
-        awarder: "Tongji University"
-        summary: "Outstanding student award."
-
-      - title: "Utility Model Patent"
-        date: 2024
-        awarder: "China National Intellectual Property Administration"
-        summary: "Authorized utility model patent."
-
-    Skills:
-      - name: "Mechanical Engineering"
-        level: "Advanced"
-        icon: fa-solid fa-gear
-        keywords: "Mechanical Design, CAD/CAM, 3D Modeling, Manufacturing"
-
-      - name: "Programming & Algorithms"
-        level: "Advanced"
-        icon: fa-solid fa-code
-        keywords: "Python, C/C++, MATLAB, Computer Vision, Deep Learning"
-
-      - name: "Robotics"
-        level: "Advanced"
-        icon: fa-solid fa-robot
-        keywords: "Robotic Grasping, Embedded Control, Motion Planning, ROS"
-
-    Languages:
-      - name: "Chinese"
-        summary: "Native speaker"
-
-      - name: "English"
-        summary: "CET-6 (510)"
-
-    Interests:
-      - name: "Robotics & Vision"
-        icon: fa-solid fa-robot
-        keywords: "Robotic Grasping, Computer Vision, Embedded Systems, Intelligent Manufacturing"
