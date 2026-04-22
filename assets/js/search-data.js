@@ -46,21 +46,26 @@ ninja.data = [{
           section: "News",},{id: "news-first-author-paper-accepted-at-ieee-icarm-2025",
           title: 'First-author paper accepted at IEEE ICARM 2025.',
           description: "",
-          section: "News",},{id: "projects-dexterous-hand-zero-shot-visual-grasping",
-          title: 'Dexterous Hand Zero-Shot Visual Grasping',
-          description: "",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-robotic-arm-embedded-control",
+          section: "News",},{id: "projects-robotic-arm-embedded-control",
           title: 'Robotic Arm Embedded Control',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
+              window.location.href = "/projects/car_race_arm/";
+            },},{id: "projects-dexterous-hand-zero-shot-visual-grasping",
+          title: 'Dexterous Hand Zero-Shot Visual Grasping',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dexterous_hand/";
             },},{id: "projects-intelligent-manufacturing-simulation",
           title: 'Intelligent Manufacturing Simulation',
           description: "",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
+              window.location.href = "/projects/emaWD/";
+            },},{id: "projects-dexterous-hand-zero-shot-visual-grasping",
+          title: 'Dexterous Hand Zero-Shot Visual Grasping',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/smart_snake/";
             },},{
         id: 'social-email',
         title: 'email',
