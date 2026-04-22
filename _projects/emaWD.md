@@ -5,10 +5,10 @@ title_zh: 智能制造仿真
 description_en: "Simulation and optimization of intelligent manufacturing processes."
 description_zh: "智能制造过程的仿真与优化，应用数字孪生概念提高制造效率。"
 img: assets/img/5.jpg
-importance: 3
+importance: 4
 category: engineering
 gallery_key: manufacturing-sim
-date_label: "2025"
+date_label: "2023.11 - 2025.03"
 
 details_en: |
   This project involves simulation and optimization of intelligent

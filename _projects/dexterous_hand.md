@@ -8,7 +8,7 @@ img: assets/img/1.jpg
 importance: 1
 category: research
 gallery_key: dexterous-hand
-date_label: "2024 – Present"
+date_label: "2025.10 – Present"
 
 details_en: |
   This project focuses on enabling dexterous robotic hands to perform

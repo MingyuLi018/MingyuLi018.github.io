@@ -5,7 +5,7 @@ title_zh: 机械臂嵌入式控制
 description_en: "Embedded control system for robotic arms with real-time control."
 description_zh: "机械臂嵌入式控制系统开发，聚焦实时控制算法和传感器融合。"
 img: assets/img/3.jpg
-importance: 2
+importance: 3
 category: research
 gallery_key: robotic-arm
 date_label: "2024 – 2025"
