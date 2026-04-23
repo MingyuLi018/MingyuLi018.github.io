@@ -46,23 +46,23 @@ ninja.data = [{
           section: "News",},{id: "news-first-author-paper-accepted-at-ieee-icarm-2025",
           title: 'First-author paper accepted at IEEE ICARM 2025.',
           description: "",
-          section: "News",},{id: "projects-robotic-arm-embedded-control",
-          title: 'Robotic Arm Embedded Control',
+          section: "News",},{id: "projects-precision-grasping-with-2d-camera-and-embedded-system",
+          title: 'Precision Grasping with 2D Camera and Embedded System',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/car_race_arm/";
-            },},{id: "projects-dexterous-hand-zero-shot-visual-grasping",
-          title: 'Dexterous Hand Zero-Shot Visual Grasping',
+            },},{id: "projects-dual-vision-infinite-roll-hand-for-edge-native-grasping",
+          title: 'Dual-Vision Infinite-Roll Hand for Edge-Native Grasping',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dexterous_hand/";
-            },},{id: "projects-intelligent-manufacturing-simulation",
-          title: 'Intelligent Manufacturing Simulation',
+            },},{id: "projects-emawd-manual-work-simulation-in-smart-manufacturing",
+          title: 'emaWD Manual Work Simulation in Smart Manufacturing',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/emaWD/";
-            },},{id: "projects-dexterous-hand-zero-shot-visual-grasping",
-          title: 'Dexterous Hand Zero-Shot Visual Grasping',
+            },},{id: "projects-edge-ai-snake-robot-for-cross-domain-operations",
+          title: 'Edge-AI Snake Robot for Cross-Domain Operations',
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/smart_snake/";
