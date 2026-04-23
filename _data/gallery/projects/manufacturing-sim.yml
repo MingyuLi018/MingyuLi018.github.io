@@ -1,4 +1,15 @@
-# Intelligent Manufacturing Simulation
-# Add project images here when available
+# emaWD / 智能制造仿真 — 图集结构同竞赛
+
 dir: assets/img/projects/manufacturing-sim
+
+preview: []
+
+sections: []
+# 示例:
+# sections:
+#   - title: "Layout / 工位布局"
+#     cols: 3
+#     images:
+#       - { file: sim-screen.png, w: 1200, h: 800, caption: "Simulation / 仿真" }
+
 images: []

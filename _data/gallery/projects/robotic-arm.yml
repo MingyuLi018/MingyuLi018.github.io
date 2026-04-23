@@ -1,4 +1,15 @@
-# Robotic Arm Embedded Control
-# Add project images here when available
+# Robotic arm / 机械臂 — 图集结构同 _data/gallery/competitions
+
 dir: assets/img/projects/robotic-arm
+
+preview: []
+
+sections: []
+# 示例:
+# sections:
+#   - title: "System / 系统"
+#     cols: 3
+#     images:
+#       - { file: arm-setup.jpg, w: 1920, h: 1080, caption: "Workcell / 工位" }
+
 images: []

@@ -168,7 +168,7 @@ zh:
 | 其他所有页面 | 同页双语 | 英文内容在上，中文内容在下，共享同一 URL |
 
 **统一格式**:
-- 标签/按钮: `English / 中文`（如 `Show Details / 展开详情`）
+- 可折叠控件（`details`/`summary` 等）的**标签文案使用英文**；页面正文可保持中英并列等既有规范。
 - 章节标题: `Section Title / 章节标题`（如 `Certificate / 获奖证书`）
 - 项目/竞赛 front matter 中字段统一用 `_en` 和 `_zh` 后缀区分
 
@@ -255,7 +255,24 @@ _data/gallery/
 
 ### Gallery YAML 格式
 
-**项目画廊**（平面列表）:
+**项目画廊** 支持两种写法（二选一或混用；分节有图时以分节为主）。**页面默认仅显示项目 `img` 封面（左侧一图）**；点击 **Show project details & gallery** 后，在同一展开区中**先**为详细介绍与主要贡献，**后**为图集（有图时标题为 “Project Gallery / 项目图集”；无图则显示占位提示）。
+
+1. **平面列表** `images` — 适合少量图、不分节。
+
+2. **分节** `preview` + `sections` — 与下述竞赛画廊**字段相同**；`preview` 为可选（仅多图时收起预览等场景可用）。
+
+```yaml
+# _data/gallery/projects/dexterous-hand.yml
+dir: assets/img/projects/dexterous-hand
+preview: []
+sections:
+  - title: "Hardware / 硬件"
+    cols: 3
+    images:
+      - { file: overview.jpg, w: 1200, h: 800, caption: "…" }
+```
+
+**仅平面、不分节**时：
 
 ```yaml
 # _data/gallery/projects/dexterous-hand.yml
@@ -303,8 +320,8 @@ sections:   # 展开后的分组画廊
 
 ### 添加项目图片
 
-1. 将图片放入 `assets/img/projects/<project-folder>/`
-2. 编辑对应的 `_data/gallery/projects/<gallery_key>.yml`，在 `images` 数组中添加条目
+1. 将图片放入 `assets/img/projects/<project-folder>/`（与各项目 YAML 的 `dir` 一致）
+2. 编辑 `_data/gallery/projects/<gallery_key>.yml`：大量图片建议用 **`preview` + `sections`**（同竞赛），少量可用 **`images`** 平面列表
 3. 确保 `w` 和 `h` 填写正确（可用图片查看器查看尺寸）
 
 示例：为 `dexterous-hand` 项目添加一张图片：

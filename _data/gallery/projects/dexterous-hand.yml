@@ -1,4 +1,19 @@
-# Dexterous Hand Zero-Shot Visual Grasping
-# Add project images here when available
+# Dual-Vision / 灵巧手 — 与竞赛图集相同：dir + preview（收起 3 张）+ sections（分节）
+# 将图片放入下方 dir 对应目录；分节、caption、w/h 写法见 competitions/*.yml
+
 dir: assets/img/projects/dexterous-hand
+
+# 未展开时展示的三张缩略（建议与 sections 中某几张一致）
+preview: []
+
+# 展开后分节；每节可设 cols: 2|3|4
+sections: []
+# 示例:
+# sections:
+#   - title: "Hardware / 硬件样机"
+#     cols: 3
+#     images:
+#       - { file: overview.jpg, w: 1200, h: 800, caption: "Prototype / 样机" }
+
+# 若不做分节、只要单一平面列表，可只填（与 sections 二选一）：
 images: []

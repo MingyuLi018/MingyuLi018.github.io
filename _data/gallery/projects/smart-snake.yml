@@ -1,0 +1,15 @@
+# Smart snake / 蛇形机器人 — 图集结构同竞赛
+
+dir: assets/img/projects/smart-snake
+
+preview: []
+
+sections: []
+# 示例:
+# sections:
+#   - title: "Exhibition / 展会与部署"
+#     cols: 3
+#     images:
+#       - { file: booth.jpg, w: 1600, h: 900, caption: "CIIF / 工博会" }
+
+images: []
