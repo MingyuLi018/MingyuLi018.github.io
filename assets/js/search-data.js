@@ -30,21 +30,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-misc",
-          title: "misc",
-          description: "Miscellaneous / 杂记",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/misc/";
-          },
         },{id: "news-utility-model-patent-authorized-by-china-national-intellectual-property-administration",
           title: 'Utility model patent authorized by China National Intellectual Property Administration.',
           description: "",
           section: "News",},{id: "news-won-multiple-national-level-competition-awards-in-robotics-and-engineering",
           title: 'Won multiple national-level competition awards in robotics and engineering.',
           description: "",
-          section: "News",},{id: "news-first-author-paper-accepted-at-ieee-icarm-2025",
-          title: 'First-author paper accepted at IEEE ICARM 2025.',
+          section: "News",},{id: "news-submitted-a-first-author-and-corresponding-author-paper-to-ieee-icarm-2026-hardware-software-co-design-of-a-dual-vision-infinite-roll-hand-for-edge-native-grasping",
+          title: 'Submitted a first-author and corresponding-author paper to IEEE ICARM 2026: “Hardware-Software Co-Design of...',
           description: "",
           section: "News",},{id: "projects-precision-grasping-with-2d-camera-and-embedded-system",
           title: 'Precision Grasping with 2D Camera and Embedded System',
