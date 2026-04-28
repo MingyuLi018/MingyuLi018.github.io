@@ -30,6 +30,10 @@
 {% elsif gallery and gallery.preview and gallery.preview.size > 0 %}
   {% assign gallery_total = gallery.preview.size %}
 {% endif %}
+{% assign video_total = 0 %}
+{% if project.videos and project.videos.size > 0 %}
+  {% assign video_total = project.videos.size %}
+{% endif %}
 
 <div class="expandable-card project-card" markdown="0">
 
@@ -58,12 +62,31 @@
         <i class="fa-brands fa-github"></i> GitHub
       </a>
     {% endif %}
+    {% if project.links %}
+      <div class="project-links mt-2">
+        {% for link in project.links %}
+          <a
+            {% if link.url contains '://' %}
+              href="{{ link.url }}"
+            {% else %}
+              href="{{ link.url | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-sm z-depth-0 mr-1 mb-1"
+          >
+            {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+            {{ link.label }}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
 </div>
 
 <details class="expandable-details project-details-and-gallery">
   <summary>
-    <span class="when-collapsed">Show project details &amp; gallery{% if gallery_total > 0 %} ({{ gallery_total }}){% endif %} &#9660;</span>
+    <span class="when-collapsed">Show project details{% if gallery_total > 0 %}, gallery ({{ gallery_total }}){% endif %}{% if video_total > 0 %}, videos ({{ video_total }}){% endif %} &#9660;</span>
     <span class="when-expanded">Collapse &#9650;</span>
   </summary>
   <div class="mt-3">
@@ -95,6 +118,19 @@
   {% endfor %}
 {% endif %}
 </ul>
+{% endif %}
+
+{% if project.videos and project.videos.size > 0 %}
+<div class="mt-4 project-videos">
+  <strong>Demo Videos / 演示视频</strong>
+  <div class="row row-cols-1 row-cols-md-2 g-2 mt-2">
+    {% for video in project.videos %}
+    <div class="col mb-3">
+      {% include video.liquid path=video.file class="img-fluid rounded z-depth-1" controls=true caption=video.caption %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
 {% endif %}
 
 {% if gallery and gallery_total > 0 %}

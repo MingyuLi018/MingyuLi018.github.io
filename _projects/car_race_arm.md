@@ -8,17 +8,17 @@ img: assets/img/car_race_arm.jpg
 importance: 3
 category: engineering
 gallery_key: robotic-arm
-date_label: "2025 – 2026.03"
+date_label: "2024.12 – 2026.01"
 
 details_en: |
-  In this project, we designed and built a 5-DOF robotic arm grasping system under two hard constraints: only a 2D planar camera (no depth sensor) and a resource-constrained embedded platform. The goal was to handle randomly placed materials with industrial-grade accuracy and reliability at low cost.
+  Conducted at the **Intelligent Vehicle Lab**, Tongji University (2024 – 2026). In this project, we designed and built a 5-DOF robotic arm grasping system under two hard constraints: only a 2D planar camera (no depth sensor) and a resource-constrained embedded platform. The goal was to handle randomly placed materials with industrial-grade accuracy and reliability at low cost.
 
   Three innovation layers address the core bottlenecks. First, the end-effector was redesigned from a conventional mechanical gripper to a **multi-layer bellows vacuum suction cup**, eliminating deformation and damage on rubber and elastic materials and lifting grasp success from 85% to **≥98%**. Second, magnetic sensors and a magnetic scale were added to the most active Z-axis (vertical) and X-axis (lateral) joints, forming a closed-loop zero-position calibration that eliminates open-loop drift without adding meaningful compute overhead. Third, a **hybrid 2D-camera + infrared rangefinder** architecture provides the missing depth dimension: the rangefinder confirms a safe 5–10 mm hover height, then a visual closed-loop cycle (capture → compare → correct → recapture) converts pixel offsets to pulse commands for sub-millimetre X/Y fine-positioning.
 
   The algorithm pipeline was **deployed on a Jetson embedded board**, optimized for millisecond-level real-time response within the NPU's memory and compute budget. The final system achieves **±0.5 mm positioning accuracy**, **≥98% grasp success rate**, and a **15% reduction in cycle time** through improved motion planning — validated across repeated grasping trials under industrial workshop conditions.
 
 details_zh: |
-  本项目在两个硬性约束下设计并搭建五自由度机械臂抓取系统：仅有二维平面相机（无深度信息）以及算力和内存受限的嵌入式平台。目标是以低成本在物料随机摆放的工业场景中实现高精度、高可靠的自动抓取。
+  本项目于同济大学**智能车实验室**开展（2024 – 2026）。在两个硬性约束下设计并搭建五自由度机械臂抓取系统：仅有二维平面相机（无深度信息）以及算力和内存受限的嵌入式平台。目标是以低成本在物料随机摆放的工业场景中实现高精度、高可靠的自动抓取。
 
   系统从三个层面突破核心瓶颈。执行层将传统机械夹爪替换为**多层波纹真空吸盘**，彻底消除对橡胶、弹性物料的形变与损伤，抓取成功率从 85% 跃升至 **≥98%**。定位层在运动最频繁的 Z 轴（升降）与 X 轴（横移）加装磁敏传感器与磁栅尺，实现低成本闭环零位校准，消除开环累积漂移。控制层采用**二维相机 + 红外测距传感器混合架构**：红外传感器确认 5–10 mm 安全悬停高度，弥补二维相机缺乏深度信息的短板；随后视觉闭环（拍照 → 比对 → 调整 → 再拍照）将像素偏差实时转换为脉冲量，驱动 X/Y 轴微调至亚毫米级重合。
 

@@ -4,10 +4,19 @@
 dir: assets/img/projects/dexterous-hand
 
 # 未展开时展示的三张缩略（建议与 sections 中某几张一致）
-preview: []
+preview:
+  - { file: icarm_fig1.jpg, w: 1168, h: 1240, caption: "Integrated hand-wrist hardware architecture / 一体化手腕平台硬件结构" }
+  - { file: icarm_fig2.jpg, w: 2148, h: 969, caption: "Dual-vision perception and grasping pipeline / 双视觉感知与抓取流程" }
+  - { file: icarm_fig4.jpg, w: 1168, h: 957, caption: "Validation setup and edge-native grasping results / 验证场景与边缘端抓取结果" }
 
 # 展开后分节；每节可设 cols: 2|3|4
-sections: []
+sections:
+  - title: "System Figures / 系统图"
+    cols: 3
+    images:
+      - { file: icarm_fig1.jpg, w: 1168, h: 1240, caption: "Integrated hand-wrist hardware architecture / 一体化手腕平台硬件结构" }
+      - { file: icarm_fig2.jpg, w: 2148, h: 969, caption: "Dual-vision perception and grasping pipeline / 双视觉感知与抓取流程" }
+      - { file: icarm_fig4.jpg, w: 1168, h: 957, caption: "Validation setup and edge-native grasping results / 验证场景与边缘端抓取结果" }
 # 示例:
 # sections:
 #   - title: "Hardware / 硬件样机"

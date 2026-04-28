@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-First-author paper accepted at IEEE ICARM 2025.
+Submitted a first-author and corresponding-author paper to IEEE ICARM 2026: “Hardware-Software Co-Design of a Dual-Vision, Infinite-Roll Hand for Edge-Native Grasping.”

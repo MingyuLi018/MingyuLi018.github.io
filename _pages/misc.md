@@ -3,7 +3,7 @@ layout: page
 title: misc
 permalink: /misc/
 description: "Miscellaneous / 杂记"
-nav: true
+nav: false
 nav_order: 5
 lang: en
 ---

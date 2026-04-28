@@ -7,8 +7,6 @@ en:
     url: /publications/
   - title: cv
     url: /cv/
-  - title: misc
-    url: /misc/
 
 zh:
   - title: "主页"
@@ -19,5 +17,3 @@ zh:
     url: /publications/
   - title: "简历"
     url: /cv/
-  - title: "杂记"
-    url: /misc/

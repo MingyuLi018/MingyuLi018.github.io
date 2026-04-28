@@ -9,9 +9,18 @@ importance: 1
 category: research
 gallery_key: dexterous-hand
 date_label: "2025.10 – Present"
+links:
+  - label: "ICARM Paper"
+    url: "/bibliography/li2026icarm/"
+    icon: "fa-solid fa-file-lines"
+videos:
+  - file: "assets/video/projects/dexterous_hand_front_coke.mp4"
+    caption: "Front-side grasping demo with a Coke can / 正向可乐罐抓取演示"
+  - file: "assets/video/projects/dexterous_hand_rear_ball.mp4"
+    caption: "Rearward flip-over grasping demo with a ball / 后向翻转小球抓取演示"
 
 details_en: |
-  In this work, we address two intrinsic physical bottlenecks in front-rear dexterous grasping: a perceptual blind spot caused by a single palm-mounted camera, and a kinematic deadlock caused by bounded wrist rotation. Rather than compensating in software, we resolve both through electromechanical co-design.
+  Conducted at the **Vision4Robotic (V4R) Lab**, Tongji University (2025 – Present), under the supervision of Prof. Changhong Fu. In this work, we address two intrinsic physical bottlenecks in front-rear dexterous grasping: a perceptual blind spot caused by a single palm-mounted camera, and a kinematic deadlock caused by bounded wrist rotation. Rather than compensating in software, we resolve both through electromechanical co-design.
 
   On the hardware side, a dorsal camera is integrated alongside the ventral camera on the hand chassis, and a direct-drive conductive slip-ring replaces the conventional bounded J1 wrist joint. Both cameras and the edge processor co-rotate with the hand, eliminating the need for high-bandwidth video transmission across the rotary joint. The slip-ring carries only six low-bandwidth channels (power rails and a shared serial bus), which was made possible by choosing a serial bus-servo architecture for the finger actuators.
 
@@ -20,13 +29,14 @@ details_en: |
   A deterministic state machine with an N=10 consensus buffer (~613 ms stabilization window) fuses semantic class and camera-source labels into "Where" and "What" routing decisions, triggering pre-calibrated grasping primitives for either forward or 180° flip-over paths. Proof-of-concept experiments over **40 physical trials** (two objects × two paths) yielded a **75% aggregate end-to-end success rate** without any task-specific fine-tuning.
 
 details_zh: |
-  本工作针对灵巧手前后方向抓取中的两个物理瓶颈——单腹侧摄像头引发的感知盲区，以及有界腕关节导致的运动学死锁——通过机电协同设计从硬件根源加以解决，而非依赖软件层面的补偿。
+  本项目于同济大学 **Vision4Robotic (V4R) 实验室**开展（2025 – 至今），指导教师为符长虹教授。本工作针对灵巧手前后方向抓取中的两个物理瓶颈——单腹侧摄像头引发的感知盲区，以及有界腕关节导致的运动学死锁——通过机电协同设计从硬件根源加以解决，而非依赖软件层面的补偿。
 
   硬件方面，在手掌底座上集成了腹侧（正面）与背侧（后视）双摄像头，形成前后互补的完整感知球；J1 腕关节引入直驱导电滑环，将关节行程从有界域扩展至无界连续旋转，物理消除翻转 180° 时的运动学死锁。两路摄像头与边缘处理器均随手部同步旋转，无需跨旋转接头传输高带宽视频信号——滑环仅需承载电源与串行总线共六路低带宽信号，这得益于手指驱动器统一采用串行总线伺服架构的早期设计决策。
 
   软件方面，采用"训练多模态、推理单模态"范式：离线将冻结的 CLIP 文本编码器生成的语义嵌入通过结构重参数化注入 VL-PAN 颈部，使网络在线推理时作为纯视觉模型运行，彻底消除文本编码器的在线计算负担。在**瑞芯微 RK3588 NPU** 上进一步将 SiLU 激活替换为 ReLU，并进行 INT8 量化，以 1.5 个百分点的 mAP 损耗换取 2.4× 吞吐量提升，最终实现 **16.3 FPS** 端到端推理。确定性状态机结合 N=10 帧共识缓冲（~613 ms 稳定窗口），将检测类别与相机来源解耦为"去哪"与"抓什么"两个决策维度，驱动预标定的抓取动作原语。**40 次实物实验**（两类物体 × 前后两条路径）验证了 **75% 的端到端成功率**，无需任何任务特化微调。
 
 contributions_en:
+  - "Served as the project lead, proposed the core innovation, built and tested the full system, and led the paper writing and submission"
   - "Designed a dorsal-ventral dual-camera relay topology for complementary front-rear perception, eliminating the structural perceptual blind spot of single eye-in-hand configurations"
   - "Integrated a direct-drive conductive slip-ring into the J1 wrist joint, enabling infinite continuous roll and removing kinematic deadlock for rearward flip-over grasps"
   - "Deployed a reparameterized zero-shot detector (YOLO-World + offline CLIP injection, SiLU→ReLU, INT8) at **16.3 FPS** on an RK3588 NPU with no online text encoding"
@@ -34,6 +44,7 @@ contributions_en:
   - "Validated the system end-to-end with a **75% success rate** across **40 physical trials** without task-specific fine-tuning"
 
 contributions_zh:
+  - "作为项目主要负责人，提出核心创新点，完成全系统构建与测试，并主导论文产出与投稿"
   - "设计腹背双摄像头接力感知拓扑，在手部机架上同时集成正面与后视视觉，从拓扑层面消除单眼式感知盲区"
   - "将直驱导电滑环集成至 J1 腕关节，实现无限连续翻转，从机械层面根除翻转 180° 的运动学死锁"
   - "通过离线 CLIP 文本注入与结构重参数化、SiLU→ReLU 算子替换、INT8 量化，在 RK3588 NPU 上以 **16.3 FPS** 完成零样本语言引导检测，在线推理无需文本编码器"

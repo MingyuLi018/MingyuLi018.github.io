@@ -4,7 +4,7 @@ cv:
   email: 2352659@tongji.edu.cn
   location: "Shanghai, China"
   image: ""
-  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0 (87.78/100), CET-6 510. Research interests in robotic dexterous manipulation, embedded vision systems, and intelligent manufacturing."
+  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0 (87.78/100), CET-6 510. Member of the Vision4Robotic (V4R) Lab under the supervision of Prof. Changhong Fu. Research interests include embodied intelligence, embedded systems, computer vision, hardware-software co-design, and low-cost dexterous intelligent grasping systems. Seeking master's and direct Ph.D. opportunities."
 
   social_networks:
     - network: GitHub
@@ -16,6 +16,27 @@ cv:
     countryCode: CN
 
   sections:
+    Academic Interests:
+      - name: "Research Keywords"
+        icon: fa-solid fa-magnifying-glass
+        keywords:
+          - "Embodied Intelligence"
+          - "Embedded Systems"
+          - "Computer Vision"
+          - "Hardware-Software Co-Design"
+          - "Robotic Grasping"
+
+      - name: "Long-Term Goal"
+        icon: fa-solid fa-bullseye
+        keywords:
+          - "Low-cost dexterous intelligent grasping systems"
+
+      - name: "Application Interests"
+        icon: fa-solid fa-graduation-cap
+        keywords:
+          - "Master's Programs"
+          - "Direct Ph.D. Programs"
+
     Education:
       - institution: "Tongji University"
         location: "Shanghai, China"
@@ -31,12 +52,14 @@ cv:
           - "CET-6: 510"
 
     Publications:
-      - title: "Zero-shot Visual Grasping for Dexterous Hands (First Author)"
+      - title: "Hardware-Software Co-Design of a Dual-Vision, Infinite-Roll Hand for Edge-Native Grasping"
         authors:
           - "Mingyu Li"
-        publisher: "IEEE ICARM 2025"
-        releaseDate: 2025
-        summary: "First-author paper accepted at IEEE International Conference on Advanced Robotics and Mechatronics."
+          - "Zhixian Gao"
+          - "Zhangchi Guo"
+        publisher: "IEEE ICARM 2026, Paris, France (Under Submission)"
+        releaseDate: 2026
+        summary: "First-author and corresponding-author paper from Tongji University on edge-native language-guided grasping with a dual-vision infinite-roll dexterous hand."
 
       - title: "Utility Model Patent (Authorized)"
         authors:
@@ -46,16 +69,17 @@ cv:
         summary: "Authorized utility model patent."
 
     Research Experience:
-      - company: "Tongji University, Intelligent Robotics Lab"
+      - company: "Tongji University, Vision4Robotic (V4R) Lab"
         position: "Project Lead — Dexterous Hand Zero-shot Visual Grasping"
         location: "Shanghai, China"
         start_date: "2024"
         end_date: ""
         highlights:
+          - "Supervised by Prof. Changhong Fu"
           - "Designed and implemented a zero-shot visual grasping pipeline integrating **depth estimation, point-cloud segmentation, and grasp pose generation** for a multi-fingered dexterous hand"
           - "Developed a **real-time ROS-based control framework** on NVIDIA Jetson for end-to-end inference and grasp execution"
           - "Validated the system on previously unseen household objects, demonstrating strong **zero-shot generalization** capability"
-          - "Published findings as **first author** at IEEE ICARM 2025"
+          - "Submitted findings as **first author and corresponding author** to IEEE ICARM"
 
       - company: "Tongji University, Intelligent Robotics Lab"
         position: "Core Researcher — Robotic Arm Embedded Vision-Control System"
@@ -87,11 +111,13 @@ cv:
       - name: "Robotics & Edge Computing"
         icon: fa-solid fa-microchip
         keywords:
+          - "Embodied Intelligence"
           - "ROS/ROS2"
           - "STM32"
           - "NVIDIA Jetson"
           - "Arduino"
           - "OpenMV"
+          - "Hardware-Software Integration"
 
       - name: "Machine Vision & AI"
         icon: fa-solid fa-eye
@@ -101,6 +127,7 @@ cv:
           - "Point Cloud Library (PCL)"
           - "YOLO"
           - "Depth Estimation"
+          - "Robotic Grasping"
 
       - name: "Simulation & CAD"
         icon: fa-solid fa-cube

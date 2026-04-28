@@ -35,6 +35,7 @@ details_zh: |
   结题中总结了研究论文、仿真与模型搭建方面的成果，并给出优化前后量化对比（如 RULA 评分下降、生产周期约 9.2% 提升等）。
 
 contributions_en:
+  - "Served as a core team member, responsible for reviewing human-factors and ergonomics literature and building the virtual production-line model"
   - "Simulated manual reducer assembly in emaWD and structured optimization along layout, posture, and takt"
   - "Improved workstation design (heights, material placement, station-style layout) and quantified walking/bending indices"
   - "Applied RULA/OWAS and ergonomic principles to reduce joint load and action waste"
@@ -42,6 +43,7 @@ contributions_en:
   - "Documented research outputs including simulation deliverables and modeling methodology"
 
 contributions_zh:
+  - "作为主要成员，负责查阅人因工程学相关资料，并完成虚拟产线建模"
   - "使用 ema WD 对减速器人工装配建模仿真，在工位布局、人体姿势、节拍三方向分模块优化"
   - "从设备高度与工位布局、物料「重下轻上」、站点式布局等入手，降低行走与弯腰等健康风险"
   - "采用 RULA、OWAS 等工具评估姿势，优化工位与工具高度及作业流程，降低关节负荷与无效动作"

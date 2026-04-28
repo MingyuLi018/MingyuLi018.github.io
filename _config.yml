@@ -13,7 +13,7 @@ description: >
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: mechatronics, computer vision, robotic grasping, embedded vision, tongji university
+keywords: embodied intelligence, embedded systems, computer vision, hardware-software co-design, robotic grasping, dexterous manipulation, tongji university
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
