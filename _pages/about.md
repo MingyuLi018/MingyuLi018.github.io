@@ -31,7 +31,7 @@ latest_posts:
 
 I am a junior undergraduate student at [Tongji University](https://en.tongji.edu.cn), majoring in Mechatronic Engineering. My research interests lie at the intersection of **embodied intelligence**, **embedded systems**, and **computer vision**, with a specific focus on low-cost dexterous intelligent grasping systems.
 
-I am deeply passionate about building intelligent robotic platforms. Currently, I lead a research project on **zero-shot visual grasping for dexterous hands** in the **Vision4Robotic (V4R) Lab** under the supervision of Prof. Changhong Fu, while also contributing to the embedded control and intelligent manufacturing simulation of robotic arms. My research efforts include a first-author and corresponding-author paper under submission to **IEEE ICARM 2026**, as well as an authorized utility model patent.
+I am deeply passionate about building intelligent robotic platforms. Currently, I lead a research project on **zero-shot visual grasping for dexterous hands** in the **Vision4Robotic (V4R) Lab** under the supervision of Prof. Changhong Fu, while also contributing to the embedded control and intelligent manufacturing simulation of robotic arms. My research efforts include a first-author and corresponding-author paper under submission to **IEEE ICARM 2026**, as well as a CNIPA-accepted utility model patent application.
 
 I am currently seeking master's and direct Ph.D. opportunities where I can continue working on hardware-software co-design for practical robotic manipulation.
 

@@ -41,20 +41,13 @@
   description_zh: "此处填写竞赛介绍内容。"
   gallery_key: shmech
 
-- key: graphics-cup-individual
-  title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize"
-  title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖"
+- key: graphics-cup
+  title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize & Team Municipal Second Prize"
+  title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖、团体市级二等奖"
   date: "2025.06"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
-  gallery_key: graphics-cup
-
-- key: graphics-cup-team
-  title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Team Municipal Second Prize (2nd Highest Individual Score in Team)"
-  title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组团体市级二等奖（团队分数贡献第二名）"
-  date: "2025.06"
-  description_en: "Description of the competition goes here."
-  description_zh: "此处填写竞赛介绍内容。"
+  note: "Achieved the 2nd highest individual score within the team. / 团队分数贡献第二名。"
   gallery_key: graphics-cup
 
 - key: aistartup
@@ -72,16 +65,3 @@
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
   note: "Photos coming soon. / 照片即将上传"
-
-# ── Honors section header ──
-
-- section_title: "Projects & Honors / 项目与荣誉"
-
-# ── Honors entries ──
-
-- key: emawd
-  title: "Intelligent Manufacturing System Manual Work Simulation Optimization Based on emaWD Software — College Student Innovation and Entrepreneurship Training Program Completion"
-  title_zh: "基于emaWD软件的智能制造系统人工工作仿真优化 — 校级大学生创新创业训练计划结题"
-  date: "2025.03"
-  description_en: "Description of the project goes here."
-  description_zh: "此处填写项目介绍内容。"
