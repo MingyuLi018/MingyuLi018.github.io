@@ -2,12 +2,12 @@
 dir: assets/img/competitions/shanghai-graphics-cup-2025
 
 preview:
-  - { file: individual-certificate.jpg, w: 1132, h: 1609 }
-  - { file: team-certificate.jpg, w: 1279, h: 1813 }
+  - { file: individual-certificate.jpg, w: 1132, h: 1609, fit: contain }
+  - { file: team-certificate.jpg, w: 1279, h: 1813, fit: contain }
 
 sections:
   - title: "Certificates / 获奖证书"
     cols: 2
     images:
-      - { file: individual-certificate.jpg, caption: "Individual Second Prize / 个人二等奖", w: 1132, h: 1609 }
-      - { file: team-certificate.jpg, caption: "Team Second Prize / 团体二等奖", w: 1279, h: 1813 }
+      - { file: individual-certificate.jpg, caption: "Individual Second Prize / 个人二等奖", w: 1132, h: 1609, fit: contain }
+      - { file: team-certificate.jpg, caption: "Team Second Prize / 团体二等奖", w: 1279, h: 1813, fit: contain }

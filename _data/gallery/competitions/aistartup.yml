@@ -2,7 +2,7 @@
 dir: assets/img/competitions/ai-startup-2023
 
 preview:
-  - { file: 1-certificate.jpg, w: 1024, h: 768 }
+  - { file: 1-certificate.jpg, w: 1024, h: 768, fit: contain }
   - { file: presentation-closeup.jpg, w: 1024, h: 768 }
   - { file: team-presentation.jpg, w: 1024, h: 683 }
 
@@ -10,7 +10,7 @@ sections:
   - title: "Certificate / 获奖证书"
     cols: 3
     images:
-      - { file: 1-certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 768 }
+      - { file: 1-certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 768, fit: contain }
 
   - title: "Competition Photos / 竞赛现场"
     cols: 2

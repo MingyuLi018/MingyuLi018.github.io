@@ -373,6 +373,18 @@ ul.task-list input[type="checkbox"] {
   display: block;
 }
 
+.gallery-thumbnail {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.gallery-thumbnail--contain {
+  background-color: var(--global-card-bg-color);
+  object-fit: contain;
+}
+
 .gallery-hover-caption {
   position: absolute;
   bottom: 0;

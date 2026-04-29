@@ -2,7 +2,7 @@
 dir: assets/img/competitions/bmhri-cup-2025
 
 preview:
-  - { file: national-certificate.jpg, w: 1024, h: 716 }
+  - { file: national-certificate.jpg, w: 1024, h: 716, fit: contain }
   - { file: national-overview-1.jpg, w: 1024, h: 768 }
   - { file: provincial-overview.jpg, w: 1024, h: 768 }
 
@@ -10,7 +10,7 @@ sections:
   - title: "Certificate / 获奖证书"
     cols: 3
     images:
-      - { file: national-certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 716 }
+      - { file: national-certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 716, fit: contain }
 
   - title: "National Competition Works / 国赛作品"
     cols: 3

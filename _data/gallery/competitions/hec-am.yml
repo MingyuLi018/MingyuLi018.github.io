@@ -2,7 +2,7 @@
 dir: assets/img/competitions/higher-education-cup-2025
 
 preview:
-  - { file: 1-certificate.jpg, w: 600, h: 855 }
+  - { file: 1-certificate.jpg, w: 600, h: 855, fit: contain }
   - { file: 2-cad-modules-front.png, w: 435, h: 450 }
   - { file: 3-printed-assembly.jpg, w: 1024, h: 531 }
 
@@ -10,7 +10,7 @@ sections:
   - title: "Certificate / 获奖证书"
     cols: 3
     images:
-      - { file: 1-certificate.jpg, caption: "Award Certificate / 获奖证书", w: 600, h: 855 }
+      - { file: 1-certificate.jpg, caption: "Award Certificate / 获奖证书", w: 600, h: 855, fit: contain }
 
   - title: "Demo Animations / 演示动画"
     cols: 2

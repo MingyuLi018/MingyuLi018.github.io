@@ -146,7 +146,8 @@
             <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
                data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-                   class="img-fluid rounded z-depth-1" loading="lazy"
+                   class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}" loading="lazy"
+                   {% if img.position %}style="object-position: {{ img.position }};"{% endif %}
                    alt="{{ img.caption | default: img.file }}" />
             </a>
             {% if img.caption %}
@@ -172,7 +173,8 @@
             <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
                data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-                   class="img-fluid rounded z-depth-1" loading="lazy"
+                   class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}" loading="lazy"
+                   {% if img.position %}style="object-position: {{ img.position }};"{% endif %}
                    alt="{{ img.caption | default: img.file }}" />
             </a>
             {% if img.caption %}
@@ -194,7 +196,8 @@
             <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
                data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank" rel="noopener noreferrer">
               <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-                   class="img-fluid rounded z-depth-1" loading="lazy"
+                   class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}" loading="lazy"
+                   {% if img.position %}style="object-position: {{ img.position }};"{% endif %}
                    alt="{{ img.caption | default: img.file }}" />
             </a>
             {% if img.caption %}

@@ -43,7 +43,7 @@ Li Mingyu (李明宇) 的个人学术主页，基于 [al-folio](https://github.c
 - **数据驱动的图片管理** — 所有图片元数据集中在 `_data/gallery/` YAML 文件中
 - **可展开的卡片式布局** — 项目卡片和竞赛卡片均支持 展开/收起 详情
 - **悬停图片描述** — 画廊图片支持鼠标悬停显示描述文字
-- **PhotoSwipe 图片查看器** — 点击图片可全屏查看
+- **统一缩略图 + PhotoSwipe 图片查看器** — 图集缩略图统一裁切显示，点击后查看完整原图
 
 ## 本地开发
 
@@ -290,7 +290,7 @@ images:
 dir: assets/img/competitions/higher-education-cup-2025    # 图片目录路径
 
 preview:    # 预览图（收起时显示的 3 张缩略图）
-  - { file: 1-certificate.jpg, w: 600, h: 855 }
+  - { file: 1-certificate.jpg, w: 600, h: 855, fit: contain }
   - { file: 2-cad-front.png, w: 435, h: 450 }
   - { file: 3-printed.jpg, w: 1024, h: 531 }
 
@@ -298,7 +298,7 @@ sections:   # 展开后的分组画廊
   - title: "Certificate / 获奖证书"
     cols: 3     # 每行列数，默认 3
     images:
-      - { file: 1-certificate.jpg, caption: "Award Certificate / 获奖证书", w: 600, h: 855 }
+      - { file: 1-certificate.jpg, caption: "Award Certificate / 获奖证书", w: 600, h: 855, fit: contain }
 
   - title: "CAD Design / CAD 设计"
     cols: 3
@@ -317,6 +317,25 @@ sections:   # 展开后的分组画廊
 | `h` | 是 | 图片高度（像素），供 PhotoSwipe 使用 |
 | `caption` | 否 | 图片描述（鼠标悬停时显示），建议用 `English / 中文` 格式 |
 | `cols` | 否 | 分节中每行显示的列数，默认 3 |
+| `fit` | 否 | 缩略图填充方式；默认裁切显示，设为 `contain` 可完整显示证书、海报、文档类图片 |
+| `position` | 否 | 缩略图裁切重心；可用 `top`、`center`、`bottom` 或 `50% 30%` 等 CSS `object-position` 值 |
+
+**缩略图显示规则**:
+
+- 图集缩略图默认使用统一的 `4 / 3` 比例和居中裁切，保证不同尺寸图片在网格中整齐排列。
+- 点击缩略图后由 PhotoSwipe 打开原图，仍按 `w` / `h` 展示完整图片，不受缩略图裁切影响。
+- 证书、海报、文档截图等不适合裁切的图片，建议加 `fit: contain`。
+- 如果普通照片主体偏上或偏下，可用 `position` 调整裁切重心。
+
+示例：
+
+```yaml
+# 证书完整显示，不裁切文字
+- { file: certificate.jpg, caption: "Certificate / 获奖证书", w: 1024, h: 768, fit: contain }
+
+# 普通照片仍裁切，但优先保留上半部分
+- { file: team-photo.jpg, caption: "Team photo / 团队合照", w: 1024, h: 1366, position: top }
+```
 
 ### 添加项目图片
 
@@ -345,6 +364,7 @@ images:
 - **GIF 文件**: 正常使用，PhotoSwipe 支持 GIF 动画显示，单个 GIF 建议控制在几 MB 以内
 - **文件命名**: 使用小写英文 + 连字符，如 `cad-assembly-iso.jpg`
 - **图片尺寸**: `w` 和 `h` 必须准确填写，否则 PhotoSwipe 查看器会显示异常
+- **缩略图比例**: 图集缩略图统一为 `4 / 3`；普通照片默认裁切，证书/海报建议使用 `fit: contain`
 - **路径约定**: 最终路径 = `dir` + `/` + `file`，如 `assets/img/competitions/higher-education-cup-2025/1-certificate.jpg`
 
 ## 添加新项目

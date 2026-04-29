@@ -2,7 +2,7 @@
 dir: assets/img/competitions/shanghai-mech-innovation-2025
 
 preview:
-  - { file: certificate.jpg, w: 1024, h: 768 }
+  - { file: certificate.jpg, w: 1024, h: 768, fit: contain }
   - { file: mechanical-drive-1.jpg, w: 1024, h: 1366 }
   - { file: team-photo-1.jpg, w: 1024, h: 768 }
 
@@ -10,8 +10,8 @@ sections:
   - title: "Certificate / 获奖证书"
     cols: 2
     images:
-      - { file: certificate.jpg, caption: "Team Certificate / 团队获奖证书", w: 1024, h: 768 }
-      - { file: certificate-individual.jpg, caption: "Individual Certificate / 个人获奖证书", w: 1798, h: 1268 }
+      - { file: certificate.jpg, caption: "Team Certificate / 团队获奖证书", w: 1024, h: 768, fit: contain }
+      - { file: certificate-individual.jpg, caption: "Individual Certificate / 个人获奖证书", w: 1798, h: 1268, fit: contain }
 
   - title: "Project Details / 作品细节"
     cols: 3
