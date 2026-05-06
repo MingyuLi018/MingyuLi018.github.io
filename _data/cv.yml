@@ -4,7 +4,7 @@ cv:
   email: 2352659@tongji.edu.cn
   location: "Shanghai, China"
   image: ""
-  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0 (87.78/100), CET-6 510. Member of the Vision4Robotic (V4R) Lab under the supervision of Prof. Changhong Fu. Research interests include embodied intelligence, embedded systems, computer vision, hardware-software co-design, and low-cost dexterous intelligent grasping systems. Seeking master's and direct Ph.D. opportunities."
+  summary: "Junior undergraduate at Tongji University, School of Mechanical Engineering. GPA 4.28/5.0 (87.78/100), CET-6 510. Member of the Vision4Robotics (V4R) Lab under the supervision of Prof. Changhong Fu. Research interests include embodied intelligence, embedded systems, computer vision, hardware-software co-design, and low-cost dexterous intelligent grasping systems. Seeking master's and direct Ph.D. opportunities."
 
   social_networks:
     - network: GitHub
@@ -41,10 +41,10 @@ cv:
       - institution: "Tongji University"
         location: "Shanghai, China"
         url: https://en.tongji.edu.cn/
-        area: "Mechatronic Engineering"
+        area: "Mechanical Engineering"
         studyType: "B.Eng."
-        start_date: 2022
-        end_date: 2026
+        start_date: 2023
+        end_date: 2027
         score: "GPA: 4.28/5.0 (87.78/100)"
         highlights:
           - "School of Mechanical Engineering"
@@ -57,7 +57,7 @@ cv:
           - "Mingyu Li"
           - "Zhixian Gao"
           - "Zhangchi Guo"
-        publisher: "IEEE ICARM 2026, Paris, France (Under Submission)"
+        publisher: "IEEE/ASME ICARM 2026, Paris, France (Under Submission)"
         releaseDate: 2026
         summary: "First-author and corresponding-author paper from Tongji University on edge-native language-guided grasping with a dual-vision infinite-roll dexterous hand."
 
@@ -69,74 +69,72 @@ cv:
         summary: "Utility model patent application accepted by CNIPA. Application No. 202521174680.9; filing date: June 9, 2025; applicant and inventor: Mingyu Li."
 
     Research Experience:
-      - company: "Tongji University, Vision4Robotic (V4R) Lab"
-        position: "Project Lead — Dexterous Hand Zero-shot Visual Grasping"
+      - company: "Tongji University, Vision4Robotics (V4R) Lab"
+        position: "Project Lead — Panoptic-Grasp: Dual-Vision, Infinite-Roll Dexterous Hand for Edge-Native Zero-Shot Grasping"
         location: "Shanghai, China"
-        start_date: "2024"
+        start_date: "2025-09"
         end_date: ""
         highlights:
-          - "Supervised by Prof. Changhong Fu"
-          - "Designed and implemented a zero-shot visual grasping pipeline integrating **depth estimation, point-cloud segmentation, and grasp pose generation** for a multi-fingered dexterous hand"
-          - "Developed a **real-time ROS-based control framework** on NVIDIA Jetson for end-to-end inference and grasp execution"
-          - "Validated the system on previously unseen household objects, demonstrating strong **zero-shot generalization** capability"
-          - "Submitted findings as **first author and corresponding author** to IEEE ICARM"
-
-      - company: "Tongji University, Intelligent Robotics Lab"
-        position: "Core Researcher — Robotic Arm Embedded Vision-Control System"
-        location: "Shanghai, China"
-        start_date: "2023"
-        end_date: "2024"
-        highlights:
-          - "Built an embedded vision-control system on **STM32 + OpenMV** for a robotic manipulator, enabling autonomous target tracking and grasping"
-          - "Implemented **PID-based servo control** with real-time visual feedback for precise positioning"
-          - "Optimized system architecture for **low-power edge deployment** with stable real-time performance"
+          - "Supervised by Assoc. Prof. Changhong Fu"
+          - "**Mechanical:** Designed a 6-DOF dexterous hand with a **direct-drive slip-ring wrist** enabling infinite continuous roll; full mechanical design in Autodesk Inventor with custom 12 V power distribution"
+          - "**Perception:** Built a **dorsal–ventral dual-camera relay** for complementary front/rear perception; deployed **reparameterized YOLO-World** on **RK3588 NPU** for real-time language-guided zero-shot grasping (offline text-encoder reparameterization removes online inference overhead)"
+          - "**System:** Integrated full perception-to-actuation loop on **ROS 2 (Python & C++)**; validated on a physical platform, closing the Sim-to-Real gap"
+          - "**Outcome:** First-author & corresponding-author paper submitted to **IEEE/ASME ICARM 2026** (under review)"
 
       - company: "Tongji University"
-        position: "Team Member — Intelligent Manufacturing Digital Twin Simulation"
+        position: "Team Member — Precise Grasping of Manipulator Under 2D-Camera and Embedded-System Constraints"
         location: "Shanghai, China"
-        start_date: "2024"
-        end_date: "2025"
+        start_date: "2024-12"
+        end_date: "2026-03"
         highlights:
-          - "Participated in building a **digital twin simulation platform** for intelligent manufacturing production lines"
-          - "Developed simulation models using **CoppeliaSim** and integrated sensor data for real-time monitoring"
+          - "Optimized the manipulator grasping pipeline under **2D planar camera** and **low-computing-power embedded system** constraints"
+          - "Conducted mechanical design of the manipulator and deployed visual / grasping algorithms on the embedded platform"
+          - "Project served as a precursor to the *Panoptic-Grasp* edge-deployment work in the V4R Lab"
+
+      - company: "Tongji University"
+        position: "Team Member — Manual Work Simulation & Optimization in an Intelligent Manufacturing System (ema Work Designer)"
+        location: "Shanghai, China"
+        start_date: "2024-04"
+        end_date: "2025-06"
+        highlights:
+          - "Built a **digital-twin gearbox assembly line** in *ema Work Designer*"
+          - "Conducted quantitative **ergonomic analysis** and proposed workstation reconfigurations to improve workers' working environment"
+          - "Completed gearbox modeling and contributed to the digital-twin workflow toolchain"
 
     Technical Skills:
       - name: "Programming"
         icon: fa-solid fa-code
         keywords:
-          - "Python"
+          - "Python (PyTorch, OpenCV, NumPy)"
           - "C/C++"
           - "MATLAB"
 
-      - name: "Robotics & Edge Computing"
+      - name: "Robotics & Embedded"
         icon: fa-solid fa-microchip
         keywords:
-          - "Embodied Intelligence"
-          - "ROS/ROS2"
+          - "ROS 2 (Python & C++)"
+          - "Embedded Linux (Ubuntu) on RK3588 NPU"
           - "STM32"
-          - "NVIDIA Jetson"
-          - "Arduino"
           - "OpenMV"
           - "Hardware-Software Integration"
 
-      - name: "Machine Vision & AI"
-        icon: fa-solid fa-eye
-        keywords:
-          - "OpenCV"
-          - "PyTorch"
-          - "Point Cloud Library (PCL)"
-          - "YOLO"
-          - "Depth Estimation"
-          - "Robotic Grasping"
-
-      - name: "Simulation & CAD"
+      - name: "Modeling & Simulation"
         icon: fa-solid fa-cube
         keywords:
+          - "Autodesk Inventor (Proficient)"
           - "SolidWorks"
-          - "ANSYS"
-          - "Gazebo"
-          - "CoppeliaSim"
-          - "ADAMS"
+          - "Fusion 360"
+          - "Revit"
+          - "Simulink & Simscape"
+
+      - name: "AI / Vision Stack"
+        icon: fa-solid fa-eye
+        keywords:
+          - "YOLO-World"
+          - "CLIP-style Models"
+          - "Zero-shot Detection"
+          - "Model Reparameterization"
+          - "INT8 Quantization for Edge Inference"
 
       - name: "Tools"
         icon: fa-solid fa-screwdriver-wrench

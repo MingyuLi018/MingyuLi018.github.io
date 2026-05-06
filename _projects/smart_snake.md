@@ -14,14 +14,14 @@ videos:
     caption: "CIIF Shanghai exhibition demo / 上海工博会展示视频"
 
 details_en: |
-  Conducted at the **Vision4Robotic (V4R) Lab**, Tongji University (2025 – Present). This project develops a cross-domain snake robot — "Edge-AI Powered Snake Robot for Cross-Domain Operations" — targeting five industry pain points in existing snake robots: insufficient joint compliance ("can't bend"), edge compute bottlenecks ("can't compute"), limited perception in extreme environments ("can't see"), cascading mechanical failure ("can't be trusted"), and high lifecycle cost ("can't afford maintenance").
+  Conducted at the **Vision4Robotics (V4R) Lab**, Tongji University (2025 – Present). This project develops a cross-domain snake robot — "Edge-AI Powered Snake Robot for Cross-Domain Operations" — targeting five industry pain points in existing snake robots: insufficient joint compliance ("can't bend"), edge compute bottlenecks ("can't compute"), limited perception in extreme environments ("can't see"), cascading mechanical failure ("can't be trusted"), and high lifecycle cost ("can't afford maintenance").
 
   The robot is built around a **composite-material metal skeleton** for impact resistance and corrosion tolerance in aerial, terrestrial, and underwater environments. A **fully modular architecture** (head module + joint modules + tail module) enables rapid production, on-site repair, and flexible reconfiguration. The edge intelligence stack runs on a domestic RISC-V heterogeneous SoC (6 TOPS, 2 W, 40×40 mm) and hosts the Snake Embodied Model Base — a visual-motor fusion framework combining deep 6D pose estimation, multi-object tracking, the Snake-RL locomotion algorithm, and real-time trajectory planning, achieving **30 FPS visual detection** and a **control response latency under 8 ms**, with a reported **85% improvement** in complex-terrain traversal rate.
 
   Six distinct gaits cover the full operational envelope: lateral undulation (≥0.3 m/s, clears 5 cm obstacles), forward undulation (35% more efficient than lateral, ≤0.15 Wh/m), arc rolling (minimum turning radius ≤0.6 m, response < 0.6 s), offset-sine steering (≤1.8× body footprint, ±3° heading accuracy), obstacle crossing and bypassing (crossing height ≥2× body diameter), and vertical climbing with surveillance (≥0.15 m/s climb speed, target recognition ≥95%). The platform also supports UAV-mounted aerial deployment and IP68-rated underwater operation.
 
 details_zh: |
-  本项目于同济大学 **Vision4Robotic (V4R) 实验室**开展（2025 – 至今）。研发面向跨域作业场景的边缘智能蛇形机器人，针对现有蛇形机器人的五大痛点——"弯不动"（超冗余逆运动学与动力学不确定性）、"算不动"（边缘芯片算力不足）、"看不清"（极端环境感知局限）、"靠不住"（串联结构连锁失效）、"养不起"（全生命周期成本高昂）——通过硬件-软件协同设计加以解决，于中国国际工业博览会（上海）公开展示。
+  本项目于同济大学 **Vision4Robotics (V4R) 实验室**开展（2025 – 至今）。研发面向跨域作业场景的边缘智能蛇形机器人，针对现有蛇形机器人的五大痛点——"弯不动"（超冗余逆运动学与动力学不确定性）、"算不动"（边缘芯片算力不足）、"看不清"（极端环境感知局限）、"靠不住"（串联结构连锁失效）、"养不起"（全生命周期成本高昂）——通过硬件-软件协同设计加以解决，于中国国际工业博览会（上海）公开展示。
 
   机体采用**复合材料金属骨架**，兼具高刚性、抗冲击与防腐蚀能力，适配水下、高空及地面多种极端工况。**模块化架构**（蛇头模块 + 关节模块 + 蛇尾模块）支持快速量产与现场维护。边缘智能模块以国产 RISC-V 异构 SoC 为核心（算力 6 TOPS，功耗 2 W，尺寸 40×40 mm），部署蛇形具身大模型底座，融合深度 6D 位姿评估、多目标跟踪、Snake-RL 核心算法与实时轨迹规划，实现 **30 FPS 视觉检测**、**控制响应延迟 < 8 ms**，复杂地形通过率提升 **85%**。
 

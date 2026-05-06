@@ -29,9 +29,9 @@ latest_posts:
   limit: 3
 ---
 
-I am a junior undergraduate student at [Tongji University](https://en.tongji.edu.cn), majoring in Mechatronic Engineering. My research interests lie at the intersection of **embodied intelligence**, **embedded systems**, and **computer vision**, with a specific focus on low-cost dexterous intelligent grasping systems.
+I am a junior undergraduate student at [Tongji University](https://en.tongji.edu.cn), majoring in Mechanical Engineering. My research interests lie at the intersection of **embodied intelligence**, **embedded systems**, and **computer vision**, with a specific focus on low-cost dexterous intelligent grasping systems.
 
-I am deeply passionate about building intelligent robotic platforms. Currently, I lead a research project on **zero-shot visual grasping for dexterous hands** in the **Vision4Robotic (V4R) Lab** under the supervision of Prof. Changhong Fu, while also contributing to the embedded control and intelligent manufacturing simulation of robotic arms. My research efforts include a first-author and corresponding-author paper under submission to **IEEE ICARM 2026**, as well as a CNIPA-accepted utility model patent application.
+I am deeply passionate about building intelligent robotic platforms. Currently, I lead a research project on **zero-shot visual grasping for dexterous hands** in the **Vision4Robotics (V4R) Lab** under the supervision of Prof. Changhong Fu, while also contributing to the embedded control and intelligent manufacturing simulation of robotic arms. My research efforts include a first-author and corresponding-author paper under submission to **IEEE ICARM 2026**, as well as a CNIPA-accepted utility model patent application.
 
 I am currently seeking master's and direct Ph.D. opportunities where I can continue working on hardware-software co-design for practical robotic manipulation.
 
@@ -39,7 +39,7 @@ Academically, I maintain a GPA of 4.28/5.0, earning me the **First-Class Scholar
 
 ## Research Experience
 
-**Vision4Robotic (V4R) Lab**, Tongji University &nbsp;·&nbsp; *2025 – Present*
+**Vision4Robotics (V4R) Lab**, Tongji University &nbsp;·&nbsp; *2025 – Present*
 <br>Core member. Working on dexterous robotic manipulation and edge-native perception systems, with contributions to a dual-vision infinite-roll dexterous hand (IEEE ICARM 2026 submission) and a cross-domain edge-AI snake robot (CIIF Shanghai).
 
 **Intelligent Vehicle Lab**, Tongji University &nbsp;·&nbsp; *2024 – 2026*
