@@ -13,14 +13,24 @@
     大赛由中国图学学会制图技术专业委员会等主办、高等教育出版社协办，位列全国普通高校学科竞赛排行榜第21位，属国家A类赛事。增材制造赛道为机械类分赛道，2人一组，考查3D打印全流程。第十八届大赛有1147所高校约48万人参加校赛，最终15500余人晋级国赛，被誉为“图学界的奥林匹克”。本赛题为自动螺丝分拣器，要求不能使用电动机等动力源。我作为项目负责人，设计了基于手摇曲柄的模块化螺丝分拣装置，包含螺丝直径分拣、螺丝头部分拣、螺丝长度分拣三种机构，可通过模块化接口按需求自由组合。制造方面采用FDM增材制造，主体使用低成本且耐用的ABS，部分尺寸精度要求较高的结构使用PLA打印。我负责绝大多数机构的结构设计与建模、各打印件参数调整以及打印机维护。该赛道国奖与主赛道奖项同等效力，一等奖获奖比例严格控制在参赛组数5%以内，获奖难度和稀缺性较高。
   gallery_key: hec-am
 
+- key: hec-team
+  title: "Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition - Team Event - National Second Prize"
+  title_zh: "第十八届\"高教杯\"全国大学生先进成图技术与产品信息建模创新大赛 团体国家二等奖"
+  date: "2025.07"
+  description_en: >
+    This entry records the national second prize in the team event of the 18th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition. This award is separate from the additive manufacturing track listed above and reflects the team's overall performance in the national competition. Detailed team-event materials and photos will be updated later.
+  description_zh: >
+    该条目记录第十八届“高教杯”全国大学生先进成图技术与产品信息建模创新大赛团体国家二等奖。该奖项与上方增材制造赛道国家一等奖为不同赛项，体现团队在国赛团体项目中的综合表现。后续将补充团体赛相关材料与图片。
+  note: "Photos coming soon. / 团体赛图片待补充。"
+
 - key: bmhri
-  title: "BMHRI Cup Logistics Technology Creativity Contest - National Third Prize<br/>18th Higher Education Cup - Team National Second Prize"
-  title_zh: "2025年中国大学生机械工程创新创意大赛\"北起院杯\"物流技术创意赛 国家三等奖<br/>第十八届\"高教杯\"全国大学生先进成图技术与产品信息建模创新大赛 团体国家二等奖"
+  title: "BMHRI Cup Logistics Technology Creativity Contest - National Third Prize"
+  title_zh: "2025年中国大学生机械工程创新创意大赛\"北起院杯\"物流技术创意赛 国家三等奖"
   date: "2025.07 - 2025.08"
   description_en: >
-    This entry includes two team awards: the national third prize in the BMHRI Cup Logistics Technology Creativity Contest and the national second prize in the Higher Education Cup team event. The BMHRI Cup is part of the innovation track of the China College Student Mechanical Engineering Innovation and Creativity Competition, hosted by the Chinese Mechanical Engineering Society and exclusively sponsored by Beijing Materials Handling Research Institute. It has been listed as an A-level national discipline competition since 2019. In 2025, the contest attracted 354 teams and 2,158 students from 77 universities; after regional selection, only 108 works from 46 universities advanced to the national final, where 37 national third prizes were awarded. Our task was to pick six boxes from a specified shelf and place them into target stacking positions, with evaluation based on task completion, mechanism weight, and execution time. The team designed a vision-guided robotic system using dual cameras for box and stacking-position localization, an overall translational pick-and-place mechanism, six underactuated grippers for simultaneous grasping, and a suction-based placement arm. I served as a core team member, responsible for most mechanical structure design and CAD modeling, training and deploying the vision models, and developing the full upper-computer system on Jetson Orin, with STM32 used as the lower-level controller.
+    The BMHRI Cup is part of the innovation track of the China College Student Mechanical Engineering Innovation and Creativity Competition, hosted by the Chinese Mechanical Engineering Society and exclusively sponsored by Beijing Materials Handling Research Institute. It has been listed as an A-level national discipline competition since 2019. In 2025, the contest attracted 354 teams and 2,158 students from 77 universities; after regional selection, only 108 works from 46 universities advanced to the national final, where 37 national third prizes were awarded. Our task was to pick six boxes from a specified shelf and place them into target stacking positions, with evaluation based on task completion, mechanism weight, and execution time. The team designed a vision-guided robotic system using dual cameras for box and stacking-position localization, an overall translational pick-and-place mechanism, six underactuated grippers for simultaneous grasping, and a suction-based placement arm. I served as a core team member, responsible for most mechanical structure design and CAD modeling, training and deploying the vision models, and developing the full upper-computer system on Jetson Orin, with STM32 used as the lower-level controller.
   description_zh: >
-    该条目包含两个团队奖项：2025年中国大学生机械工程创新创意大赛“北起院杯”物流技术创意赛国家三等奖，以及第十八届“高教杯”全国大学生先进成图技术与产品信息建模创新大赛团体国家二等奖。其中“北起院杯”由中国机械工程学会主办，物流工程分会与同济大学等高校承办，北起院独家冠名，属中国大学生机械工程创新创意大赛创新赛道赛项，自2019年起连续列入全国普通高校学科竞赛排行榜，为国家A类赛事。2025年度共有77所高校、354支队伍、2158名学生参赛，经区域赛选拔后仅46所高校108件作品晋级全国总决赛，最终产生国家三等奖37项。赛题要求机器人在特定货架上夹取6箱货物并放置到规定码垛位置，综合考察任务完成度、机构重量和完成用时。团队方案在启动时调用两个方向的摄像头确定货物和码垛位置及序号，取物置物机构整体平移，取物端采用6个欠驱动夹爪并通过钢索实现整体升降，到达指定位置后同时夹取；移动至置物区后，由带吸盘执行器的机械臂根据视觉识别结果完成放置。我作为团队核心成员，负责大部分机械结构设计与建模、视觉模型训练与部署，并完成Jetson Orin上位机的全部开发；系统下位机采用STM32。
+    “北起院杯”由中国机械工程学会主办，物流工程分会与同济大学等高校承办，北起院独家冠名，属中国大学生机械工程创新创意大赛创新赛道赛项，自2019年起连续列入全国普通高校学科竞赛排行榜，为国家A类赛事。2025年度共有77所高校、354支队伍、2158名学生参赛，经区域赛选拔后仅46所高校108件作品晋级全国总决赛，最终产生国家三等奖37项。赛题要求机器人在特定货架上夹取6箱货物并放置到规定码垛位置，综合考察任务完成度、机构重量和完成用时。团队方案在启动时调用两个方向的摄像头确定货物和码垛位置及序号，取物置物机构整体平移，取物端采用6个欠驱动夹爪并通过钢索实现整体升降，到达指定位置后同时夹取；移动至置物区后，由带吸盘执行器的机械臂根据视觉识别结果完成放置。我作为团队核心成员，负责大部分机械结构设计与建模、视觉模型训练与部署，并完成Jetson Orin上位机的全部开发；系统下位机采用STM32。
   gallery_key: bmhri
 
 - key: internet-plus
