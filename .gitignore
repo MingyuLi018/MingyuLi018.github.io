@@ -15,3 +15,7 @@ node_modules/
 nul
 vendor
 ignore/
+.qoder/
+.qoder
+letter.xlsx
+teacher_list.xlsx

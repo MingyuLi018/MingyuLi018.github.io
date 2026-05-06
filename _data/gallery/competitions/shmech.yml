@@ -26,3 +26,10 @@ sections:
     images:
       - { file: team-photo-1.jpg, caption: "Team photo 1 / 团队合照1", w: 1024, h: 768 }
       - { file: team-photo-2.jpg, caption: "Team photo 2 / 团队合照2", w: 1706, h: 1280 }
+
+  - title: "Exhibition & Venue / 成品展示与赛场"
+    cols: 3
+    images:
+      - { file: 成品展示1.jpg, caption: "Product display 1 / 成品展示1", w: 1279, h: 1706 }
+      - { file: 成品展示2.jpg, caption: "Product display 2 / 成品展示2", w: 1279, h: 1706 }
+      - { file: 比赛现场.jpg, caption: "Competition venue / 比赛现场", w: 1279, h: 1706 }
