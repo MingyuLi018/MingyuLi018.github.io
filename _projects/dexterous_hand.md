@@ -20,7 +20,7 @@ videos:
     caption: "Rearward flip-over grasping demo with a ball / 后向翻转小球抓取演示"
 
 details_en: |
-  Conducted at the **Vision4Robotic (V4R) Lab**, Tongji University (2025 – Present), under the supervision of Prof. Changhong Fu. In this work, we address two intrinsic physical bottlenecks in front-rear dexterous grasping: a perceptual blind spot caused by a single palm-mounted camera, and a kinematic deadlock caused by bounded wrist rotation. Rather than compensating in software, we resolve both through electromechanical co-design.
+  Conducted at the **Vision4Robotic (V4R) Lab**, Tongji University (2025 – Present), under the supervision of Associate Professor Changhong Fu. In this work, we address two intrinsic physical bottlenecks in front-rear dexterous grasping: a perceptual blind spot caused by a single palm-mounted camera, and a kinematic deadlock caused by bounded wrist rotation. Rather than compensating in software, we resolve both through electromechanical co-design.
 
   On the hardware side, a dorsal camera is integrated alongside the ventral camera on the hand chassis, and a direct-drive conductive slip-ring replaces the conventional bounded J1 wrist joint. Both cameras and the edge processor co-rotate with the hand, eliminating the need for high-bandwidth video transmission across the rotary joint. The slip-ring carries only six low-bandwidth channels (power rails and a shared serial bus), which was made possible by choosing a serial bus-servo architecture for the finger actuators.
 
@@ -29,7 +29,7 @@ details_en: |
   A deterministic state machine with an N=10 consensus buffer (~613 ms stabilization window) fuses semantic class and camera-source labels into "Where" and "What" routing decisions, triggering pre-calibrated grasping primitives for either forward or 180° flip-over paths. Proof-of-concept experiments over **40 physical trials** (two objects × two paths) yielded a **75% aggregate end-to-end success rate** without any task-specific fine-tuning.
 
 details_zh: |
-  本项目于同济大学 **Vision4Robotic (V4R) 实验室**开展（2025 – 至今），指导教师为符长虹教授。本工作针对灵巧手前后方向抓取中的两个物理瓶颈——单腹侧摄像头引发的感知盲区，以及有界腕关节导致的运动学死锁——通过机电协同设计从硬件根源加以解决，而非依赖软件层面的补偿。
+  本项目于同济大学 **Vision4Robotic (V4R) 实验室**开展（2025 – 至今），指导教师为符长虹副教授。本工作针对灵巧手前后方向抓取中的两个物理瓶颈——单腹侧摄像头引发的感知盲区，以及有界腕关节导致的运动学死锁——通过机电协同设计从硬件根源加以解决，而非依赖软件层面的补偿。
 
   硬件方面，在手掌底座上集成了腹侧（正面）与背侧（后视）双摄像头，形成前后互补的完整感知球；J1 腕关节引入直驱导电滑环，将关节行程从有界域扩展至无界连续旋转，物理消除翻转 180° 时的运动学死锁。两路摄像头与边缘处理器均随手部同步旋转，无需跨旋转接头传输高带宽视频信号——滑环仅需承载电源与串行总线共六路低带宽信号，这得益于手指驱动器统一采用串行总线伺服架构的早期设计决策。
 
