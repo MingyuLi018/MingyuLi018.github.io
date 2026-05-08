@@ -30,7 +30,10 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "news-utility-model-patent-application-folding-cane-chair-accepted-by-the-china-national-intellectual-property-administration-application-no-202521174680-9",
+        },{id: "news-won-municipal-first-prize-in-14th-shanghai-college-student-mechanical-engineering-innovation-competition",
+          title: 'Won Municipal First Prize in 14th Shanghai College Student Mechanical Engineering Innovation Competition...',
+          description: "",
+          section: "News",},{id: "news-utility-model-patent-application-folding-cane-chair-accepted-by-the-china-national-intellectual-property-administration-application-no-202521174680-9",
           title: 'Utility model patent application “Folding Cane Chair” accepted by the China National Intellectual...',
           description: "",
           section: "News",},{id: "news-won-national-first-prize-in-higher-education-cup-national-college-student-advanced-graphics-technology-and-product-information-modeling-innovation-competition-additive-manufacturing-track",
@@ -41,9 +44,6 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-won-national-third-prize-in-bmhri-cup-logistics-technology-creativity-contest",
           title: 'Won National Third Prize in BMHRI Cup Logistics Technology Creativity Contest',
-          description: "",
-          section: "News",},{id: "news-won-municipal-first-prize-in-14th-shanghai-college-student-mechanical-engineering-innovation-competition",
-          title: 'Won Municipal First Prize in 14th Shanghai College Student Mechanical Engineering Innovation Competition...',
           description: "",
           section: "News",},{id: "news-submitted-a-first-author-and-corresponding-author-paper-to-ieee-icarm-2026-hardware-software-co-design-of-a-dual-vision-infinite-roll-hand-for-edge-native-grasping",
           title: 'Submitted a first-author and corresponding-author paper to IEEE ICARM 2026: “Hardware-Software Co-Design of...',
