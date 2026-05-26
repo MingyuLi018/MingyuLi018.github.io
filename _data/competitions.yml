@@ -64,6 +64,17 @@
     大赛由上海市教育委员会主办、上海理工大学承办，自2012年创办以来已连续举办十四届，是覆盖全市主要工科高校的市级重点学科竞赛。第十四届（2025年）以“健康幸福生活”为主题，吸引17所高校146项作品参赛，共评选出一等奖30项。该赛事在国赛年承担全国大学生机械创新设计大赛上海赛区选拔功能，市级一等奖由上海市教委颁发，在上海高校综测评优和奖学金评审中具有较高认可度。团队参赛作品面向助老产品方向，设计了一款声控智能拐杖椅，用户可在需要时控制拐杖展开为椅子，帮助腿脚不便、精力下降的老年人出行。产品通过凸轮滑槽和空间连杆机构实现展开与收起，电控装置通过开发板接收声控信息，驱动电机驱动板，并由电机带动丝杆完成机构变形。我作为项目负责人，独立负责产品的全部设计、建模、加工、电控及测试，并在竞赛现场负责讲解和答辩。
   gallery_key: shmech
 
+- key: shmech-2026
+  title: "15th Shanghai College Student Mechanical Engineering Innovation Competition & 12th National College Student Mechanical Design Innovation Competition Shanghai Regional - Municipal First Prize & National Final Recommendation"
+  title_zh: "第十五届上海市大学生机械工程创新大赛暨第十二届全国大学生机械设计创新大赛上海赛 省一等奖 + 推荐国赛名额（保底国二）"
+  date: "2026.05"
+  badge: "Racing / 进行中"
+  description_en: >
+    Co-hosted as the Shanghai regional selection for the 12th National College Student Mechanical Design Innovation Competition, the 15th Shanghai College Student Mechanical Engineering Innovation Competition was held at the University of Shanghai for Science and Technology on May 15–16, 2026. The 2026 theme was "Dexterity · Intelligence, Better Life." Municipal first-prize teams are recommended to advance to the national final; according to the Shanghai selection policy, recommended teams are typically positioned for strong national-level outcomes (commonly at least a national second prize). Our team entered the aquatic-product primary-processing track with Smart Shrimp Peeling (智械解虾), an integrated machine-vision-driven shrimp pre-processing platform that chains feeding, vision-based recognition and grasping, infeed alignment, traveling-fixture fixation with dual needle pins, back splitting, head removal, shell-meat separation, brush-based meat recovery, and collection into a continuous multi-station workflow. The design addresses the core difficulty of processing irregular, slippery, and deformable shrimp bodies by combining front-end vision localization with mid-stage traveling-fixture stabilization and rear-end flexible shell-meat separation (adjustable needle expansion, shovel-type separators, and rotary brushes). I served as a core team member, contributing to part of the mechanical structure design while leading most of the electronic control algorithms and vision-system tuning and debugging, including coordinated stepper-motor indexing, multi-station action sequencing, and vision-guided grasping calibration. The work was awarded a Shanghai regional first prize with a national-final recommendation slot.
+  description_zh: >
+    本赛事与第十二届全国大学生机械设计创新大赛上海赛区选拔合并举办，于2026年5月15–16日在上海理工大学举行，本届主题为“灵巧·智能，美好生活”。我所在团队选择特定水产品初加工机械方向，作品为“智械解虾——基于智能视觉的虾类全链加工一体化设备”：将上料输送、视觉识别与抓取、进料定位、随行夹具与双刺针固定、开背去头、壳肉分离、滚刷取肉及成品收集整合为连续多工位自动化流程，针对虾体弯曲、湿滑、规格差异和姿态不确定等非规则物料特点，以“视觉识别—进料对中—随行固定—分步加工—柔性取肉”为主线，重点强化随行夹具配合双刺针的侧向稳定约束，并结合可调针排、铲形分离件与滚刷机构降低壳肉分离阻力、提高取肉完整性。我作为团队核心成员，负责部分机械结构设计，并主导大部分电控算法以及视觉系统调试工作，包括主轨道步进节拍控制、多工位动作协调、视觉识别与抓取标定等。作品获上海赛区省一等奖并获推荐国赛名额（保底国赛二等奖水平）。
+  gallery_key: shmech-2026
+
 - key: graphics-cup
   title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize & Team Municipal Second Prize"
   title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖、团体市级二等奖"

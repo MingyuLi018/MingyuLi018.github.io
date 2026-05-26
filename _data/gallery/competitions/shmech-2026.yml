@@ -1,0 +1,32 @@
+﻿# 15th Shanghai Mech Innovation & 12th National Mechanical Design Innovation (Shanghai Regional)
+dir: assets/img/competitions/shanghai-mech-innovation-2026
+
+preview:
+  - { file: certificate.jpg, w: 1706, h: 1279 }
+  - { file: product-display-1.jpg, w: 1279, h: 1706 }
+  - { file: vision-recognition.jpg, w: 1920, h: 1080 }
+
+sections:
+  - title: "Certificate / 获奖证书"
+    cols: 2
+    images:
+      - { file: certificate.jpg, caption: "Shanghai Regional First Prize Certificate / 上海赛区省一等奖证书", w: 1706, h: 1279 }
+      - { file: national-recommendation.png, caption: "National Final Recommendation / 国赛推荐资格", w: 1392, h: 638, fit: contain }
+
+  - title: "Project Details / 作品细节"
+    cols: 3
+    images:
+      - { file: product-display-1.jpg, caption: "Smart Shrimp Peeling prototype / 智械解虾样机总览", w: 1279, h: 1706 }
+      - { file: vision-recognition.jpg, caption: "Vision-based shrimp localization / 虾体视觉识别与定位效果", w: 1920, h: 1080 }
+
+  - title: "Competition Scene / 比赛现场"
+    cols: 3
+    images:
+      - { file: competition-scene-1.jpg, caption: "Competition scene 1 / 比赛现场1", w: 1706, h: 1279 }
+      - { file: competition-scene-2.jpg, caption: "Competition scene 2 / 比赛现场2", w: 1706, h: 1279 }
+      - { file: competition-scene-3.jpg, caption: "Competition scene 3 / 比赛现场3", w: 1707, h: 1280 }
+
+  - title: "Team Photos / 团队合照"
+    cols: 2
+    images:
+      - { file: team-photo-1.jpg, caption: "Team photo / 团队合照", w: 1707, h: 1280 }
