@@ -57,7 +57,7 @@ cv:
           - "Mingyu Li"
           - "Zhixian Gao"
           - "Zhangchi Guo"
-        publisher: "IEEE/ASME ICARM 2026, Paris, France (Under Submission)"
+        publisher: "IEEE/ASME ICARM 2026, Paris, France (Accepted)"
         releaseDate: 2026
         summary: "First-author and corresponding-author paper from Tongji University on edge-native language-guided grasping with a dual-vision infinite-roll dexterous hand."
 
@@ -79,7 +79,7 @@ cv:
           - "**Mechanical:** Designed a 6-DOF dexterous hand with a **direct-drive slip-ring wrist** enabling infinite continuous roll; full mechanical design in Autodesk Inventor with custom 12 V power distribution"
           - "**Perception:** Built a **dorsal–ventral dual-camera relay** for complementary front/rear perception; deployed **reparameterized YOLO-World** on **RK3588 NPU** for real-time language-guided zero-shot grasping (offline text-encoder reparameterization removes online inference overhead)"
           - "**System:** Integrated full perception-to-actuation loop on **ROS 2 (Python & C++)**; validated on a physical platform, closing the Sim-to-Real gap"
-          - "**Outcome:** First-author & corresponding-author paper submitted to **IEEE/ASME ICARM 2026** (under review)"
+          - "**Outcome:** First-author & corresponding-author paper **accepted** by **IEEE/ASME ICARM 2026**"
 
       - company: "Tongji University"
         position: "Team Member — Precise Grasping of Manipulator Under 2D-Camera and Embedded-System Constraints"
