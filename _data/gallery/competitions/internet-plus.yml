@@ -1,0 +1,16 @@
+﻿# China International College Students' Innovation Competition (2026)
+dir: assets/img/competitions/internet-plus-2026
+
+preview:
+  - { file: product-display-1.jpg, w: 2843, h: 1280 }
+  - { file: vehicle-cad-model.jpg, w: 1287, h: 893 }
+  - { file: logo-modeling.jpg, w: 1706, h: 1279 }
+
+sections:
+  - title: "Project Details / 作品细节"
+    cols: 3
+    images:
+      - { file: product-display-1.jpg, caption: "Finished intelligent agricultural vehicle prototype / 智慧农机整车成品", w: 2843, h: 1280 }
+      - { file: vehicle-cad-model.jpg, caption: "Vehicle mechanical CAD modeling / 车辆机械结构建模", w: 1287, h: 893 }
+      - { file: logo-modeling.jpg, caption: "Vehicle logo aesthetic modeling / 车标美学建模", w: 1706, h: 1279 }
+      - { file: body-shell-processing.jpg, caption: "Body shell fabrication and processing / 车辆外壳加工", w: 1440, h: 810 }

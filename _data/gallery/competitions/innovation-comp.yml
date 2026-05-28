@@ -1,0 +1,11 @@
+# China International College Students' Innovation Competition (2025) — Industry Track
+dir: assets/img/competitions/innovation-comp-2025
+
+preview:
+  - { file: certificate.jpg, w: 3386, h: 2390, fit: contain }
+
+sections:
+  - title: "Certificate / 获奖证书"
+    cols: 2
+    images:
+      - { file: certificate.jpg, caption: "University Silver Award Certificate / 校级银奖证书", w: 3386, h: 2390, fit: contain }

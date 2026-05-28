@@ -42,6 +42,7 @@
     The project is currently under development for the 2026 China International College Students' Innovation and Entrepreneurship Competition. The project direction is an intelligent human-machine collaborative agricultural machinery platform, and a company has already been established around the project. My role focuses on visual and industrial design support for the engineering prototype: I contribute to part of the mechanical structure design and complete the modeling work, including mechanical CAD modeling in Inventor and complex-surface aesthetic modeling in Fusion for components such as the vehicle logo.
   description_zh: >
     项目目前处于中国国际大学生创新大赛（2026）备赛与打磨阶段，方向为“智慧有人无人农机”，目前已成立公司。我在团队中主要负责美工与工程外观相关工作，参与部分机械结构设计，并负责全部建模工作，包括使用Inventor进行机械结构建模，以及使用Fusion完成车标等复杂曲面的美学建模。
+  gallery_key: internet-plus
 
 - key: smartcar
   title: "20th National University Students Intelligent Car Race - Baidu Smart Transportation Track - Regional Second Prize"
@@ -98,4 +99,4 @@
   date: "2025.07"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
-  note: "Photos coming soon. / 照片即将上传"
+  gallery_key: innovation-comp
