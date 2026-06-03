@@ -18,7 +18,7 @@ layout: default
     <h1 class="post-title">
       {{ page.title }}
       {% if page.cv_pdf %}
-        {% unless page.cv_pdf_en or page.cv_pdf_zh %}
+        {% unless page.cv_pdf_en or page.cv_pdf_zh or page.cv_pdf_portfolio %}
         <a
           {% if page.cv_pdf contains '://' %}
             href="{{ page.cv_pdf }}"
@@ -35,7 +35,7 @@ layout: default
         {% endunless %}
       {% endif %}
     </h1>
-    {% if page.cv_pdf_en or page.cv_pdf_zh %}
+    {% if page.cv_pdf_en or page.cv_pdf_zh or page.cv_pdf_portfolio %}
       <p class="cv-pdf-actions mb-0 mt-2">
         {% if page.cv_pdf_en %}
           <a
@@ -50,6 +50,22 @@ layout: default
             rel="noopener noreferrer"
           >
             <i class="fa-solid fa-file-pdf me-1"></i> English CV Download
+          </a>
+          {% if page.cv_pdf_portfolio %}<br>{% endif %}
+        {% endif %}
+        {% if page.cv_pdf_portfolio %}
+          <a
+            class="btn btn-sm z-depth-0 mb-1"
+            role="button"
+            {% if page.cv_pdf_portfolio contains '://' %}
+              href="{{ page.cv_pdf_portfolio }}"
+            {% else %}
+              href="{{ page.cv_pdf_portfolio | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-solid fa-file-pdf me-1"></i> Portfolio Download
           </a>
         {% endif %}
         {% if page.cv_pdf_zh %}
