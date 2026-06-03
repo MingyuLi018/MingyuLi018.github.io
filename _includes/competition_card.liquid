@@ -58,10 +58,12 @@
 {% if comp.description_en or comp.description_zh %}
 <div class="card-desc">
 {% if comp.description_en %}
-<strong>About:</strong> {{ comp.description_en }}
+<strong>About:</strong>
+<div>{{ comp.description_en | markdownify }}</div>
 {% endif %}
 {% if comp.description_zh %}
-<strong>竞赛介绍：</strong>{{ comp.description_zh }}
+<strong>竞赛介绍：</strong>
+<div>{{ comp.description_zh | markdownify }}</div>
 {% endif %}
 </div>
 {% endif %}

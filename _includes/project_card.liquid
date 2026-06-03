@@ -53,9 +53,9 @@
     {% if project.date_label %}
       <p class="text-muted"><small>{{ project.date_label }}</small></p>
     {% endif %}
-    <p>{{ project.description_en }}</p>
+    <div>{{ project.description_en | markdownify }}</div>
     {% if project.description_zh %}
-      <p>{{ project.description_zh }}</p>
+      <div>{{ project.description_zh | markdownify }}</div>
     {% endif %}
     {% if project.github %}
       <a href="{{ project.github }}" target="_blank" class="github-icon">
@@ -95,11 +95,11 @@
 <div class="card-desc">
 {% if project.details_en %}
 <strong>About:</strong>
-<p>{{ project.details_en }}</p>
+<div>{{ project.details_en | markdownify }}</div>
 {% endif %}
 {% if project.details_zh %}
 <strong>项目介绍：</strong>
-<p>{{ project.details_zh }}</p>
+<div>{{ project.details_zh | markdownify }}</div>
 {% endif %}
 </div>
 {% endif %}
@@ -109,12 +109,12 @@
 <ul>
 {% if project.contributions_en %}
   {% for c in project.contributions_en %}
-    <li>{{ c }}</li>
+    <li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>
   {% endfor %}
 {% endif %}
 {% if project.contributions_zh %}
   {% for c in project.contributions_zh %}
-    <li>{{ c }}</li>
+    <li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>
   {% endfor %}
 {% endif %}
 </ul>
