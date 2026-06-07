@@ -1,0 +1,17 @@
+# 9th National Innovation Experience Competition — Track 3 (SymbioCore)
+dir: assets/img/competitions/innovation-experience-2026
+
+preview:
+  - { file: certificate.jpg, w: 1275, h: 721, fit: contain }
+  - { file: concept-poster.png, w: 1024, h: 715, fit: contain }
+
+sections:
+  - title: "Certificate / 获奖证书"
+    cols: 1
+    images:
+      - { file: certificate.jpg, caption: "Track 3 National First Prize — Award Ceremony / 赛道三全国一等奖颁奖典礼", w: 1275, h: 721, fit: contain }
+
+  - title: "Concept Poster / 概念方案海报"
+    cols: 1
+    images:
+      - { file: concept-poster.png, caption: "SymbioCore concept framework / 智汇共生概念框架海报", w: 1024, h: 715, fit: contain }

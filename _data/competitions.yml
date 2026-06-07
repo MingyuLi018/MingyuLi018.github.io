@@ -76,6 +76,17 @@
     本赛事与第十二届全国大学生机械设计创新大赛上海赛区选拔合并举办，于2026年5月15–16日在上海理工大学举行，本届主题为“灵巧·智能，美好生活”。我所在团队选择特定水产品初加工机械方向，作品为“智械解虾——基于智能视觉的虾类全链加工一体化设备”：将上料输送、视觉识别与抓取、进料定位、随行夹具与双刺针固定、开背去头、壳肉分离、滚刷取肉及成品收集整合为连续多工位自动化流程，针对虾体弯曲、湿滑、规格差异和姿态不确定等非规则物料特点，以“视觉识别—进料对中—随行固定—分步加工—柔性取肉”为主线，重点强化随行夹具配合双刺针的侧向稳定约束，并结合可调针排、铲形分离件与滚刷机构降低壳肉分离阻力、提高取肉完整性。我作为团队核心成员，负责部分机械结构设计，并主导大部分电控算法以及视觉系统调试工作，包括主轨道步进节拍控制、多工位动作协调、视觉识别与抓取标定等。作品获上海赛区省一等奖并获推荐国赛名额（保底国赛二等奖水平）。
   gallery_key: shmech-2026
 
+- key: innovation-experience
+  title: "9th National University Student Innovation Experience Competition - Track 3 (Entrepreneurship Plan) - National First Prize"
+  title_zh: "第九届全国大学生创新体验竞赛 赛道三（创业计划）全国一等奖"
+  date: "2026.05"
+  description_en: >
+    In Track 3 of the 9th National University Student Innovation Experience Competition, our team submitted **SymbioCore (智汇共生)**, a concept-level entrepreneurship plan for a full-scenario active human–machine symbiotic service system driven by multimodal intent perception. The submission was intentionally oriented toward **brainstorming and system-level framing** rather than detailed engineering implementation: we focused on articulating the problem landscape, service architecture, and commercial narrative expected in the entrepreneurship track, without building a physical prototype or locking in low-level technical specifications. The concept responds to the gap between today's embodied-intelligence hardware boom and still-limited intent understanding in complex industrial and care settings. SymbioCore proposes a three-layer framework—**perceptual input** (vision, force/tactile sensing, BCI, and rPPG vital-sign cues), **context understanding** (cloud–edge collaborative reasoning with long-horizon planning on the cloud and millisecond-level motion/fatigue assessment on the edge), and **adaptive output** (trajectory planning, safety intervention, compliant force compensation, and affective voice support)—so that collaboration can shift from command-following toward anticipatory "tacit understanding." Two illustrative scenarios anchor the plan: MR-guided human–robot co-disassembly of retired batteries in high-risk manufacturing, and EEG/rPPG-assisted gait rehabilitation with fatigue-aware adjustment. The work also outlines a multi-dimensional intent-synchronization interaction paradigm and a visual–language intuitive guidance stack integrated with mixed reality. The project received a **national first prize** in Track 3.
+  description_zh: >
+    在第九届全国大学生创新体验竞赛赛道三（创业计划）中，我们团队提交了 **SymbioCore（智汇共生）**——一套基于多模态意图感知的全场景主动式人机共生服务体系创业方案。该作品**以概念框架与头脑风暴为主**：侧重问题定义、体系架构与商业叙事等赛道三所要求的创造性表达，**并未展开具体工程细节落地**，也未制作实体样机。方案针对具身智能快速普及背景下，复杂工业与康养场景中机器人“读不懂人”的交互与安全痛点，提出“感知输入—语境理解—自适应输出”三层架构：**感知层**融合视觉语义、力触觉、脑机接口（BCI）与 rPPG 面部生理特征；**理解层**采用云边协同的“大脑+小脑”推理，云端负责长时序规划，边缘端负责毫秒级运动解算与疲劳评估；**输出层**实现轨迹规划、安全干预、柔性力补偿与情感化语音陪伴，使协作从“听令执行”转向“默契预判”。方案以两类典型场景论证可行性：工业端以混合现实（MR）统筹人机协同的退役电池拆解，医疗端以 EEG/rPPG 辅助脑卒中患者步态康复并按疲劳度自适应调节。交互范式上提出“多维意图同步”机制，并将视觉—语言直觉引导与 MR 结合。作品获赛道三**全国一等奖**。
+  note: "Concept-level submission; no physical prototype built. / 作品为概念方案，未制作实体样机。"
+  gallery_key: innovation-experience
+
 - key: graphics-cup
   title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize & Team Municipal Second Prize"
   title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖、团体市级二等奖"
