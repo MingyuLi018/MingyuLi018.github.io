@@ -1,6 +1,7 @@
 {% comment %}
-  Combined award carousel: landscape (left, 2-up) + portrait (right, 3-up) on one row per slide.
-  Orphan singles (1 landscape + 1 portrait left over) are paired on the final slide.
+  Single award carousel: each slide shows ONE orientation only.
+  Landscape slides: 2 certificates per slide (last slide may have 1, centered).
+  Portrait slides: 3 certificates per slide (last slide may have 1, centered).
   Data: _data/awards_carousel.yml
 {% endcomment %}
 
@@ -12,23 +13,18 @@
 {% assign P = portrait_items.size %}
 {% assign l_rem = L | modulo: l_per %}
 {% assign p_rem = P | modulo: p_per %}
-{% assign pair_orphans = false %}
-{% if l_rem == 1 and p_rem == 1 %}
-  {% assign pair_orphans = true %}
-{% endif %}
-{% assign l_pairs = L | minus: l_rem | divided_by: l_per %}
-{% assign total_slides = l_pairs %}
+{% assign l_slides = L | minus: l_rem | divided_by: l_per %}
 {% if l_rem > 0 %}
-  {% assign total_slides = total_slides | plus: 1 %}
+  {% assign l_slides = l_slides | plus: 1 %}
 {% endif %}
-{% assign p_alloc_end = P %}
-{% if pair_orphans %}
-  {% assign p_alloc_end = P | minus: 1 %}
+{% assign p_slides = P | minus: p_rem | divided_by: p_per %}
+{% if p_rem > 0 %}
+  {% assign p_slides = p_slides | plus: 1 %}
 {% endif %}
-{% assign last_slide_idx = total_slides | minus: 1 %}
+{% assign total_slides = l_slides | plus: p_slides %}
 
 <section class="awards-carousels mt-4">
-  {% if L > 0 or P > 0 %}
+  {% if total_slides > 0 %}
     <div
       id="awardsCarousel"
       class="carousel slide awards-carousel"
@@ -51,41 +47,23 @@
       {% endif %}
 
       <div class="carousel-inner">
-        {% for i in (1..total_slides) %}
+        {% comment %} Landscape slides {% endcomment %}
+        {% for i in (1..l_slides) %}
           {% assign slide_idx = forloop.index0 %}
           {% assign l_start = slide_idx | times: l_per %}
-          {% assign p_start = slide_idx | times: p_per %}
-          {% assign has_landscape = false %}
-          {% assign has_portrait = false %}
-          {% assign is_orphan_slide = false %}
-
-          {% if pair_orphans and slide_idx == last_slide_idx %}
-            {% assign is_orphan_slide = true %}
-            {% assign has_landscape = true %}
-            {% assign has_portrait = true %}
-          {% else %}
-            {% if l_start < L %}
-              {% if pair_orphans %}
-                {% assign l_limit = L | minus: 1 %}
-              {% else %}
-                {% assign l_limit = L %}
-              {% endif %}
-              {% if l_start < l_limit %}
-                {% assign has_landscape = true %}
-              {% endif %}
-            {% endif %}
-            {% if p_start < p_alloc_end %}
-              {% assign has_portrait = true %}
-            {% endif %}
+          {% assign remaining = L | minus: l_start %}
+          {% assign slide_count = remaining %}
+          {% if slide_count > l_per %}
+            {% assign slide_count = l_per %}
           {% endif %}
-
           <div
-            class="carousel-item{% if slide_idx == 0 %} active{% endif %}{% if is_orphan_slide %} awards-carousel__slide--orphan-pair{% endif %}{% unless has_portrait %} awards-carousel__slide--landscape-only{% endunless %}"
+            class="carousel-item awards-carousel__slide--landscape{% if slide_idx == 0 %} active{% endif %}{% if slide_count == 1 %} awards-carousel__slide--single{% endif %}"
           >
-            <div class="awards-carousel__combined-row">
-              <div class="awards-carousel__landscape-group">
-                {% if is_orphan_slide %}
-                  {% assign item = landscape_items.last %}
+            <div class="awards-carousel__row awards-carousel__row--landscape">
+              {% for offset in (0..1) %}
+                {% assign l_idx = l_start | plus: offset %}
+                {% if l_idx < L %}
+                  {% assign item = landscape_items[l_idx] %}
                   <figure class="awards-carousel__figure mb-0">
                     <img
                       src="{{ item.path | relative_url }}"
@@ -99,68 +77,44 @@
                     >
                     <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
                   </figure>
-                {% elsif has_landscape %}
-                  {% for offset in (0..1) %}
-                    {% assign l_idx = l_start | plus: offset %}
-                    {% if pair_orphans %}
-                      {% assign l_max = L | minus: 1 %}
-                    {% else %}
-                      {% assign l_max = L %}
-                    {% endif %}
-                    {% if l_idx < l_max %}
-                      {% assign item = landscape_items[l_idx] %}
-                      <figure class="awards-carousel__figure mb-0">
-                        <img
-                          src="{{ item.path | relative_url }}"
-                          alt="{{ item.caption }}"
-                          class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--landscape"
-                          {% if slide_idx == 0 %}
-                            loading="eager"
-                          {% else %}
-                            loading="lazy"
-                          {% endif %}
-                        >
-                        <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
-                      </figure>
-                    {% endif %}
-                  {% endfor %}
                 {% endif %}
-              </div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
 
-              <div class="awards-carousel__portrait-group{% unless has_portrait %} awards-carousel__portrait-group--empty{% endunless %}">
-                {% if is_orphan_slide %}
-                  {% assign item = portrait_items.last %}
+        {% comment %} Portrait slides {% endcomment %}
+        {% for i in (1..p_slides) %}
+          {% assign slide_idx = l_slides | plus: forloop.index0 %}
+          {% assign p_start = forloop.index0 | times: p_per %}
+          {% assign remaining = P | minus: p_start %}
+          {% assign slide_count = remaining %}
+          {% if slide_count > p_per %}
+            {% assign slide_count = p_per %}
+          {% endif %}
+          <div
+            class="carousel-item awards-carousel__slide--portrait{% if l_slides == 0 and forloop.first %} active{% endif %}{% if slide_count == 1 %} awards-carousel__slide--single{% endif %}"
+          >
+            <div class="awards-carousel__row awards-carousel__row--portrait">
+              {% for offset in (0..2) %}
+                {% assign p_idx = p_start | plus: offset %}
+                {% if p_idx < P %}
+                  {% assign item = portrait_items[p_idx] %}
                   <figure class="awards-carousel__figure mb-0">
                     <img
                       src="{{ item.path | relative_url }}"
                       alt="{{ item.caption }}"
                       class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--portrait"
-                      loading="lazy"
+                      {% if slide_idx == 0 and p_idx == 0 %}
+                        loading="eager"
+                      {% else %}
+                        loading="lazy"
+                      {% endif %}
                     >
                     <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
                   </figure>
-                {% elsif has_portrait %}
-                  {% for offset in (0..2) %}
-                    {% assign p_idx = p_start | plus: offset %}
-                    {% if p_idx < p_alloc_end %}
-                      {% assign item = portrait_items[p_idx] %}
-                      <figure class="awards-carousel__figure mb-0">
-                        <img
-                          src="{{ item.path | relative_url }}"
-                          alt="{{ item.caption }}"
-                          class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--portrait"
-                          {% if slide_idx == 0 %}
-                            loading="eager"
-                          {% else %}
-                            loading="lazy"
-                          {% endif %}
-                        >
-                        <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
-                      </figure>
-                    {% endif %}
-                  {% endfor %}
                 {% endif %}
-              </div>
+              {% endfor %}
             </div>
           </div>
         {% endfor %}
