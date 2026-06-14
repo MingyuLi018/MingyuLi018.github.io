@@ -68,6 +68,17 @@ cv:
         releaseDate: 2025
         summary: "Utility model patent application accepted by CNIPA. Application No. 202521174680.9; filing date: June 9, 2025; applicant and inventor: Mingyu Li."
 
+    Volunteer:
+      - company: "Sanguo Youth Development Center — China's Rural Online English Education Service"
+        position: "Online English Teaching & Companionship Volunteer"
+        location: "Shangri-La Senior High School, Diqing, Yunnan (remote)"
+        start_date: "2023-10"
+        end_date: "2023-12"
+        highlights:
+          - "Provided **weekly online English lessons and companionship** (1 hr/week × 10 weeks) for **left-behind children** in rural **Yunnan–Guizhou** mountainous areas."
+          - "Served students at **Shangri-La Senior High School**, Diqing Tibetan Autonomous Prefecture, through Sanguo's remote volunteer education program."
+          - "Adapted teaching to rural learners' backgrounds; developed **patience, empathy, and cross-distance communication** beyond technical coursework."
+
     Research Experience:
       - company: "Tongji University, Vision4Robotics (V4R) Lab"
         position: "Project Lead — Panoptic-Grasp: Dual-Vision, Infinite-Roll Dexterous Hand for Edge-Native Zero-Shot Grasping"

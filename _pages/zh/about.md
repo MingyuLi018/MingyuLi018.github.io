@@ -37,8 +37,15 @@ latest_posts:
 
 在校期间深耕课题组前沿研讨，获多项**国家级竞赛奖项**，工程实践与协作能力扎实。
 
+## 志愿活动
+
+除科研与竞赛外，我于 2023 年 10–12 月参与**三果**「中国农村线上英语教育服务」远程支教项目，面向**云贵山区留守儿童**开展每周 1 小时、共 10 周的**线上英语教学与陪伴**志愿活动，服务地点为云南省迪庆藏族自治州香格里拉中学。活动中我根据乡村学生学情调整授课方式，在跨地域远程协作中锻炼耐心、沟通与换位思考能力。
+
 <div class="row mt-4">
   <div class="col-sm-6 col-md-4">
     {% include figure.liquid loading="lazy" path="assets/img/outstanding-student-certificate.jpg" class="img-fluid rounded z-depth-1" alt="同济大学校级优秀学生 / Tongji University Outstanding Student Award" %}
+  </div>
+  <div class="col-sm-6 col-md-4">
+    {% include figure.liquid loading="lazy" path="assets/img/teaching-volunteer-certificate.jpg" class="img-fluid rounded z-depth-1" alt="三果云贵山区线上英语支教志愿证书 / Sanguo Rural English Teaching Volunteer Certificate" %}
   </div>
 </div>

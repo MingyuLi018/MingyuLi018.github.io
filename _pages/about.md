@@ -36,6 +36,10 @@ I am currently seeking master's and direct Ph.D. opportunities where I can conti
 
 Academically, I maintain a GPA of 4.28/5.0, earning me the **First-Class Scholarship** and the **Outstanding Student Award** in 2025. Beyond the lab and classroom, I have actively participated in national-level engineering competitions, winning multiple awards that reflect my strong foundation in engineering practice and teamwork.
 
+## Volunteer Service
+
+Beyond research and competitions, I volunteered with **Sanguo's Rural Online English Education Service** (Oct–Dec 2023), providing weekly remote **English instruction and companionship** to **left-behind children** in the mountainous regions of **Yunnan and Guizhou**. Over 10 weeks, I taught one hour per week to students at Shangri-La Senior High School in Diqing Tibetan Autonomous Prefecture, adapting lessons to rural learners' needs while offering consistent emotional support across distance. The experience strengthened my patience, empathy, and communication skills outside the engineering classroom.
+
 ## Research Experience
 
 **Vision4Robotics (V4R) Lab**, Tongji University &nbsp;·&nbsp; *2025 – Present*
@@ -47,5 +51,8 @@ Academically, I maintain a GPA of 4.28/5.0, earning me the **First-Class Scholar
 <div class="row mt-4">
   <div class="col-sm-6 col-md-4">
     {% include figure.liquid loading="lazy" path="assets/img/outstanding-student-certificate.jpg" class="img-fluid rounded z-depth-1" alt="Tongji University Outstanding Student Award / 同济大学校级优秀学生" %}
+  </div>
+  <div class="col-sm-6 col-md-4">
+    {% include figure.liquid loading="lazy" path="assets/img/teaching-volunteer-certificate.jpg" class="img-fluid rounded z-depth-1" alt="Sanguo Rural English Teaching Volunteer Certificate / 三果云贵山区线上英语支教志愿证书" %}
   </div>
 </div>
