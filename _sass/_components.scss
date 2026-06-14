@@ -417,3 +417,81 @@ ul.task-list input[type="checkbox"] {
 .d2h-diff-table {
   position: relative;
 }
+
+// Awards certificate carousel (About page)
+
+.awards-carousels {
+  max-width: 960px;
+}
+
+.awards-carousel {
+  .carousel-inner {
+    padding-bottom: 0.5rem;
+  }
+
+  .carousel-indicators li {
+    background-color: var(--global-theme-color);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1) grayscale(100);
+  }
+
+  &__row {
+    min-height: 300px;
+    align-items: flex-end;
+    padding: 0 2.5rem;
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain;
+    background: var(--global-card-bg-color);
+  }
+
+  &--landscape .awards-carousel__img {
+    max-height: 260px;
+  }
+
+  &--portrait .awards-carousel__img {
+    max-height: 320px;
+  }
+
+  &__caption {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1.3;
+  }
+
+  &__slide--single .awards-carousel__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  &--portrait &__slide--single .awards-carousel__col {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
+@media (max-width: 767px) {
+  .awards-carousel__row {
+    padding: 0 1.75rem;
+  }
+
+  .awards-carousel--landscape .awards-carousel__img {
+    max-height: 200px;
+  }
+
+  .awards-carousel--portrait .awards-carousel__img {
+    max-height: 240px;
+  }
+}

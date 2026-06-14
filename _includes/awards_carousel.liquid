@@ -1,0 +1,170 @@
+{% comment %}
+  Award certificate carousels for the About page.
+  Landscape certificates: 2 per slide. Portrait certificates: 3 per slide.
+  Data: _data/awards_carousel.yml
+{% endcomment %}
+
+{% assign landscape_items = site.data.awards_carousel.landscape %}
+{% assign portrait_items = site.data.awards_carousel.portrait %}
+{% assign landscape_per = 2 %}
+{% assign portrait_per = 3 %}
+
+<section class="awards-carousels mt-4">
+  {% if landscape_items.size > 0 %}
+    {% assign landscape_slides = landscape_items.size | plus: 1 | divided_by: landscape_per %}
+
+    <div
+      id="awardsLandscapeCarousel"
+      class="carousel slide awards-carousel awards-carousel--landscape mb-4"
+      data-ride="carousel"
+      data-interval="4500"
+      data-pause="hover"
+    >
+      {% if landscape_slides > 1 %}
+        <ol class="carousel-indicators">
+          {% for i in (1..landscape_slides) %}
+            <li
+              data-target="#awardsLandscapeCarousel"
+              data-slide-to="{{ forloop.index0 }}"
+              {% if forloop.first %}
+                class="active"
+              {% endif %}
+            ></li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      <div class="carousel-inner">
+        {% for item in landscape_items %}
+          {% assign idx = forloop.index0 %}
+          {% assign mod = idx | modulo: landscape_per %}
+          {% if mod == 0 %}
+            {% assign slide_idx = idx | divided_by: landscape_per %}
+            {% assign remaining = landscape_items.size | minus: idx %}
+            {% assign slide_count = remaining %}
+            {% if slide_count > landscape_per %}
+              {% assign slide_count = landscape_per %}
+            {% endif %}
+            <div
+              class="carousel-item{% if slide_idx == 0 %} active{% endif %}{% if slide_count == 1 %} awards-carousel__slide--single{% endif %}"
+            >
+              <div class="row justify-content-center awards-carousel__row">
+          {% endif %}
+
+                <div class="col-6 col-md-5 awards-carousel__col">
+                  <figure class="awards-carousel__figure mb-0">
+                    <img
+                      src="{{ item.path | relative_url }}"
+                      alt="{{ item.caption }}"
+                      class="img-fluid rounded z-depth-1 awards-carousel__img"
+                      {% if slide_idx == 0 %}
+                        loading="eager"
+                      {% else %}
+                        loading="lazy"
+                      {% endif %}
+                    >
+                    <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
+                  </figure>
+                </div>
+
+          {% assign next_idx = forloop.index %}
+          {% assign next_mod = next_idx | modulo: landscape_per %}
+          {% if next_mod == 0 or forloop.last %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if landscape_slides > 1 %}
+        <a class="carousel-control-prev" href="#awardsLandscapeCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#awardsLandscapeCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if portrait_items.size > 0 %}
+    {% assign portrait_slides = portrait_items.size | plus: 2 | divided_by: portrait_per %}
+
+    <div
+      id="awardsPortraitCarousel"
+      class="carousel slide awards-carousel awards-carousel--portrait"
+      data-ride="carousel"
+      data-interval="4500"
+      data-pause="hover"
+    >
+      {% if portrait_slides > 1 %}
+        <ol class="carousel-indicators">
+          {% for i in (1..portrait_slides) %}
+            <li
+              data-target="#awardsPortraitCarousel"
+              data-slide-to="{{ forloop.index0 }}"
+              {% if forloop.first %}
+                class="active"
+              {% endif %}
+            ></li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+
+      <div class="carousel-inner">
+        {% for item in portrait_items %}
+          {% assign idx = forloop.index0 %}
+          {% assign mod = idx | modulo: portrait_per %}
+          {% if mod == 0 %}
+            {% assign slide_idx = idx | divided_by: portrait_per %}
+            {% assign remaining = portrait_items.size | minus: idx %}
+            {% assign slide_count = remaining %}
+            {% if slide_count > portrait_per %}
+              {% assign slide_count = portrait_per %}
+            {% endif %}
+            <div
+              class="carousel-item{% if slide_idx == 0 %} active{% endif %}{% if slide_count == 1 %} awards-carousel__slide--single{% endif %}"
+            >
+              <div class="row justify-content-center awards-carousel__row">
+          {% endif %}
+
+                <div class="col-4 col-md-3 awards-carousel__col">
+                  <figure class="awards-carousel__figure mb-0">
+                    <img
+                      src="{{ item.path | relative_url }}"
+                      alt="{{ item.caption }}"
+                      class="img-fluid rounded z-depth-1 awards-carousel__img"
+                      {% if slide_idx == 0 %}
+                        loading="eager"
+                      {% else %}
+                        loading="lazy"
+                      {% endif %}
+                    >
+                    <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
+                  </figure>
+                </div>
+
+          {% assign next_idx = forloop.index %}
+          {% assign next_mod = next_idx | modulo: portrait_per %}
+          {% if next_mod == 0 or forloop.last %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if portrait_slides > 1 %}
+        <a class="carousel-control-prev" href="#awardsPortraitCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#awardsPortraitCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      {% endif %}
+    </div>
+  {% endif %}
+</section>

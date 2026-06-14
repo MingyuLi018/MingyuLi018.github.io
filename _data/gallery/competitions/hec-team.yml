@@ -1,0 +1,11 @@
+# Higher Education Cup - Team Event (#2)
+dir: assets/img/competitions/higher-education-cup-2025
+
+preview:
+  - { file: team-certificate.jpg, w: 1683, h: 1190, fit: contain }
+
+sections:
+  - title: "Certificate / 获奖证书"
+    cols: 1
+    images:
+      - { file: team-certificate.jpg, caption: "Team National Second Prize / 团体国家二等奖", w: 1683, h: 1190, fit: contain }

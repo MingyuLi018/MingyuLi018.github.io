@@ -1,0 +1,31 @@
+# Award certificates for About page carousel (landscape: 2-up, portrait: 3-up)
+
+landscape:
+  - path: assets/img/competitions/higher-education-cup-2025/team-certificate.jpg
+    caption: "National Second Prize, Higher Education Cup (Team Event)"
+  - path: assets/img/competitions/bmhri-cup-2025/national-certificate.jpg
+    caption: "National Third Prize, BMHRI Cup Logistics Technology Contest"
+  - path: assets/img/competitions/shanghai-mech-innovation-2025/certificate.jpg
+    caption: "Municipal First Prize, 14th Shanghai Mech Innovation (Team)"
+  - path: assets/img/competitions/shanghai-mech-innovation-2025/certificate-individual.jpg
+    caption: "Municipal First Prize, 14th Shanghai Mech Innovation (Individual)"
+  - path: assets/img/competitions/shanghai-mech-innovation-2026/certificate.jpg
+    caption: "Shanghai Regional First Prize, 15th Shanghai Mech Innovation"
+  - path: assets/img/competitions/innovation-comp-2025/certificate.jpg
+    caption: "University Silver Award, China International College Students' Innovation Competition (2025)"
+  - path: assets/img/competitions/innovation-experience-2026/certificate.jpg
+    caption: "Track 3 National First Prize, 9th National Innovation Experience Competition"
+  - path: assets/img/outstanding-student-certificate.jpg
+    caption: "Tongji University Outstanding Student Award"
+  - path: assets/img/teaching-volunteer-certificate.jpg
+    caption: "Sanguo Rural English Teaching Volunteer Certificate"
+
+portrait:
+  - path: assets/img/competitions/higher-education-cup-2025/1-certificate.jpg
+    caption: "National First Prize, Higher Education Cup (Additive Manufacturing)"
+  - path: assets/img/scholarship-certificate.jpg
+    caption: "First-Class Scholarship, Tongji University (2024–2025)"
+  - path: assets/img/competitions/shanghai-graphics-cup-2025/individual-certificate.jpg
+    caption: "Individual Second Prize, Shanghai Graphics Cup (3D Modeling)"
+  - path: assets/img/competitions/shanghai-graphics-cup-2025/team-certificate.jpg
+    caption: "Team Second Prize, Shanghai Graphics Cup (3D Modeling)"

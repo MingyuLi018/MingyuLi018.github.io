@@ -48,11 +48,4 @@ Beyond research and competitions, I volunteered with **Sanguo's Rural Online Eng
 **Intelligent Vehicle Lab**, Tongji University &nbsp;·&nbsp; *2024 – 2026*
 <br>Core member. Developed a precision robotic arm grasping system under 2D-camera and embedded-system constraints, and competed in the National Intelligent Vehicle Competition, winning the **2nd Prize**.
 
-<div class="row mt-4">
-  <div class="col-sm-6 col-md-4">
-    {% include figure.liquid loading="lazy" path="assets/img/outstanding-student-certificate.jpg" class="img-fluid rounded z-depth-1" alt="Tongji University Outstanding Student Award / 同济大学校级优秀学生" %}
-  </div>
-  <div class="col-sm-6 col-md-4">
-    {% include figure.liquid loading="lazy" path="assets/img/teaching-volunteer-certificate.jpg" class="img-fluid rounded z-depth-1" alt="Sanguo Rural English Teaching Volunteer Certificate / 三果云贵山区线上英语支教志愿证书" %}
-  </div>
-</div>
+{% include awards_carousel.liquid %}
