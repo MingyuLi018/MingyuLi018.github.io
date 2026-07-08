@@ -87,6 +87,14 @@
   note: "Concept-level submission; no physical prototype built. / 作品为概念方案，未制作实体样机。"
   gallery_key: innovation-experience
 
+- key: graphics-cup-2026
+  title: "16th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal First Prize & Team Municipal First Prize"
+  title_zh: "第十六届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级一等奖、团体市级一等奖"
+  date: "2026.06"
+  description_en: "Description of the competition goes here."
+  description_zh: "此处填写竞赛介绍内容。"
+  gallery_key: graphics-cup-2026
+
 - key: graphics-cup
   title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize & Team Municipal Second Prize"
   title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖、团体市级二等奖"

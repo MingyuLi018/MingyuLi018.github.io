@@ -1,0 +1,13 @@
+# Shanghai Graphics Cup 2026 (#16 individual + team first prizes)
+dir: assets/img/competitions/shanghai-graphics-cup-2026
+
+preview:
+  - { file: individual-certificate.jpg, w: 2077, h: 2922, fit: contain }
+  - { file: team-certificate.jpg, w: 2028, h: 2862, fit: contain }
+
+sections:
+  - title: "Certificates / 获奖证书"
+    cols: 2
+    images:
+      - { file: individual-certificate.jpg, caption: "Individual First Prize / 个人一等奖", w: 2077, h: 2922, fit: contain }
+      - { file: team-certificate.jpg, caption: "Team First Prize / 团体一等奖", w: 2028, h: 2862, fit: contain }
