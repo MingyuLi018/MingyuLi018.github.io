@@ -11,6 +11,7 @@ gallery_key: smart-snake
 date_label: "2025.09 – Present"
 videos:
   - file: "assets/video/projects/smart_snake_ciif.mp4"
+    poster: "assets/img/smart_snake.png"
     caption: "CIIF Shanghai exhibition demo / 上海工博会展示视频"
 
 details_en: |

@@ -4,6 +4,7 @@
   {% if extension == 'mp4' or extension == 'webm' or extension == 'ogg' %}
     <video
       src="{% if include.cache_bust %}{{ include.path | relative_url | bust_file_cache }}{% else %}{{ include.path | relative_url }}{% endif %}"
+      preload="{{ include.preload | default: 'metadata' }}"
       {% if include.class %}
         class="{{ include.class }}"
       {% endif %}
@@ -48,9 +49,16 @@
         muted
       {% endif %}
       {% if include.poster %}
-        poster="{{ include.poster }}"
+        poster="{{ include.poster | relative_url }}"
       {% endif %}
-    />
+      {% if include.playsinline %}
+        playsinline
+      {% endif %}
+    >
+      {% if include.alt or include.title %}
+        {{ include.alt | default: include.title }}
+      {% endif %}
+    </video>
 
   {% else %}
     <iframe

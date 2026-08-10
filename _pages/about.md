@@ -5,6 +5,15 @@ permalink: /
 subtitle: >
   Junior Undergraduate, <a href="https://en.tongji.edu.cn">Tongji University</a>, School of Mechanical Engineering
 lang: en
+hero_eyebrow: Embodied intelligence · Robotic manipulation
+hero_intro: I build practical robotic systems where mechanical design, edge intelligence, and visual perception work as one.
+hero_actions:
+  - label: Explore projects
+    url: /projects/
+    icon: fa-solid fa-arrow-right
+  - label: View CV
+    url: /cv/
+    icon: fa-regular fa-file-lines
 
 profile:
   align: right
@@ -28,24 +37,50 @@ latest_posts:
   limit: 3
 ---
 
-I am a junior undergraduate student at [Tongji University](https://en.tongji.edu.cn), majoring in Mechanical Engineering. My research interests lie at the intersection of **embodied intelligence**, **embedded systems**, and **computer vision**, with a specific focus on low-cost dexterous intelligent grasping systems.
+## Research focus
 
-I am deeply passionate about building intelligent robotic platforms. Currently, I lead a research project on **zero-shot visual grasping for dexterous hands** in the **Vision4Robotics (V4R) Lab** under the supervision of Prof. Changhong Fu, while also contributing to the embedded control and intelligent manufacturing simulation of robotic arms. My research efforts include a first-author and corresponding-author paper **accepted** by **IEEE ICARM 2026**, as well as a CNIPA-accepted utility model patent application.
+<div class="research-focus-grid">
+  <div class="research-focus-card">
+    <strong>Robotic manipulation</strong>
+    <p>Low-cost dexterous grasping systems designed around real hardware constraints.</p>
+  </div>
+  <div class="research-focus-card">
+    <strong>Edge intelligence</strong>
+    <p>Efficient perception and control deployed on resource-constrained embedded platforms.</p>
+  </div>
+  <div class="research-focus-card">
+    <strong>Hardware–software co-design</strong>
+    <p>Mechanical, electronic, and algorithmic decisions developed as one complete system.</p>
+  </div>
+</div>
 
-I am currently seeking master's and direct Ph.D. opportunities where I can continue working on hardware-software co-design for practical robotic manipulation.
+I am a junior undergraduate in Mechanical Engineering at [Tongji University](https://en.tongji.edu.cn). At the **Vision4Robotics (V4R) Lab**, I lead a zero-shot visual grasping project for dexterous hands and contribute to robotic-arm control and intelligent-manufacturing simulation. My work has resulted in a first-author and corresponding-author paper **accepted by IEEE ICARM 2026** and a CNIPA-accepted utility model patent application.
 
-Academically, I maintain a GPA of 4.28/5.0, earning me the **First-Class Scholarship** and the **Outstanding Student Award** in 2025. Beyond the lab and classroom, I have actively participated in national-level engineering competitions, winning multiple awards that reflect my strong foundation in engineering practice and teamwork.
-
-## Volunteer Service
-
-Beyond research and competitions, I volunteered with **Sanguo's Rural Online English Education Service** (Oct–Dec 2023), providing weekly remote **English instruction and companionship** to **left-behind children** in the mountainous regions of **Yunnan and Guizhou**. Over 10 weeks, I taught one hour per week to students at Shangri-La Senior High School in Diqing Tibetan Autonomous Prefecture, adapting lessons to rural learners' needs while offering consistent emotional support across distance. The experience strengthened my patience, empathy, and communication skills outside the engineering classroom.
+I maintain a **4.28/5.0 GPA** and received Tongji University's **First-Class Scholarship** and **Outstanding Student Award** in 2025. I am currently seeking master's and direct Ph.D. opportunities in practical robotic manipulation and embodied intelligence.
 
 ## Research Experience
 
-**Vision4Robotics (V4R) Lab**, Tongji University &nbsp;·&nbsp; *2025 – Present*
-<br>Core member. Working on dexterous robotic manipulation and edge-native perception systems, with contributions to a dual-vision infinite-roll dexterous hand (IEEE ICARM 2026, accepted) and a cross-domain edge-AI snake robot (CIIF Shanghai).
+<div class="research-timeline">
+  <div class="research-timeline__item">
+    <strong>Vision4Robotics (V4R) Lab · Tongji University</strong>
+    <p><small>2025 – Present</small></p>
+    <p>Dexterous robotic manipulation and edge-native perception, including a dual-vision infinite-roll hand and a cross-domain Edge-AI snake robot.</p>
+  </div>
+  <div class="research-timeline__item">
+    <strong>Intelligent Vehicle Lab · Tongji University</strong>
+    <p><small>2024 – 2026</small></p>
+    <p>Precision robotic-arm grasping under 2D-camera and embedded-system constraints; National Intelligent Vehicle Competition regional second prize.</p>
+  </div>
+</div>
 
-**Intelligent Vehicle Lab**, Tongji University &nbsp;·&nbsp; *2024 – 2026*
-<br>Core member. Developed a precision robotic arm grasping system under 2D-camera and embedded-system constraints, and competed in the National Intelligent Vehicle Competition, winning the **2nd Prize**.
+## Featured projects
+
+{% include featured_projects.liquid %}
+
+## Selected honors
 
 {% include awards_carousel.liquid %}
+
+## Beyond engineering
+
+From October to December 2023, I volunteered with **Sanguo's Rural Online English Education Service**, providing weekly remote English teaching and companionship to students in Yunnan. The ten-week experience strengthened my patience, empathy, and communication beyond engineering work.

@@ -15,12 +15,14 @@ images:
 <ul class="nav nav-tabs projects-tabs" id="projectsTabs" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="research-tab" data-toggle="tab" href="#research" role="tab" aria-controls="research" aria-selected="true">
-      Research
+      <i class="fa-solid fa-microchip mr-1" aria-hidden="true"></i>
+      Research <span class="projects-tab-count">{{ site.projects.size }}</span>
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="competitions-tab" data-toggle="tab" href="#competitions" role="tab" aria-controls="competitions" aria-selected="false">
-      Competitions
+      <i class="fa-solid fa-trophy mr-1" aria-hidden="true"></i>
+      Competitions <span class="projects-tab-count">{{ site.data.competitions.size }}</span>
     </a>
   </li>
 </ul>

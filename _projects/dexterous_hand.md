@@ -15,8 +15,10 @@ links:
     icon: "fa-solid fa-file-lines"
 videos:
   - file: "assets/video/projects/dexterous_hand_front_coke.mp4"
+    poster: "assets/img/dexterous_hand.jpg"
     caption: "Front-side grasping demo with a Coke can / 正向可乐罐抓取演示"
   - file: "assets/video/projects/dexterous_hand_rear_ball.mp4"
+    poster: "assets/img/projects/dexterous-hand/icarm_fig4.jpg"
     caption: "Rearward flip-over grasping demo with a ball / 后向翻转小球抓取演示"
 
 details_en: |

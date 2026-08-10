@@ -26,17 +26,18 @@
 <section class="awards-carousels mt-4">
   {% if total_slides > 0 %}
     <div
-      id="awardsCarousel"
-      class="carousel slide awards-carousel"
+      id="awardsCarouselDesktop"
+      class="carousel slide awards-carousel awards-carousel--desktop"
       data-ride="carousel"
-      data-interval="4500"
+      data-interval="6000"
       data-pause="hover"
+      aria-label="{% if page.lang == 'zh' %}代表荣誉证书{% else %}Selected award certificates{% endif %}"
     >
       {% if total_slides > 1 %}
         <ol class="carousel-indicators">
           {% for i in (1..total_slides) %}
             <li
-              data-target="#awardsCarousel"
+              data-target="#awardsCarouselDesktop"
               data-slide-to="{{ forloop.index0 }}"
               {% if forloop.first %}
                 class="active"
@@ -69,6 +70,7 @@
                       src="{{ item.path | relative_url }}"
                       alt="{{ item.caption }}"
                       class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--landscape"
+                      decoding="async"
                       {% if slide_idx == 0 %}
                         loading="eager"
                       {% else %}
@@ -105,6 +107,7 @@
                       src="{{ item.path | relative_url }}"
                       alt="{{ item.caption }}"
                       class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--portrait"
+                      decoding="async"
                       {% if slide_idx == 0 and p_idx == 0 %}
                         loading="eager"
                       {% else %}
@@ -121,15 +124,91 @@
       </div>
 
       {% if total_slides > 1 %}
-        <a class="carousel-control-prev" href="#awardsCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#awardsCarouselDesktop" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#awardsCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#awardsCarouselDesktop" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
       {% endif %}
     </div>
+
+    <div
+      id="awardsCarouselMobile"
+      class="carousel slide awards-carousel awards-carousel--mobile"
+      data-ride="carousel"
+      data-interval="6000"
+      data-pause="hover"
+      aria-label="{% if page.lang == 'zh' %}代表荣誉证书，单张展示{% else %}Selected award certificates, one at a time{% endif %}"
+    >
+      <ol class="carousel-indicators">
+        {% for item in landscape_items %}
+          <li
+            data-target="#awardsCarouselMobile"
+            data-slide-to="{{ forloop.index0 }}"
+            {% if forloop.first %}
+              class="active"
+            {% endif %}
+          ></li>
+        {% endfor %}
+        {% for item in portrait_items %}
+          <li data-target="#awardsCarouselMobile" data-slide-to="{{ L | plus: forloop.index0 }}"></li>
+        {% endfor %}
+      </ol>
+
+      <div class="carousel-inner">
+        {% for item in landscape_items %}
+          <div class="carousel-item{% if forloop.first %} active{% endif %}">
+            <div class="awards-carousel__mobile-frame">
+              <figure class="awards-carousel__figure mb-0">
+                <img
+                  src="{{ item.path | relative_url }}"
+                  alt="{{ item.caption }}"
+                  class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--landscape"
+                  decoding="async"
+                  loading="lazy"
+                >
+                <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
+              </figure>
+            </div>
+          </div>
+        {% endfor %}
+        {% for item in portrait_items %}
+          <div class="carousel-item{% if L == 0 and forloop.first %} active{% endif %}">
+            <div class="awards-carousel__mobile-frame">
+              <figure class="awards-carousel__figure mb-0">
+                <img
+                  src="{{ item.path | relative_url }}"
+                  alt="{{ item.caption }}"
+                  class="img-fluid rounded z-depth-1 awards-carousel__img awards-carousel__img--portrait"
+                  decoding="async"
+                  loading="lazy"
+                >
+                <figcaption class="caption awards-carousel__caption">{{ item.caption }}</figcaption>
+              </figure>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <a class="carousel-control-prev" href="#awardsCarouselMobile" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#awardsCarouselMobile" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   {% endif %}
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.jQuery) {
+      window.jQuery('.awards-carousel').carousel('pause').attr('data-interval', 'false');
+    }
+  });
+</script>

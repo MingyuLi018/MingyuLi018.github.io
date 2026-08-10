@@ -2,33 +2,58 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+  <header class="about-hero">
+    <div class="about-hero__content">
+      {% if page.hero_eyebrow %}
+        <div class="about-hero__eyebrow">{{ page.hero_eyebrow }}</div>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+      <h1 class="post-title about-hero__title">
+        {% if site.title == 'blank' %}
+          <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+          {{ site.last_name }}
+        {% else %}
+          {{ site.title }}
+        {% endif %}
+      </h1>
+      <p class="about-hero__subtitle">{{ page.subtitle }}</p>
+      {% if page.hero_intro %}
+        <p class="about-hero__intro">{{ page.hero_intro }}</p>
+      {% endif %}
+      {% if page.hero_actions %}
+        <div class="about-hero__actions">
+          {% for action in page.hero_actions %}
+            <a
+              class="tech-button{% unless forloop.first %} tech-button--secondary{% endunless %}"
+              href="{{ action.url | relative_url }}"
+              {% if action.url contains '://' %}
+                target="_blank" rel="noopener noreferrer"
+              {% endif %}
+            >
+              {% if action.icon %}<i class="{{ action.icon }}" aria-hidden="true"></i>{% endif %}
+              {{ action.label }}
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if page.social %}
+        <div class="about-hero__social" aria-label="{% if page.lang == 'zh' %}社交与联系方式{% else %}Social and contact links{% endif %}">
+          <div class="contact-icons">{% social_links %}</div>
+        </div>
+      {% endif %}
+    </div>
 
-  <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div class="profile">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
+          {% capture sizes %}(min-width: {{ site.max_width }}) 260px, (min-width: 768px) 29vw, 64vw{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=site.title
             cache_bust=true
           %}
         {% endif %}
@@ -37,14 +62,18 @@ layout: default
         {% endif %}
       </div>
     {% endif %}
+  </header>
 
-    <div class="clearfix">{{ content }}</div>
+  <article>
+    <div class="about-content">{{ content }}</div>
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
-      {% assign current_lang = page.lang | default: "en" %}
+      {% assign current_lang = page.lang | default: 'en' %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">{% if current_lang == 'zh' %}动态{% else %}news{% endif %}</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">
+          {%- if current_lang == 'zh' %}动态{% else %}news{% endif -%}
+        </a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -52,32 +81,27 @@ layout: default
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{% if current_lang == 'zh' %}最新文章{% else %}latest posts{% endif %}</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">
+          {%- if current_lang == 'zh' %}最新文章{% else %}latest posts{% endif -%}
+        </a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
-      {% assign current_lang = page.lang | default: "en" %}
+      {% assign current_lang = page.lang | default: 'en' %}
       {% if current_lang == 'zh' %}
         {% assign pub_url = '/zh/publications/' %}
       {% else %}
         {% assign pub_url = '/publications/' %}
       {% endif %}
       <h2>
-        <a href="{{ pub_url | relative_url }}" style="color: inherit">{% if current_lang == 'zh' %}代表论文{% else %}selected publications{% endif %}</a>
+        <a href="{{ pub_url | relative_url }}" style="color: inherit">
+          {%- if current_lang == 'zh' %}代表论文{% else %}selected publications{% endif -%}
+        </a>
       </h2>
       {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}

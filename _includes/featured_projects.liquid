@@ -1,0 +1,72 @@
+{% assign sorted_projects = site.projects | sort: 'importance' %}
+{% assign featured_project = sorted_projects | first %}
+{% assign featured_slug = featured_project.title | slugify %}
+{% assign rotating_count = sorted_projects.size | minus: 1 %}
+
+<section class="home-project-showcase" aria-label="{% if page.lang == 'zh' %}精选项目{% else %}Featured projects{% endif %}">
+  <a class="home-project-card home-project-card--featured" href="{{ '/projects/#project--' | append: featured_slug | relative_url }}">
+    <div class="home-project-card__media">
+      {%
+        include figure.liquid path=featured_project.img class="home-project-card__image" loading="lazy"
+        sizes="(min-width: 768px) 430px, 95vw" alt=featured_project.title
+      %}
+    </div>
+    <div class="home-project-card__body">
+      <h3>Panoptic Grasp</h3>
+      <p>
+        {% if page.lang == 'zh' %}
+          双视觉、无限翻转与边缘端感知协同的灵巧抓取系统。
+        {% else %}
+          Dual-vision, infinite-roll dexterous grasping with edge-native perception.
+        {% endif %}
+      </p>
+    </div>
+  </a>
+
+  {% if rotating_count > 0 %}
+    <div id="homeProjectsCarousel" class="carousel slide home-project-rotator" data-ride="carousel" data-interval="5500" data-pause="hover">
+      <div class="carousel-inner">
+        {% assign rotating_index = 0 %}
+        {% for project in sorted_projects %}
+          {% unless project == featured_project %}
+            {% assign project_slug = project.title | slugify %}
+            {% if page.lang == 'zh' and project.description_zh %}
+              {% assign project_summary = project.description_zh %}
+            {% else %}
+              {% assign project_summary = project.description_en %}
+            {% endif %}
+            <div class="carousel-item{% if rotating_index == 0 %} active{% endif %}">
+              <a class="home-project-card" href="{{ '/projects/#project--' | append: project_slug | relative_url }}">
+                <div class="home-project-card__media">
+                  {%
+                    include figure.liquid path=project.img class="home-project-card__image" loading="lazy"
+                    sizes="(min-width: 768px) 430px, 95vw" alt=project.title
+                  %}
+                </div>
+                <div class="home-project-card__body">
+                  <h3>
+                    {% if page.lang == 'zh' and project.title_zh %}
+                      {{ project.title_zh }}
+                    {% else %}
+                      {{ project.title }}
+                    {% endif %}
+                  </h3>
+                  <p>{{ project_summary | markdownify | strip_html | strip | truncate: 115 }}</p>
+                </div>
+              </a>
+            </div>
+            {% assign rotating_index = rotating_index | plus: 1 %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+      <a class="carousel-control-prev" href="#homeProjectsCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous project</span>
+      </a>
+      <a class="carousel-control-next" href="#homeProjectsCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next project</span>
+      </a>
+    </div>
+  {% endif %}
+</section>

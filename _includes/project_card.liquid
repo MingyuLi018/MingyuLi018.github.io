@@ -4,7 +4,7 @@
 
 {% assign slug = project.title | slugify %}
 
-{% assign gallery = nil %}
+{% assign gallery = null %}
 {% if project.gallery_key %}
   {% assign gallery = site.data.gallery.projects[project.gallery_key] %}
 {% endif %}
@@ -35,187 +35,230 @@
   {% assign video_total = project.videos.size %}
 {% endif %}
 
-<div class="expandable-card project-card" markdown="0">
-
-<!-- Horizontal header: left image + right text -->
-<div class="row no-gutters align-items-center mb-3">
-  <div class="col-md-4">
-    <img src="{{ project.img | relative_url }}"
-         class="img-fluid rounded z-depth-1 project-header-img"
-         loading="lazy"
-         alt="{{ project.title }}" />
-  </div>
-  <div class="col-md-8 pl-md-3 pt-3 pt-md-0">
-    <h3>{{ project.title }}</h3>
-    {% if project.title_zh %}
-      <h3>{{ project.title_zh }}</h3>
-    {% endif %}
-    {% if project.date_label %}
-      <p class="text-muted"><small>{{ project.date_label }}</small></p>
-    {% endif %}
-    <div>{{ project.description_en | markdownify }}</div>
-    {% if project.description_zh %}
-      <div>{{ project.description_zh | markdownify }}</div>
-    {% endif %}
-    {% if project.github %}
-      <a href="{{ project.github }}" target="_blank" class="github-icon">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-    {% endif %}
-    {% if project.links %}
-      <div class="project-links mt-2">
-        {% for link in project.links %}
-          <a
-            {% if link.url contains '://' %}
-              href="{{ link.url }}"
-            {% else %}
-              href="{{ link.url | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-sm z-depth-0 mr-1 mb-1"
-          >
-            {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-            {{ link.label }}
-          </a>
-        {% endfor %}
-      </div>
-    {% endif %}
-  </div>
-</div>
-
-<details class="expandable-details project-details-and-gallery">
-  <summary>
-    <span class="when-collapsed">Show project details{% if gallery_total > 0 %}, gallery ({{ gallery_total }}){% endif %}{% if video_total > 0 %}, videos ({{ video_total }}){% endif %} &#9660;</span>
-    <span class="when-expanded">Collapse &#9650;</span>
-  </summary>
-  <div class="mt-3">
-
-{% if project.details_en or project.details_zh %}
-<div class="card-desc">
-{% if project.details_en %}
-<strong>About:</strong>
-<div>{{ project.details_en | markdownify }}</div>
-{% endif %}
-{% if project.details_zh %}
-<strong>项目介绍：</strong>
-<div>{{ project.details_zh | markdownify }}</div>
-{% endif %}
-</div>
-{% endif %}
-
-{% if project.contributions_en or project.contributions_zh %}
-<strong>Key Contributions / 主要贡献</strong>
-<ul>
-{% if project.contributions_en %}
-  {% for c in project.contributions_en %}
-    <li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-  {% endfor %}
-{% endif %}
-{% if project.contributions_zh %}
-  {% for c in project.contributions_zh %}
-    <li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-  {% endfor %}
-{% endif %}
-</ul>
-{% endif %}
-
-{% if project.videos and project.videos.size > 0 %}
-<div class="mt-4 project-videos">
-  <strong>Demo Videos / 演示视频</strong>
-  <div class="row row-cols-1 row-cols-md-2 g-2 mt-2">
-    {% for video in project.videos %}
-    <div class="col mb-3">
-      {% include video.liquid path=video.file class="img-fluid rounded z-depth-1" controls=true caption=video.caption %}
-    </div>
-    {% endfor %}
-  </div>
-</div>
-{% endif %}
-
-{% if gallery and gallery_total > 0 %}
-<div class="mt-4 project-gallery-below-text">
-  <strong>Project Gallery / 项目图集</strong>
-  <div class="mt-2">
-    {% if gallery.images and gallery.images.size > 0 %}
-    <div class="pswp-gallery" id="gallery--{{ slug }}-all-flat">
-      <div class="row row-cols-2 row-cols-md-3 g-2">
-        {% for img in gallery.images %}
-        <div class="col mb-3">
-          <div class="gallery-img-wrapper">
-            <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-               data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank" rel="noopener noreferrer">
-              <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-                   class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}" loading="lazy"
-                   {% if img.position %}style="object-position: {{ img.position }};"{% endif %}
-                   alt="{{ img.caption | default: img.file }}" />
-            </a>
-            {% if img.caption %}
-            <div class="gallery-hover-caption">{{ img.caption }}</div>
-            {% endif %}
-          </div>
-        </div>
-        {% endfor %}
+<div id="project--{{ slug }}" class="expandable-card project-card" markdown="0">
+  <!-- Horizontal header: left image + right text -->
+  <div class="row no-gutters align-items-center mb-3">
+    <div class="col-md-4">
+      <div class="project-cover">
+        {%
+          include figure.liquid path=project.img class="img-fluid project-header-img" loading="lazy" sizes="(min-width: 768px) 280px, 95vw"
+          alt=project.title
+        %}
       </div>
     </div>
-    {% elsif project_section_gallery %}
-    {% assign first_gallery_section = true %}
-    {% for section in gallery.sections %}
-      {% if section.images and section.images.size > 0 %}
-    <strong class="d-block{% unless first_gallery_section %} mt-2{% endunless %}">{{ section.title }}</strong>
-    {% assign first_gallery_section = false %}
-    {% assign sec_cols = section.cols | default: 3 %}
-    <div class="pswp-gallery" id="gallery--{{ slug }}-all-{{ forloop.index }}">
-      <div class="row row-cols-2 row-cols-md-{{ sec_cols }} g-2">
-        {% for img in section.images %}
-        <div class="col mb-3">
-          <div class="gallery-img-wrapper">
-            <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-               data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank" rel="noopener noreferrer">
-              <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-                   class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}" loading="lazy"
-                   {% if img.position %}style="object-position: {{ img.position }};"{% endif %}
-                   alt="{{ img.caption | default: img.file }}" />
-            </a>
-            {% if img.caption %}
-            <div class="gallery-hover-caption">{{ img.caption }}</div>
-            {% endif %}
-          </div>
-        </div>
-        {% endfor %}
+    <div class="col-md-8 pl-md-3 pt-3 pt-md-0">
+      <div class="project-badges">
+        {% if project.category %}
+          <span class="project-badge"><i class="fa-solid fa-microchip" aria-hidden="true"></i>{{ project.category }}</span>
+        {% endif %}
+        {% if video_total > 0 %}
+          <span class="project-badge"
+            ><i class="fa-solid fa-play" aria-hidden="true"></i>{{ video_total }} demo{% if video_total > 1 %}s{% endif -%}
+          </span>
+        {% endif %}
+        {% if project.date_label %}
+          <span class="project-badge"><i class="fa-regular fa-calendar" aria-hidden="true"></i>{{ project.date_label }}</span>
+        {% endif %}
       </div>
-    </div>
+      <h3>{{ project.title }}</h3>
+      {% if project.title_zh %}
+        <h3>{{ project.title_zh }}</h3>
       {% endif %}
-    {% endfor %}
-    {% elsif gallery.preview and gallery.preview.size > 0 %}
-    <div class="pswp-gallery" id="gallery--{{ slug }}-all-preview">
-      <div class="row row-cols-2 row-cols-md-3 g-2">
-        {% for img in gallery.preview %}
-        <div class="col mb-3">
-          <div class="gallery-img-wrapper">
-            <a href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-               data-pswp-width="{{ img.w }}" data-pswp-height="{{ img.h }}" target="_blank" rel="noopener noreferrer">
-              <img src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
-                   class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}" loading="lazy"
-                   {% if img.position %}style="object-position: {{ img.position }};"{% endif %}
-                   alt="{{ img.caption | default: img.file }}" />
+      <div>{{ project.description_en | markdownify }}</div>
+      {% if project.description_zh %}
+        <div>{{ project.description_zh | markdownify }}</div>
+      {% endif %}
+      {% if project.github %}
+        <a href="{{ project.github }}" target="_blank" class="github-icon"> <i class="fa-brands fa-github"></i> GitHub </a>
+      {% endif %}
+      {% if project.links %}
+        <div class="project-links mt-2">
+          {% for link in project.links %}
+            <a
+              {% if link.url contains '://' %}
+                href="{{ link.url }}"
+              {% else %}
+                href="{{ link.url | relative_url }}"
+              {% endif %}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-sm z-depth-0 mr-1 mb-1"
+            >
+              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+              {{ link.label }}
             </a>
-            {% if img.caption %}
-            <div class="gallery-hover-caption">{{ img.caption }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <details class="expandable-details project-details-and-gallery">
+    <summary>
+      <span class="when-collapsed"
+        >Show project details{% if gallery_total > 0 %}, gallery ({{ gallery_total }}){% endif -%}
+        {%- if video_total > 0 %}, videos ({{ video_total }}){% endif %} &#9660;</span
+      >
+      <span class="when-expanded">Collapse &#9650;</span>
+    </summary>
+    <div class="mt-3">
+      {% if project.details_en or project.details_zh %}
+        <div class="card-desc">
+          {% if project.details_en %}
+            <strong>About:</strong>
+            <div>{{ project.details_en | markdownify }}</div>
+          {% endif %}
+          {% if project.details_zh %}
+            <strong>项目介绍：</strong>
+            <div>{{ project.details_zh | markdownify }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      {% if project.contributions_en or project.contributions_zh %}
+        <strong>Key Contributions / 主要贡献</strong>
+        <ul>
+          {% if project.contributions_en %}
+            {% for c in project.contributions_en %}
+              <li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          {% endif %}
+          {% if project.contributions_zh %}
+            {% for c in project.contributions_zh %}
+              <li>{{ c | markdownify | remove: '<p>' | remove: '</p>' }}</li>
+            {% endfor %}
+          {% endif %}
+        </ul>
+      {% endif %}
+
+      {% if project.videos and project.videos.size > 0 %}
+        <div class="mt-4 project-videos">
+          <strong>Demo Videos / 演示视频</strong>
+          <div class="row row-cols-1 row-cols-md-2 g-2 mt-2">
+            {% for video in project.videos %}
+              <div class="col mb-3">
+                {%
+                  include video.liquid path=video.file class="img-fluid rounded z-depth-1" controls=true preload="metadata" playsinline=true
+                  poster=video.poster caption=video.caption
+                %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+
+      {% if gallery and gallery_total > 0 %}
+        <div class="mt-4 project-gallery-below-text">
+          <strong>Project Gallery / 项目图集</strong>
+          <div class="mt-2">
+            {% if gallery.images and gallery.images.size > 0 %}
+              <div class="pswp-gallery" id="gallery--{{ slug }}-all-flat">
+                <div class="row row-cols-2 row-cols-md-3 g-2">
+                  {% for img in gallery.images %}
+                    <div class="col mb-3">
+                      <div class="gallery-img-wrapper">
+                        <a
+                          href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+                          data-pswp-width="{{ img.w }}"
+                          data-pswp-height="{{ img.h }}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+                            class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}"
+                            loading="lazy"
+                            {% if img.position %}
+                              style="object-position: {{ img.position }};"
+                            {% endif %}
+                            alt="{{ img.caption | default: img.file }}"
+                          >
+                        </a>
+                        {% if img.caption %}
+                          <div class="gallery-hover-caption">{{ img.caption }}</div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% elsif project_section_gallery %}
+              {% assign first_gallery_section = true %}
+              {% for section in gallery.sections %}
+                {% if section.images and section.images.size > 0 %}
+                  <strong class="d-block{% unless first_gallery_section %} mt-2{% endunless %}">{{ section.title }}</strong>
+                  {% assign first_gallery_section = false %}
+                  {% assign sec_cols = section.cols | default: 3 %}
+                  <div class="pswp-gallery" id="gallery--{{ slug }}-all-{{ forloop.index }}">
+                    <div class="row row-cols-2 row-cols-md-{{ sec_cols }} g-2">
+                      {% for img in section.images %}
+                        <div class="col mb-3">
+                          <div class="gallery-img-wrapper">
+                            <a
+                              href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+                              data-pswp-width="{{ img.w }}"
+                              data-pswp-height="{{ img.h }}"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+                                class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}"
+                                loading="lazy"
+                                {% if img.position %}
+                                  style="object-position: {{ img.position }};"
+                                {% endif %}
+                                alt="{{ img.caption | default: img.file }}"
+                              >
+                            </a>
+                            {% if img.caption %}
+                              <div class="gallery-hover-caption">{{ img.caption }}</div>
+                            {% endif %}
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            {% elsif gallery.preview and gallery.preview.size > 0 %}
+              <div class="pswp-gallery" id="gallery--{{ slug }}-all-preview">
+                <div class="row row-cols-2 row-cols-md-3 g-2">
+                  {% for img in gallery.preview %}
+                    <div class="col mb-3">
+                      <div class="gallery-img-wrapper">
+                        <a
+                          href="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+                          data-pswp-width="{{ img.w }}"
+                          data-pswp-height="{{ img.h }}"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="{{ gallery.dir | append: '/' | append: img.file | relative_url }}"
+                            class="img-fluid rounded z-depth-1 gallery-thumbnail{% if img.fit == 'contain' %} gallery-thumbnail--contain{% endif %}"
+                            loading="lazy"
+                            {% if img.position %}
+                              style="object-position: {{ img.position }};"
+                            {% endif %}
+                            alt="{{ img.caption | default: img.file }}"
+                          >
+                        </a>
+                        {% if img.caption %}
+                          <div class="gallery-hover-caption">{{ img.caption }}</div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
             {% endif %}
           </div>
         </div>
-        {% endfor %}
-      </div>
+      {% else %}
+        <p class="mt-3"><em>Photos coming soon. / 照片即将上传</em></p>
+      {% endif %}
     </div>
-    {% endif %}
-  </div>
+  </details>
 </div>
-{% else %}
-<p class="mt-3"><em>Photos coming soon. / 照片即将上传</em></p>
-{% endif %}
-
-  </div>
-</details>
-
-</div><!-- end expandable-card -->
+<!-- end expandable-card -->
