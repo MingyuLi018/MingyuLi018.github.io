@@ -5,7 +5,7 @@
 
 - key: hec-am
   title: "Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition - Additive Manufacturing Track - National First Prize"
-  title_zh: "第十八届\"高教杯\"全国大学生先进成图技术与产品信息建模创新大赛【机械类增材制造赛道】国家一等奖"
+  title_zh: '第十八届"高教杯"全国大学生先进成图技术与产品信息建模创新大赛【机械类增材制造赛道】国家一等奖'
   date: "2025.07"
   description_en: >
     Hosted by the Professional Committee of Engineering Graphics of the China Graphics Society and co-organized by Higher Education Press, the Higher Education Cup is an A-level national discipline competition ranked among China's top undergraduate competitions. The additive manufacturing track is a mechanical-engineering sub-track for two-person teams and evaluates the full 3D-printing workflow. The 18th competition attracted about 480,000 students from 1,147 universities at the campus level, with more than 15,500 advancing to the national final. For the assigned task of an unpowered automatic screw sorter, I served as the project lead and designed a hand-crank modular sorting device composed of three interchangeable mechanisms for screw diameter, head type, and length classification. The product was fabricated with FDM using ABS for low-cost durable structural parts and PLA for components requiring higher dimensional accuracy. I was responsible for most of the mechanism design and CAD modeling, tuning printing parameters for the printed parts, and maintaining the 3D printers. The national first prize in this track is awarded to less than 5% of participating teams and has the same recognition as main-track national awards.
@@ -15,7 +15,7 @@
 
 - key: hec-team
   title: "Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition - Team Event - National Second Prize"
-  title_zh: "第十八届\"高教杯\"全国大学生先进成图技术与产品信息建模创新大赛 团体国家二等奖"
+  title_zh: '第十八届"高教杯"全国大学生先进成图技术与产品信息建模创新大赛 团体国家二等奖'
   date: "2025.07"
   description_en: >
     This entry records the national second prize in the team event of the 18th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition. This award is separate from the additive manufacturing track listed above and reflects the team's overall performance in the national competition main-track team event at Tongji University.
@@ -25,13 +25,31 @@
 
 - key: bmhri
   title: "BMHRI Cup Logistics Technology Creativity Contest - National Third Prize"
-  title_zh: "2025年中国大学生机械工程创新创意大赛\"北起院杯\"物流技术创意赛 国家三等奖"
+  title_zh: '2025年中国大学生机械工程创新创意大赛"北起院杯"物流技术创意赛 国家三等奖'
   date: "2025.07 - 2025.08"
   description_en: >
     The BMHRI Cup is part of the innovation track of the China College Student Mechanical Engineering Innovation and Creativity Competition, hosted by the Chinese Mechanical Engineering Society and exclusively sponsored by Beijing Materials Handling Research Institute. It has been listed as an A-level national discipline competition since 2019. In 2025, the contest attracted 354 teams and 2,158 students from 77 universities; after regional selection, only 108 works from 46 universities advanced to the national final, where 37 national third prizes were awarded. Our task was to pick six boxes from a specified shelf and place them into target stacking positions, with evaluation based on task completion, mechanism weight, and execution time. The team designed a vision-guided robotic system using dual cameras for box and stacking-position localization, an overall translational pick-and-place mechanism, six underactuated grippers for simultaneous grasping, and a suction-based placement arm. I served as a core team member, responsible for most mechanical structure design and CAD modeling, training and deploying the vision models, and developing the full upper-computer system on Jetson Orin, with STM32 used as the lower-level controller.
   description_zh: >
     “北起院杯”由中国机械工程学会主办，物流工程分会与同济大学等高校承办，北起院独家冠名，属中国大学生机械工程创新创意大赛创新赛道赛项，自2019年起连续列入全国普通高校学科竞赛排行榜，为国家A类赛事。2025年度共有77所高校、354支队伍、2158名学生参赛，经区域赛选拔后仅46所高校108件作品晋级全国总决赛，最终产生国家三等奖37项。赛题要求机器人在特定货架上夹取6箱货物并放置到规定码垛位置，综合考察任务完成度、机构重量和完成用时。团队方案在启动时调用两个方向的摄像头确定货物和码垛位置及序号，取物置物机构整体平移，取物端采用6个欠驱动夹爪并通过钢索实现整体升降，到达指定位置后同时夹取；移动至置物区后，由带吸盘执行器的机械臂根据视觉识别结果完成放置。我作为团队核心成员，负责大部分机械结构设计与建模、视觉模型训练与部署，并完成Jetson Orin上位机的全部开发；系统下位机采用STM32。
   gallery_key: bmhri
+
+- key: hec-am-2026
+  title: "19th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition - Mechanical Additive Manufacturing Track - National Second Prize"
+  title_zh: '第十九届"高教杯"全国大学生先进成图技术与产品信息建模创新大赛【机械类增材制造赛道】国家二等奖'
+  date: "2026.07"
+  description_en: >
+    Awarded a national second prize in the Mechanical Additive Manufacturing Track of the 19th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition.
+  description_zh: >
+    获第十九届“高教杯”全国大学生先进成图技术与产品信息建模创新大赛机械类增材制造赛道国家二等奖。
+
+- key: hec-modeling-team-2026
+  title: "19th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition - 3D Modeling Main Track National Second Prize & Team National Second Prize"
+  title_zh: '第十九届"高教杯"全国大学生先进成图技术与产品信息建模创新大赛【三维建模主赛道】国家二等奖、团体国家二等奖'
+  date: "2026.07"
+  description_en: >
+    Awarded a national second prize in the 3D Modeling Main Track and a team national second prize at the 19th Higher Education Cup National College Student Advanced Graphics Technology and Product Information Modeling Innovation Competition.
+  description_zh: >
+    获第十九届“高教杯”全国大学生先进成图技术与产品信息建模创新大赛三维建模主赛道国家二等奖及团体国家二等奖。
 
 - key: internet-plus
   title: "China International College Students' Internet+ Innovation and Entrepreneurship Competition (2026)"
@@ -66,14 +84,13 @@
   gallery_key: shmech
 
 - key: shmech-2026
-  title: "15th Shanghai College Student Mechanical Engineering Innovation Competition & 12th National College Student Mechanical Design Innovation Competition Shanghai Regional - Municipal First Prize & National Final Recommendation"
-  title_zh: "第十五届上海市大学生机械工程创新大赛暨第十二届全国大学生机械设计创新大赛上海赛 省一等奖 + 推荐国赛名额（保底国二）"
+  title: "15th Shanghai College Student Mechanical Engineering Innovation Competition & 12th National College Student Mechanical Design Innovation Competition - Provincial First Prize & National Third Prize"
+  title_zh: "第十五届上海市大学生机械工程创新大赛暨第十二届全国大学生机械设计创新大赛 省一等奖、国家三等奖"
   date: "2026.05"
-  badge: "Racing / 进行中"
   description_en: >
-    Co-hosted as the Shanghai regional selection for the 12th National College Student Mechanical Design Innovation Competition, the 15th Shanghai College Student Mechanical Engineering Innovation Competition was held at the University of Shanghai for Science and Technology on May 15–16, 2026. The 2026 theme was "Dexterity · Intelligence, Better Life." Municipal first-prize teams are recommended to advance to the national final; according to the Shanghai selection policy, recommended teams are typically positioned for strong national-level outcomes (commonly at least a national second prize). Our team entered the aquatic-product primary-processing track with Smart Shrimp Peeling (智械解虾), an integrated machine-vision-driven shrimp pre-processing platform that chains feeding, vision-based recognition and grasping, infeed alignment, traveling-fixture fixation with dual needle pins, back splitting, head removal, shell-meat separation, brush-based meat recovery, and collection into a continuous multi-station workflow. The design addresses the core difficulty of processing irregular, slippery, and deformable shrimp bodies by combining front-end vision localization with mid-stage traveling-fixture stabilization and rear-end flexible shell-meat separation (adjustable needle expansion, shovel-type separators, and rotary brushes). I served as a core team member, contributing to part of the mechanical structure design while leading most of the electronic control algorithms and vision-system tuning and debugging, including coordinated stepper-motor indexing, multi-station action sequencing, and vision-guided grasping calibration. The work was awarded a Shanghai regional first prize with a national-final recommendation slot.
+    Co-hosted as the Shanghai regional selection for the 12th National College Student Mechanical Design Innovation Competition, the 15th Shanghai College Student Mechanical Engineering Innovation Competition was held at the University of Shanghai for Science and Technology on May 15–16, 2026. The 2026 theme was "Dexterity · Intelligence, Better Life." Our team entered the aquatic-product primary-processing track with Smart Shrimp Peeling (智械解虾), an integrated machine-vision-driven shrimp pre-processing platform that chains feeding, vision-based recognition and grasping, infeed alignment, traveling-fixture fixation with dual needle pins, back splitting, head removal, shell-meat separation, brush-based meat recovery, and collection into a continuous multi-station workflow. The design addresses the core difficulty of processing irregular, slippery, and deformable shrimp bodies by combining front-end vision localization with mid-stage traveling-fixture stabilization and rear-end flexible shell-meat separation (adjustable needle expansion, shovel-type separators, and rotary brushes). I served as a core team member, contributing to part of the mechanical structure design while leading most of the electronic control algorithms and vision-system tuning and debugging, including coordinated stepper-motor indexing, multi-station action sequencing, and vision-guided grasping calibration. The work received a provincial first prize in the Shanghai competition and a national third prize in the national competition.
   description_zh: >
-    本赛事与第十二届全国大学生机械设计创新大赛上海赛区选拔合并举办，于2026年5月15–16日在上海理工大学举行，本届主题为“灵巧·智能，美好生活”。我所在团队选择特定水产品初加工机械方向，作品为“智械解虾——基于智能视觉的虾类全链加工一体化设备”：将上料输送、视觉识别与抓取、进料定位、随行夹具与双刺针固定、开背去头、壳肉分离、滚刷取肉及成品收集整合为连续多工位自动化流程，针对虾体弯曲、湿滑、规格差异和姿态不确定等非规则物料特点，以“视觉识别—进料对中—随行固定—分步加工—柔性取肉”为主线，重点强化随行夹具配合双刺针的侧向稳定约束，并结合可调针排、铲形分离件与滚刷机构降低壳肉分离阻力、提高取肉完整性。我作为团队核心成员，负责部分机械结构设计，并主导大部分电控算法以及视觉系统调试工作，包括主轨道步进节拍控制、多工位动作协调、视觉识别与抓取标定等。作品获上海赛区省一等奖并获推荐国赛名额（保底国赛二等奖水平）。
+    本赛事与第十二届全国大学生机械设计创新大赛上海赛区选拔合并举办，于2026年5月15–16日在上海理工大学举行，本届主题为“灵巧·智能，美好生活”。我所在团队选择特定水产品初加工机械方向，作品为“智械解虾——基于智能视觉的虾类全链加工一体化设备”：将上料输送、视觉识别与抓取、进料定位、随行夹具与双刺针固定、开背去头、壳肉分离、滚刷取肉及成品收集整合为连续多工位自动化流程，针对虾体弯曲、湿滑、规格差异和姿态不确定等非规则物料特点，以“视觉识别—进料对中—随行固定—分步加工—柔性取肉”为主线，重点强化随行夹具配合双刺针的侧向稳定约束，并结合可调针排、铲形分离件与滚刷机构降低壳肉分离阻力、提高取肉完整性。我作为团队核心成员，负责部分机械结构设计，并主导大部分电控算法以及视觉系统调试工作，包括主轨道步进节拍控制、多工位动作协调、视觉识别与抓取标定等。作品获上海赛区省一等奖，并在全国赛中获国家三等奖。
   gallery_key: shmech-2026
 
 - key: innovation-experience
@@ -89,7 +106,7 @@
 
 - key: graphics-cup-2026
   title: "16th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal First Prize & Team Municipal First Prize"
-  title_zh: "第十六届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级一等奖、团体市级一等奖"
+  title_zh: '第十六届"上图杯"先进成图技术与创新设计大赛 三维组个人市级一等奖、团体市级一等奖'
   date: "2026.06"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
@@ -97,7 +114,7 @@
 
 - key: graphics-cup
   title: "15th Shanghai Graphics Cup Advanced Graphics Technology and Innovative Design Competition - 3D Modeling Individual Municipal Second Prize & Team Municipal Second Prize"
-  title_zh: "第十五届\"上图杯\"先进成图技术与创新设计大赛 三维组个人市级二等奖、团体市级二等奖"
+  title_zh: '第十五届"上图杯"先进成图技术与创新设计大赛 三维组个人市级二等奖、团体市级二等奖'
   date: "2025.06"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"
@@ -105,8 +122,8 @@
   gallery_key: graphics-cup
 
 - key: aistartup
-  title: "1st \"Insight WE Future - AI Please Answer\" Startup Experience Competition - University Second Prize"
-  title_zh: "第一届\"洞见WE来—AI请回答\"初创体验大赛 校级二等奖"
+  title: '1st "Insight WE Future - AI Please Answer" Startup Experience Competition - University Second Prize'
+  title_zh: '第一届"洞见WE来—AI请回答"初创体验大赛 校级二等奖'
   date: "2023.12"
   description_en: "Description of the competition goes here."
   description_zh: "此处填写竞赛介绍内容。"

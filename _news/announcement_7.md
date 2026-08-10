@@ -5,6 +5,6 @@ inline: true
 related_posts: false
 ---
 
-Won **Shanghai Regional First Prize** and **National Final Qualification** in 15th Shanghai College Student Mechanical Engineering Innovation Competition & 12th National College Student Mechanical Design Innovation Competition Shanghai Regional (Smart Shrimp Peeling / 智械解虾)
+Won **Provincial First Prize** and **National Third Prize** in the 15th Shanghai College Student Mechanical Engineering Innovation Competition & 12th National College Student Mechanical Design Innovation Competition (Smart Shrimp Peeling / 智械解虾).
 
-<!-- 15th Shanghai Mech Innovation - Shanghai Regional First Prize & National Final Recommendation -->
+<!-- 15th Shanghai Mech Innovation - Provincial First Prize & National Third Prize -->

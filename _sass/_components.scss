@@ -636,6 +636,40 @@ ul.task-list input[type="checkbox"] {
   border-radius: 999px;
 }
 
+.awards-summary {
+  display: flex;
+  margin: 0.25rem 0 1.5rem;
+  padding: 0.85rem 1rem;
+  background: var(--global-surface-color);
+  border: 1px solid var(--global-card-border-color);
+  border-radius: 0.65rem;
+
+  &::before {
+    width: 4px;
+    margin-right: 0.85rem;
+    content: "";
+    background: var(--global-theme-color);
+    border-radius: 999px;
+    flex: 0 0 4px;
+  }
+
+  &__content {
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    p:first-child {
+      font-weight: 650;
+    }
+
+    p:last-child {
+      color: var(--global-text-color-light);
+      font-size: 0.9rem;
+    }
+  }
+}
+
 .projects-tabs .nav-link.active .projects-tab-count {
   color: var(--global-theme-color);
   background: var(--global-bg-color);

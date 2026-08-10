@@ -3,23 +3,29 @@
 <!-- Gallery data loaded from _data/gallery/competitions/*.yml -->
 
 <div class="competitions-section">
+  <div class="awards-summary" role="note" aria-label="Competition awards summary">
+    <div class="awards-summary__content">
+      <p>8 National-Level Awards · 8 Provincial-Level Awards</p>
+      <p>八项国家级奖项 · 八项省级奖项</p>
+    </div>
+  </div>
 
-<p>Below is a collection of competitions and awards. Click on any photo to view in full size.</p>
-<p>以下是我参与的竞赛和获奖经历。点击照片可查看大图。</p>
+  <p>Below is a collection of competitions and awards. Click on any photo to view in full size.</p>
+  <p>以下是我参与的竞赛和获奖经历。点击照片可查看大图。</p>
 
-<hr />
+  <hr>
 
-{% assign prev_was_card = false %}
-{% for comp in site.data.competitions %}
-  {% if comp.section_title %}
-    <hr />
-    <h2>{{ comp.section_title }}</h2>
-    {% assign prev_was_card = false %}
-  {% else %}
-    {% if prev_was_card %}<hr />{% endif %}
-    {% include competition_card.liquid comp=comp %}
-    {% assign prev_was_card = true %}
-  {% endif %}
-{% endfor %}
-
-</div><!-- end competitions-section -->
+  {% assign prev_was_card = false %}
+  {% for comp in site.data.competitions %}
+    {% if comp.section_title %}
+      <hr>
+      <h2>{{ comp.section_title }}</h2>
+      {% assign prev_was_card = false %}
+    {% else %}
+      {% if prev_was_card %}<hr>{% endif %}
+      {% include competition_card.liquid comp=comp %}
+      {% assign prev_was_card = true %}
+    {% endif %}
+  {% endfor %}
+</div>
+<!-- end competitions-section -->
